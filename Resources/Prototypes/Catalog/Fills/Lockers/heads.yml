@@ -227,8 +227,8 @@
     #    - id: Hypospray # Frontier - balance
     - id: HypoMini # Frontier
     #    - id: MedicalTechFabCircuitboard # Frontier - bloat
-    - id: MedicalTechFabFlatpack
-    - id: Multitool
+    - id: MedicalTechFabFlatpack # Mono
+    - id: Multitool # Mono
     #    - id: MedkitFilled # Frontier - bloat
     #    - id: RubberStampCMO # Frontier - MOM stamp
     - id: MedTekCartridge
