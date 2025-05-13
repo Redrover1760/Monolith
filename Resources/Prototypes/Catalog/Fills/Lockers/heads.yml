@@ -226,7 +226,9 @@
     - id: HandheldCrewMonitor
     #    - id: Hypospray # Frontier - balance
     - id: HypoMini # Frontier
-    - id: MedicalTechFabCircuitboard # Frontier Revert - Mono
+    #    - id: MedicalTechFabCircuitboard # Frontier - bloat
+    - id: MedicalTechFabFlatpack
+    - id: Multitool
     #    - id: MedkitFilled # Frontier - bloat
     #    - id: RubberStampCMO # Frontier - MOM stamp
     - id: MedTekCartridge
