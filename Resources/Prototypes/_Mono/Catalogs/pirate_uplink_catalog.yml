@@ -606,7 +606,7 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledShotgun
   icon: { sprite: Objects/Weapons/Guns/Shotguns/bulldog.rsi, state: icon }
   cost:
-    Doubloon: 25
+    Doubloon: 20
   categories:
   - UplinkPirateWeapons
   conditions:
