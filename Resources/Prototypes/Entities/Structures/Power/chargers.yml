@@ -12,7 +12,6 @@
     snapCardinals: true
   - type: Appearance
   - type: Charger
-    chargeRate: 50 # Mono
     slotId: charger_slot
   - type: Anchorable
     delay: 1
