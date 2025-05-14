@@ -3,6 +3,9 @@
 uplink-pirate-medical-bundle-name = Interdyne Medical Bundle
 uplink-pirate-medical-bundle-desc = An assortment of autoinjectors and premium medical equipment to cover for every possible situation. Contains an elite compact defibrillator that can be used as a weapon.
 
+uplink-pirate-interdyne-defibrilator-name = Interdyne Defibrillator
+uplink-pirate-interdyne-defibrilator-desc = An elite compact defibrilator that can be used as a weapon, now sold separately.
+
 uplink-pirate-chemical-synthesis-kit-name = Chemical Synthesis Kit
 uplink-pirate-chemical-synthesis-kit-desc = A starter kit for the aspiring chemist, includes toxin and vestine for all your criminal needs!
 
