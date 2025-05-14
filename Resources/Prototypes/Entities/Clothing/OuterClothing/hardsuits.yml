@@ -635,9 +635,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.6
-        Piercing: 0.6
+        Blunt: 0.55 # 0.6 -> 0.55
+        Slash: 0.55 # 0.6 -> 0.55
+        Piercing: 0.45 # 0.6 -> 0.45
         Heat: 0.2
         Radiation: 0.01
         Caustic: 0.5
@@ -645,12 +645,12 @@
     size: Huge
   - type: ClothingSpeedModifier
     walkModifier: 1.0
-    sprintModifier: 0.9
+    sprintModifier: 1.0
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieElite
   - type: StaminaDamageResistance # Mono - Stamres
-    coefficient: 0.25
+    coefficient: 0.2
 
 #Syndicate Commander Hardsuit
 - type: entity
