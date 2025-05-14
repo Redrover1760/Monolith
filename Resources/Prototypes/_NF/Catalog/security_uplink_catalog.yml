@@ -530,8 +530,8 @@
 
 - type: listing
   id: UplinkSecurityCompactDefibrillator
-  name:  uplink-security-compact-defibrillator-pen-name
-  description: uplink-security-compact-defibrillator-pen-name
+  name:  uplink-security-compact-defibrillator-name
+  description: uplink-security-compact-defibrillator-desc
   productEntity: DefibrillatorCompact
   cost:
     FrontierUplinkCoin: 3

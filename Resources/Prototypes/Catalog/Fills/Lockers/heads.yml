@@ -231,6 +231,7 @@
     - id: Multitool # Mono
     #    - id: MedkitFilled # Frontier - bloat
     #    - id: RubberStampCMO # Frontier - MOM stamp
+    - id: DefibrillatorCompact # Mono
     - id: MedTekCartridge
     - id: ClothingBeltMedicalFilled # Frontier - add more bloat
     - id: RubberStampDoctor # Frontier

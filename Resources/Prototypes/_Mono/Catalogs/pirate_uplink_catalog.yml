@@ -20,7 +20,7 @@
   description: uplink-pirate-interdyne-defibrillator-desc
   productEntity: DefibrillatorSyndicate
   cost:
-    Doubloon: 5
+    Doubloon: 12
   categories:
   - UplinkPirateUtility
   conditions:

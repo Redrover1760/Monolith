@@ -99,7 +99,7 @@
 
 - type: entity
   id: DefibrillatorSyndicate
-  parent: DefibrillatorCompact
+  parent: [DefibrillatorCompact, BaseC3SyndicateContraband] # Mono: BaseC3SyndicateContraband
   name: interdyne defibrillator
   description: Doubles as a self-defense weapon against war-crime inclined tiders.
   components:
@@ -132,3 +132,5 @@
       types:
         Blunt: 8
         Shock: 16
+  - type: StaticPrice # Mono
+    price: 1250
