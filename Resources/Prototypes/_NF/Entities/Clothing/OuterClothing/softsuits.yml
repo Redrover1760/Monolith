@@ -1401,13 +1401,13 @@
       - state: equipped-unshaded
         shader: unshaded
   - type: ToggleableClothing
+    clothingPrototype: ClothingHeadEVAHelmetNfsd
   - type: Armor
     modifiers:
       coefficients: # Mono
         Blunt: 0.95
         Slash: 0.95
         Piercing: 0.95
-    clothingPrototype: ClothingHeadEVAHelmetNfsd
 
 ## PLAYER FACTIONS
 - type: entity
