@@ -50,6 +50,37 @@
       - PirateUplink
 
 - type: listing
+  id: UplinkPirateSyndicateMagboots
+  name:  uplink-pirate-syndicate-magboots-name
+  description: uplink-pirate-syndicate-magboots-desc
+  productEntity: ClothingShoesBootsMagSyndie
+  cost:
+    Doubloon: 1
+  categories:
+  - UplinkPirateUtility
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateSyndicateJetpack
+  name:  uplink-pirate-syndicate-jetpack-name
+  description: uplink-pirate-syndicate-jetpack-desc
+  productEntity: JetpackBlackFilled
+  cost:
+    Doubloon: 1
+  categories:
+  - UplinkPirateUtility
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+
+- type: listing
   id: UplinkPirateEmpGrenade
   name:  uplink-pirate-emp-grenade-name
   description: uplink-pirate-emp-grenade-desc

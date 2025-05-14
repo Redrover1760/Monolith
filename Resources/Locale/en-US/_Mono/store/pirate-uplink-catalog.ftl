@@ -6,6 +6,12 @@ uplink-pirate-medical-bundle-desc = An assortment of autoinjectors and premium m
 uplink-pirate-chemical-synthesis-kit-name = Chemical Synthesis Kit
 uplink-pirate-chemical-synthesis-kit-desc = A starter kit for the aspiring chemist, includes toxin and vestine for all your criminal needs!
 
+uplink-pirate-syndicate-magboots-name = Blood-red Magboots
+uplink-pirate-syndicate-magboots-desc = A pair of boots that prevent slipping and, in zero gravity, allow you to move normally, at the cost of a slight slowdown. Additionally, they have jetpack functionality and come fueled, but don't last for long.
+
+uplink-pirate-syndicate-jetpack-name = Black Jetpack
+uplink-pirate-syndicate-jetpack-desc = A black jetpack. It allows you to fly around in space. Refills not included, use your fuel wisely.
+
 uplink-pirate-emp-grenade-name = EMP Grenade
 uplink-pirate-emp-grenade-desc = A grenade designed to disrupt electronic systems. Useful for disrupting communications, security's energy weapons, and APCs when you're in a tight spot.
 
