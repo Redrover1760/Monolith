@@ -84,8 +84,8 @@
     soundEmpty:
       path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
   - type: Battery
-    maxCharge: 4000
-    startingCharge: 4000
+    maxCharge: 3000 # Mono 2000->3000
+    startingCharge: 3000 # Mono 2000->3000
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 25

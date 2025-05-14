@@ -240,7 +240,7 @@
     - SemiAuto
   - type: HitscanBatteryAmmoProvider
     proto: RedLaserPractice
-    fireCost: 50
+    fireCost: 62.5
   - type: StaticPrice
     price: 300
 
@@ -615,7 +615,7 @@
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: HitscanBatteryAmmoProvider
     proto: RedMediumLaser
-    fireCost: 80
+    fireCost: 100
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 40
