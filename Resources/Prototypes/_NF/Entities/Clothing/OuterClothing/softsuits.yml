@@ -10,6 +10,14 @@
   - type: Item
     shape:
     - 0,0,3,2
+  - type: Armor
+    modifiers:
+      coefficients: # Made to have no protection - Mono
+        Blunt: 1
+        Slash: 1
+        Piercing: 1
+        Heat: 1
+        Radiation: 1
   - type: ClothingSpeedModifier # Changed to 5% because the suit doesn't provide any protection other than from low pressure
     walkModifier: 0.95
     sprintModifier: 0.95
@@ -84,6 +92,10 @@
       - state: equipped-breathing-gear
       - state: equipped-unshaded
         shader: unshaded
+  - type: Armor
+    modifiers:
+      coefficients: # Mono
+        Caustic: 0.75
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadEVAHelmetHydro
 
@@ -255,6 +267,13 @@
       - state: equipped-breathing-gear
       - state: equipped-unshaded
         shader: unshaded
+  - type: Armor
+    modifiers:
+      coefficients: # CL suit, seems fine to have something - Mono
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadEVAHelmetSr
 
@@ -312,6 +331,12 @@
       - state: equipped-unshaded
         shader: unshaded
   - type: ToggleableClothing
+  - type: Armor
+    modifiers:
+      coefficients: # Cap suit, seems fine to have something - Mono
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
     clothingPrototype: ClothingHeadEVAHelmetCaptain
 
 ## ENGINEERING
@@ -333,6 +358,12 @@
     - state: icon-breathing-gear
     - state: icon-unshaded
       shader: unshaded
+  - type: Armor
+    modifiers:
+      coefficients: # Engie suit gets something - Mono
+        Blunt: 0.95
+        Radiation: 0.75
+
   - type: Item
     inhandVisuals:
       left:
@@ -426,6 +457,11 @@
         shader: unshaded
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadEVAHelmetAtmosTech
+  - type: Armor
+    modifiers:
+      coefficients: # Engie suit gets something - Mono
+        Blunt: 0.95
+        Radiation: 0.75
 
 ## SUPPLY
 - type: entity
@@ -538,6 +574,12 @@
       - state: equipped-unshaded
         shader: unshaded
   - type: ToggleableClothing
+  - type: Armor
+    modifiers:
+      coefficients: # Salv suit, seems fine to have something - Mono
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
     clothingPrototype: ClothingHeadEVAHelmetSalvage
 
 ## MEDICAL
@@ -595,6 +637,10 @@
       - state: equipped-unshaded
         shader: unshaded
   - type: ToggleableClothing
+  - type: Armor
+    modifiers:
+      coefficients: # Med suit, seems fine to have something - Mono
+        Caustic: 0.75
     clothingPrototype: ClothingHeadEVAHelmetMedic
 
 ## SCIENCE
@@ -651,6 +697,10 @@
       - state: equipped-breathing-gear
       - state: equipped-unshaded
         shader: unshaded
+  - type: Armor
+    modifiers:
+      coefficients: # Mono
+        Caustic: 0.75
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadEVAHelmetScientist
 
@@ -708,6 +758,10 @@
       - state: equipped-breathing-gear
       - state: equipped-unshaded
         shader: unshaded
+  - type: Armor
+    modifiers:
+      coefficients: # Mono
+        Caustic: 0.75
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadEVAHelmetJanitor
 
@@ -1222,6 +1276,12 @@
       - state: equipped-unshaded
         shader: unshaded
   - type: ToggleableClothing
+  - type: Armor
+    modifiers:
+      coefficients: # Mono
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
     clothingPrototype: ClothingHeadEVAHelmetMercenary
 
 - type: entity
@@ -1278,6 +1338,12 @@
       - state: equipped-unshaded
         shader: unshaded
   - type: ToggleableClothing
+  - type: Armor
+    modifiers:
+      coefficients: # Mono
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
     clothingPrototype: ClothingHeadEVAHelmetPrivateSec
 
 ## NFSD
@@ -1335,6 +1401,12 @@
       - state: equipped-unshaded
         shader: unshaded
   - type: ToggleableClothing
+  - type: Armor
+    modifiers:
+      coefficients: # Mono
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
     clothingPrototype: ClothingHeadEVAHelmetNfsd
 
 ## PLAYER FACTIONS
@@ -1398,6 +1470,12 @@
       - state: equipped-unshaded
         shader: unshaded
   - type: ToggleableClothing
+  - type: Armor
+    modifiers:
+      coefficients: # Mono
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
     clothingPrototype: ClothingHeadEVAHelmetLvhi
 
 - type: entity
@@ -1466,6 +1544,12 @@
         state: decor_base_OuterClothing_armor_05
         color: "#8f1717"
   - type: ToggleableClothing
+  - type: Armor
+    modifiers:
+      coefficients: # Mono
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
     clothingPrototype: ClothingHeadEVAHelmetArcadia
 
 #FSB suit
@@ -1484,6 +1568,12 @@
     sprite: _NF/Clothing/OuterClothing/Suits/fsb_voidsuit.rsi
   - type: Clothing
     sprite: _NF/Clothing/OuterClothing/Suits/fsb_voidsuit.rsi
+  - type: Armor
+    modifiers:
+      coefficients: # Mono
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitFSB
     slot: head

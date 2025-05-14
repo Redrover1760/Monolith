@@ -119,8 +119,11 @@
     coolingCoefficient: 0.1
   - type: Armor
     modifiers:
-      coefficients:
-        Heat: 0.90
+      coefficients: # Added Blunt, Slash, and Pierce - Mono
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.9
         Radiation: 0.75
         Caustic: 0.5
   - type: GroupExamine
@@ -155,3 +158,5 @@
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:ContainerSlot {}
+  - type: StaminaDamageResistance # Mono - Stamres
+    coefficient: 0.8
