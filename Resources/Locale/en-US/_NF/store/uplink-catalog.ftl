@@ -235,6 +235,9 @@ uplink-security-rad-pen-desc = A rapid dose of anti-radiation. Contains arithraz
 uplink-security-combat-pen-name = Combat Medipen
 uplink-security-combat-pen-desc = A general use shot of omnizine, packaged in a autoinjector.
 
+uplink-security-compact-defibrillator-pen-name = Compact Defibrillator
+uplink-security-compact-defibrillator-pen-desc = A portable defibrillator made for field revivals.
+
 uplink-security-cash5000-name = 5,000 Spesos
 uplink-security-cash5000-desc = Cold, hard cash.
 

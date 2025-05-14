@@ -529,6 +529,25 @@
         - Brigmedic
 
 - type: listing
+  id: UplinkSecurityCompactDefibrillator
+  name:  uplink-security-compact-defibrillator-pen-name
+  description: uplink-security-compact-defibrillator-pen-name
+  productEntity: DefibrillatorCompact
+  cost:
+    FrontierUplinkCoin: 3
+  categories:
+    - UplinkSecurityUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Sheriff
+        - Brigmedic
+
+- type: listing
   id: UplinkSecurityCombatPen
   name:  uplink-security-combat-pen-name
   description: uplink-security-combat-pen-desc

@@ -15,9 +15,9 @@
       - PirateUplink
 
 - type: listing
-  id: UplinkPirateInterdyneDefibrilator
-  name:  uplink-pirate-interdyne-defibrilator-name
-  description: uplink-pirate-interdyne-defibrilator-desc
+  id: UplinkPirateInterdyneDefibrillator
+  name:  uplink-pirate-interdyne-defibrillator-name
+  description: uplink-pirate-interdyne-defibrillator-desc
   productEntity: DefibrillatorSyndicate
   cost:
     Doubloon: 5
