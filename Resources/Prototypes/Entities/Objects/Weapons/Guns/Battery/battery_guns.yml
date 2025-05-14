@@ -179,7 +179,7 @@
     sprite: Objects/Weapons/Guns/Battery/makeshift.rsi
   - type: HitscanBatteryAmmoProvider
     proto: RedLightLaser
-    fireCost: 62.5
+    fireCost: 50
   - type: Battery
     maxCharge: 500
     startingCharge: 500
@@ -240,7 +240,7 @@
     - SemiAuto
   - type: HitscanBatteryAmmoProvider
     proto: RedLaserPractice
-    fireCost: 62.5
+    fireCost: 50
   - type: StaticPrice
     price: 300
 
@@ -254,7 +254,7 @@
     price: 420
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
-    fireCost: 62.5
+    fireCost: 50
 
 - type: entity
   name: pulse pistol
@@ -287,8 +287,8 @@
     proto: Pulse
     fireCost: 200
   - type: Battery
-    maxCharge: 2000
-    startingCharge: 2000
+    maxCharge: 3000
+    startingCharge: 3000
 
 - type: entity
   name: pulse carbine
@@ -323,8 +323,8 @@
     proto: Pulse
     fireCost: 200
   - type: Battery
-    maxCharge: 5000
-    startingCharge: 5000
+    maxCharge: 6000
+    startingCharge: 6000
 
 - type: entity
   name: pulse rifle
@@ -387,8 +387,8 @@
     proto: RedHeavyLaser
     fireCost: 250
   - type: Battery
-    maxCharge: 4000
-    startingCharge: 4000
+    maxCharge: 5000
+    startingCharge: 5000
 
 
 - type: entity
@@ -450,8 +450,8 @@
     zeroVisible: true
   - type: Appearance
   - type: Battery
-    maxCharge: 4000
-    startingCharge: 4000
+    maxCharge: 5000
+    startingCharge: 5000
 
 - type: entity
   name: practice disabler
@@ -615,7 +615,7 @@
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: HitscanBatteryAmmoProvider
     proto: RedMediumLaser
-    fireCost: 100
+    fireCost: 80
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 40

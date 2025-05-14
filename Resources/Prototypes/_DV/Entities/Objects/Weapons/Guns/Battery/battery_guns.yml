@@ -27,8 +27,8 @@
     soundEmpty:
       path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
   - type: Battery
-    maxCharge: 2000
-    startingCharge: 2000
+    maxCharge: 4000
+    startingCharge: 4000
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
     fireCost: 100
@@ -84,8 +84,8 @@
     soundEmpty:
       path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
   - type: Battery
-    maxCharge: 2000
-    startingCharge: 2000
+    maxCharge: 4000
+    startingCharge: 4000
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 25
@@ -145,8 +145,8 @@
     soundEmpty:
       path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
   - type: Battery
-    maxCharge: 2000
-    startingCharge: 2000
+    maxCharge: 4000
+    startingCharge: 4000
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
     fireCost: 100
