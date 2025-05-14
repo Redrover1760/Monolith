@@ -179,7 +179,7 @@
     sprite: Objects/Weapons/Guns/Battery/makeshift.rsi
   - type: HitscanBatteryAmmoProvider
     proto: RedLightLaser
-    fireCost: 50
+    fireCost: 62.5
   - type: Battery
     maxCharge: 500
     startingCharge: 500
@@ -254,7 +254,7 @@
     price: 420
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
-    fireCost: 50
+    fireCost: 62.5
 
 - type: entity
   name: pulse pistol
@@ -387,8 +387,8 @@
     proto: RedHeavyLaser
     fireCost: 250
   - type: Battery
-    maxCharge: 5000
-    startingCharge: 5000
+    maxCharge: 4000
+    startingCharge: 4000
 
 
 - type: entity
@@ -450,8 +450,8 @@
     zeroVisible: true
   - type: Appearance
   - type: Battery
-    maxCharge: 5000
-    startingCharge: 5000
+    maxCharge: 4000
+    startingCharge: 4000
 
 - type: entity
   name: practice disabler

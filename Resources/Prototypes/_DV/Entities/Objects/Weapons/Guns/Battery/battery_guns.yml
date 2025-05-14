@@ -27,8 +27,8 @@
     soundEmpty:
       path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
   - type: Battery
-    maxCharge: 3000
-    startingCharge: 3000
+    maxCharge: 3000 # Mono 2000->3000
+    startingCharge: 3000 # Mono 2000->3000
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
     fireCost: 100
@@ -157,7 +157,7 @@
       name: disable
       state: disabler
     - proto: BulletEnergyGunLaser
-      fireCost: 150
+      fireCost: 150 # Mono 200 -> 150
       name: lethal
       state: lethal
     # - proto: BulletEnergyGunIon
