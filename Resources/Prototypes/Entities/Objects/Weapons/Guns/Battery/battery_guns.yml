@@ -287,8 +287,8 @@
     proto: Pulse
     fireCost: 200
   - type: Battery
-    maxCharge: 3000
-    startingCharge: 3000
+    maxCharge: 2000
+    startingCharge: 2000
 
 - type: entity
   name: pulse carbine
@@ -323,8 +323,8 @@
     proto: Pulse
     fireCost: 200
   - type: Battery
-    maxCharge: 6000
-    startingCharge: 6000
+    maxCharge: 5000
+    startingCharge: 5000
 
 - type: entity
   name: pulse rifle
