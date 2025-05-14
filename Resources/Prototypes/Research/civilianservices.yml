@@ -57,7 +57,7 @@
   - SurveillanceCameraMonitorCircuitboard
   - SurveillanceWirelessCameraMonitorCircuitboard
   - TelecomServerCircuitboard
-  - HolopadMachineCircuitboard # Mono: Uncommented
+  #  - HolopadMachineCircuitboard # Frontier: needs work before use
 
 - type: technology
   id: AdvancedEntertainment
