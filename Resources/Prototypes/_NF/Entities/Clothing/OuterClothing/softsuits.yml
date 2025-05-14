@@ -331,13 +331,13 @@
       - state: equipped-unshaded
         shader: unshaded
   - type: ToggleableClothing
+    clothingPrototype: ClothingHeadEVAHelmetCaptain
   - type: Armor
     modifiers:
       coefficients: # Cap suit, seems fine to have something - Mono
         Blunt: 0.95
         Slash: 0.95
         Piercing: 0.95
-    clothingPrototype: ClothingHeadEVAHelmetCaptain
 
 ## ENGINEERING
 - type: entity
@@ -574,13 +574,14 @@
       - state: equipped-unshaded
         shader: unshaded
   - type: ToggleableClothing
+    clothingPrototype: ClothingHeadEVAHelmetSalvage
   - type: Armor
     modifiers:
       coefficients: # Salv suit, seems fine to have something - Mono
         Blunt: 0.95
         Slash: 0.95
         Piercing: 0.95
-    clothingPrototype: ClothingHeadEVAHelmetSalvage
+
 
 ## MEDICAL
 - type: entity
@@ -637,11 +638,12 @@
       - state: equipped-unshaded
         shader: unshaded
   - type: ToggleableClothing
+    clothingPrototype: ClothingHeadEVAHelmetMedic
   - type: Armor
     modifiers:
       coefficients: # Med suit, seems fine to have something - Mono
         Caustic: 0.75
-    clothingPrototype: ClothingHeadEVAHelmetMedic
+
 
 ## SCIENCE
 - type: entity
@@ -1276,13 +1278,14 @@
       - state: equipped-unshaded
         shader: unshaded
   - type: ToggleableClothing
+    clothingPrototype: ClothingHeadEVAHelmetMercenary
   - type: Armor
     modifiers:
       coefficients: # Mono
         Blunt: 0.95
         Slash: 0.95
         Piercing: 0.95
-    clothingPrototype: ClothingHeadEVAHelmetMercenary
+
 
 - type: entity
   parent: NFClothingOuterEVASuitBase
@@ -1338,13 +1341,14 @@
       - state: equipped-unshaded
         shader: unshaded
   - type: ToggleableClothing
+    clothingPrototype: ClothingHeadEVAHelmetPrivateSec
   - type: Armor
     modifiers:
       coefficients: # Mono
         Blunt: 0.95
         Slash: 0.95
         Piercing: 0.95
-    clothingPrototype: ClothingHeadEVAHelmetPrivateSec
+
 
 ## NFSD
 - type: entity
@@ -1470,13 +1474,14 @@
       - state: equipped-unshaded
         shader: unshaded
   - type: ToggleableClothing
+    clothingPrototype: ClothingHeadEVAHelmetLvhi
   - type: Armor
     modifiers:
       coefficients: # Mono
         Blunt: 0.95
         Slash: 0.95
         Piercing: 0.95
-    clothingPrototype: ClothingHeadEVAHelmetLvhi
+
 
 - type: entity
   parent: NFClothingOuterEVASuitBase
@@ -1544,13 +1549,14 @@
         state: decor_base_OuterClothing_armor_05
         color: "#8f1717"
   - type: ToggleableClothing
+    clothingPrototype: ClothingHeadEVAHelmetArcadia
   - type: Armor
     modifiers:
       coefficients: # Mono
         Blunt: 0.95
         Slash: 0.95
         Piercing: 0.95
-    clothingPrototype: ClothingHeadEVAHelmetArcadia
+
 
 #FSB suit
 
