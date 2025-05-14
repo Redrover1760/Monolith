@@ -274,6 +274,17 @@
     Plasma: 150
 
 - type: latheRecipe
+  id: DefibrillatorCompact
+  result: DefibrillatorCompact
+  completetime: 2
+  materials:
+    Steel: 1000
+    Glass: 350
+    Plastic: 250
+    Gold: 250
+    Silver: 150
+
+- type: latheRecipe
   id: OmnimedTool
   result: OmnimedTool
   completetime: 2
