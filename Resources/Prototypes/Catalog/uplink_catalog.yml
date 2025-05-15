@@ -6,11 +6,11 @@
   name: uplink-pistol-viper-name
   description: uplink-pistol-viper-desc
   productEntity: WeaponPistolViper
-#  discountCategory: rareDiscounts - Mono Costs 1 TC
-#  discountDownTo:
-#    Telecrystal: 1
+  discountCategory: rareDiscounts - Mono Costs 1 TC
+  discountDownTo:
+    Telecrystal: 1 # Mono
   cost:
-    Telecrystal: 1 # 3->1 Mono Edit
+    Telecrystal: 2 # 3->2 Mono Edit
   categories:
   - UplinkWeaponry
 
@@ -138,8 +138,8 @@
     Telecrystal: 6 #8->6 Mono Edit
   categories:
   - UplinkWeaponry
-  conditions:
-  - !type:StoreWhitelistCondition
+#  conditions:
+#  - !type:StoreWhitelistCondition
 #    whitelist:
 #      tags:
 #      - NukeOpsUplink
