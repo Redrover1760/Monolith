@@ -14,7 +14,7 @@ pirate-bounty-item-techfab = Techfab
 pirate-bounty-item-rtg = RTG
 
 pirate-bounty-description-generic = The Insurgency is in need of this.
-pirate-bounty-description-encrpytion-key-TSFMC = Make sure to pop the encryption key out with a screwdriver first, we don't care for the headset itself.
+pirate-bounty-description-encryption-key-TSFMC = Make sure to pop the encryption key out with a screwdriver first, we don't care for the headset itself.
 pirate-bounty-description-merc-suit = SCAF suits, Mercernary Hardsuits, and PMC Hardsuits count equally towards this. Not your own SCAF suits though.
 pirate-bounty-description-tsfmctacsuit = Any TSFMC tacsuit equally counts to this.
 pirate-bounty-description-energy-weapon = HF-Katanas, All Energy Swords and TSF Energy Shields count towards this. Energy Cutlasses, VT-7s and Syndicate Energy Shields do not.
