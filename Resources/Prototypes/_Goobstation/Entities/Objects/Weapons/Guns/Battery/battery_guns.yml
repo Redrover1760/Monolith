@@ -61,4 +61,5 @@
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 75 # Mono - 75 < 35
-
+  - type: PirateBountyItem # Mono
+    id: TSFEnergyGun

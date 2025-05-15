@@ -29,6 +29,8 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitMercenary
+  - type: PirateBountyItem
+    id: ClothingOuterHardsuitMerc
   - type: StaminaDamageResistance # Mono - Stamres
     coefficient: 0.55
 
@@ -383,7 +385,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitScaf
   - type: PirateBountyItem
-    id: ClothingOuterHardsuitScaf
+    id: ClothingOuterHardsuitMerc
   - type: StaminaDamageResistance # Mono - Stamres
     coefficient: 0.4 # slightly worse than rogue one
 

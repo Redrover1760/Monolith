@@ -556,7 +556,7 @@
 
 #Mono
 - type: entity
-  parent: [ BaseComputerCircuitboard, BaseC3SyndicateContraband ]
+  parent: [ BaseComputerCircuitboard, BaseC3PirateContrabandHighValue ]
   id: RogueCommsComputerCircuitboard
   name: rogue communications computer board
   description: A computer printed circuit board for a rogue communications console.

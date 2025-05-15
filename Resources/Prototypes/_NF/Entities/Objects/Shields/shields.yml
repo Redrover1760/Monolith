@@ -9,3 +9,5 @@
     sprite: _NF/Objects/Weapons/Melee/e_shield.rsi
   - type: PointLight
     color: blue
+  - type: PirateBountyItem # Mono
+    id: HardlightTool

@@ -55,6 +55,6 @@
   name: PMC Viper
   id: WeaponPistolViperPMC
   description: A Viper that has been properly registered for private security and mercenary use.
-  components:
-  - type: PirateBountyItem
-    id: PMCGun
+#  components:
+#  - type: PirateBountyItem
+#    id: PMCGun

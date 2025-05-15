@@ -27,6 +27,10 @@
   examineText: contraband-examine-text-Class3Pirate
 
 - type: contrabandSeverity
+  id: Class3PirateHighValue
+  examineText: contraband-examine-text-Class3PirateHighValue
+
+- type: contrabandSeverity
   id: Class3Syndicate
   examineText: contraband-examine-text-Class3Syndicate
 

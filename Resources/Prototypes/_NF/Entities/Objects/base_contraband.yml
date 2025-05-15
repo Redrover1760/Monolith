@@ -130,6 +130,16 @@
     turnInValues: *oneFUC
 
 - type: entity
+  parent: BaseC3PirateContrabandNoValue
+  id: BaseC3PirateContrabandHighValue
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class3PirateHighValue
+    turnInValues:
+      FrontierUplinkCoin: 4
+
+- type: entity
   parent: BaseC3ContrabandUnredeemable
   id: BaseC3SyndicateContrabandUnredeemable
   abstract: true
@@ -151,7 +161,7 @@
   abstract: true
   components:
   - type: Contraband
-    turnInValues: 
+    turnInValues:
       FrontierUplinkCoin: 2 #Mono: Increased FUC turn in from 1 to 2
 
 - type: entity

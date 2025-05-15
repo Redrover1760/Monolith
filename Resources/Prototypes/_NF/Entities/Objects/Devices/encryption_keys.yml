@@ -34,6 +34,10 @@
     layers:
     - state: crypt_gray
     - state: nfsd_label
+  components: # Mono
+  - type: PirateBountyItem
+    id: EncryptionKeyNfsd
+
 
 - type: entity
   parent: EncryptionKey

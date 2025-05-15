@@ -85,7 +85,7 @@
 - type: entity
   id: RadioImplanterFreelance
   suffix: radio Freelance
-  parent: BaseImplantOnlyImplanter
+  parent: [ BaseImplantOnlyImplanter, BaseC3PirateContrabandHighValue ]
   components:
   - type: Implanter
     implant: RadioImplantFreelance
