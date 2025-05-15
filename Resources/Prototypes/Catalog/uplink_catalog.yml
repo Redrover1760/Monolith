@@ -140,9 +140,9 @@
   - UplinkWeaponry
   conditions:
   - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
+#    whitelist:
+#      tags:
+#      - NukeOpsUplink
 
 - type: listing
   id: UplinkSniperBundle
@@ -186,19 +186,19 @@
   categories:
   - UplinkWeaponry
 
-# - type: listing # Frontier
-  # id: UplinkGrenadeLauncherBundle
-  # name: uplink-grenade-launcher-bundle-name
-  # description: uplink-grenade-launcher-bundle-desc
-  # icon: { sprite: /Textures/Objects/Weapons/Guns/Launchers/china_lake.rsi, state: icon }
-  # productEntity: ClothingBackpackDuffelSyndicateFilledGrenadeLauncher
-  # discountCategory: veryRareDiscounts
-  # discountDownTo:
-    # Telecrystal: 20
-  # cost:
-    # Telecrystal: 25
-  # categories:
-  # - UplinkWeaponry
+- type: listing # Mono revert, re-adds China Lake
+  id: UplinkGrenadeLauncherBundle
+  name: uplink-grenade-launcher-bundle-name
+  description: uplink-grenade-launcher-bundle-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Launchers/china_lake.rsi, state: icon }
+  productEntity: ClothingBackpackDuffelSyndicateFilledGrenadeLauncher
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+  Telecrystal: 24 # 20->24 Mono Edit
+  cost:
+    Telecrystal: 30 #25->30 Mono Edit
+  categories:
+  - UplinkWeaponry
 
 - type: listing
   id: UplinkL6SawBundle
@@ -208,26 +208,26 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledLMG
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 24
+    Telecrystal: 20 # 24->20 Mono Edit
   cost:
-    Telecrystal: 30
+    Telecrystal: 25 # 30->25 Mono Edit
   categories:
   - UplinkWeaponry
 
 # Explosives
 
-# - type: listing # Frontier
-  # id: UplinkExplosiveGrenade
-  # name: uplink-explosive-grenade-name
-  # description: uplink-explosive-grenade-desc
-  # productEntity: ExGrenade
-  # discountCategory: usualDiscounts
-  # discountDownTo:
-    # Telecrystal: 2
-  # cost:
-    # Telecrystal: 4
-  # categories:
-  # - UplinkExplosives
+- type: listing # Frontier - Mono Edit, readds Explosives
+  id: UplinkExplosiveGrenade
+  name: uplink-explosive-grenade-name
+  description: uplink-explosive-grenade-desc
+  productEntity: ExGrenade
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 2
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkExplosives
 
 - type: listing
   id: UplinkExplosiveGrenadeFlash
@@ -249,106 +249,106 @@
   categories:
   - UplinkExplosives
 
-# - type: listing # Frontier
-  # id: UplinkSyndieMiniBomb
-  # name: uplink-mini-bomb-name
-  # description: uplink-mini-bomb-desc
-  # productEntity: SyndieMiniBomb
-  # discountCategory: veryRareDiscounts
-  # discountDownTo:
-    # Telecrystal: 3
-  # cost:
-    # Telecrystal: 6
-  # categories:
-    # - UplinkExplosives
+- type: listing # Frontier - Mono edit - Readds Explosives
+  id: UplinkSyndieMiniBomb
+  name: uplink-mini-bomb-name
+  description: uplink-mini-bomb-desc
+  productEntity: SyndieMiniBomb
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 6
+  categories:
+    - UplinkExplosives
 
-# - type: listing # Frontier
-#   id: UplinkSingularityGrenade
-#   name: uplink-singularity-grenade-name
-#   description: uplink-singularity-grenade-desc
-#   productEntity: SingularityGrenade
-#   discountCategory: usualDiscounts
-#   discountDownTo:
-#     Telecrystal: 3
-#   cost:
-#     Telecrystal: 6
-#   categories:
-#     - UplinkExplosives
+- type: listing # Frontier - Mono edit - Readds Explosives
+  id: UplinkSingularityGrenade
+  name: uplink-singularity-grenade-name
+  description: uplink-singularity-grenade-desc
+  productEntity: SingularityGrenade
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 6
+  categories:
+    - UplinkExplosives
 
-# - type: listing # Frontier
-  # id: UplinkWhiteholeGrenade
-  # name: uplink-whitehole-grenade-name
-  # description: uplink-whitehole-grenade-desc
-  # productEntity: WhiteholeGrenade
-  # discountCategory: usualDiscounts
-  # discountDownTo:
-    # Telecrystal: 1
-  # cost:
-    # Telecrystal: 3
-  # categories:
-    # - UplinkExplosives
+- type: listing # Frontier - Mono edit - Readds Explosives
+  id: UplinkWhiteholeGrenade
+  name: uplink-whitehole-grenade-name
+  description: uplink-whitehole-grenade-desc
+  productEntity: WhiteholeGrenade
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 1
+  cost:
+    Telecrystal: 3
+  categories:
+    - UplinkExplosives
 
-# - type: listing # Frontier
-  # id: UplinkGrenadePenguin
-  # name: uplink-penguin-grenade-name
-  # description: uplink-penguin-grenade-desc
-  # productEntity: MobGrenadePenguin
-  # discountCategory: usualDiscounts
-  # discountDownTo:
-    # Telecrystal: 3
-  # cost:
-    # Telecrystal: 5
-  # categories:
-    # - UplinkExplosives
-  # conditions:
-  # - !type:BuyerWhitelistCondition
-    # blacklist:
-      # components:
-      # - SurplusBundle
+- type: listing # Frontier - Mono edit - Readds Explosives
+  id: UplinkGrenadePenguin
+  name: uplink-penguin-grenade-name
+  description: uplink-penguin-grenade-desc
+  productEntity: MobGrenadePenguin
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 5
+  categories:
+    - UplinkExplosives
+  conditions:
+  - !type:BuyerWhitelistCondition
+    blacklist:
+      components:
+      - SurplusBundle
 
-# - type: listing # Frontier
-  # id: UplinkC4
-  # name: uplink-c4-name
-  # description: uplink-c4-desc
-  # productEntity: C4
-  # discountCategory: veryRareDiscounts
-  # discountDownTo:
-    # Telecrystal: 1
-  # cost:
-    # Telecrystal: 2
-  # categories:
-  # - UplinkExplosives
+- type: listing # Frontier - Mono edit - Readds Explosives
+  id: UplinkC4
+  name: uplink-c4-name
+  description: uplink-c4-desc
+  productEntity: C4
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 1
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkExplosives
 
-# - type: listing # Frontier
-  # id: UplinkGrenadierRig
-  # name: uplink-grenadier-rig-name
-  # description: uplink-grenadier-rig-desc
-  # productEntity: ClothingBeltMilitaryWebbingGrenadeFilled
-  # discountCategory: veryRareDiscounts
-  # discountDownTo:
-    # Telecrystal: 6
-  # cost:
-    # Telecrystal: 12
-  # categories:
-  # - UplinkExplosives
-  # conditions:
-  # - !type:StoreWhitelistCondition
-    # whitelist:
-      # tags:
-      # - NukeOpsUplink
+- type: listing # Frontier - Mono edit - Readds Explosives
+  id: UplinkGrenadierRig
+  name: uplink-grenadier-rig-name
+  description: uplink-grenadier-rig-desc
+  productEntity: ClothingBeltMilitaryWebbingGrenadeFilled
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 6
+  cost:
+    Telecrystal: 12
+  categories:
+  - UplinkExplosives
+#  conditions: # Mono - Hyperwar
+#  - !type:StoreWhitelistCondition
+#    whitelist:
+#      tags:
+#      - NukeOpsUplink
 
-# - type: listing # Frontier
-  # id: UplinkC4Bundle
-  # name: uplink-c4-bundle-name
-  # description: uplink-c4-bundle-desc
-  # productEntity: ClothingBackpackDuffelSyndicateC4tBundle
-  # discountCategory: veryRareDiscounts
-  # discountDownTo:
-    # Telecrystal: 8
-  # cost:
-    # Telecrystal: 12 #you're buying bulk so its a 25% discount, so no additional random discount over it
-  # categories:
-  # - UplinkExplosives
+- type: listing # Frontier - Mono Edit - Readds Explosives
+  id: UplinkC4Bundle
+  name: uplink-c4-bundle-name
+  description: uplink-c4-bundle-desc
+  productEntity: ClothingBackpackDuffelSyndicateC4tBundle
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 8
+  cost:
+    Telecrystal: 12 #you're buying bulk so its a 25% discount, so no additional random discount over it
+  categories:
+  - UplinkExplosives
 
 - type: listing
   id: UplinkEmpGrenade
@@ -363,35 +363,35 @@
   categories:
   - UplinkExplosives
 
-# - type: listing # Frontier
-  # id: UplinkExplodingPen
-  # name: uplink-exploding-pen-name
-  # description: uplink-exploding-pen-desc
-  # icon: { sprite: /Textures/Objects/Misc/pens.rsi, state: pen }
-  # productEntity: PenExplodingBox
-  # discountCategory: usualDiscounts
-  # discountDownTo:
-    # Telecrystal: 2
-  # cost:
-    # Telecrystal: 4
-  # categories:
-  # - UplinkExplosives
+- type: listing # Frontier - Mono Edit - Readds Explosives
+  id: UplinkExplodingPen
+  name: uplink-exploding-pen-name
+  description: uplink-exploding-pen-desc
+  icon: { sprite: /Textures/Objects/Misc/pens.rsi, state: pen }
+  productEntity: PenExplodingBox
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 2
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkExplosives
 
-# - type: listing # Frontier
-  # id: UplinkSyndicateBomb
-  # name: uplink-exploding-syndicate-bomb-name
-  # description: uplink-exploding-syndicate-bomb-desc
-  # productEntity: SyndicateBomb
-  # cost:
-    # Telecrystal: 11
-  # categories:
-    # - UplinkExplosives
-  # restockTime: 1800
-  # conditions:
-  # - !type:StoreWhitelistCondition
-    # blacklist:
-      # tags:
-      # - NukeOpsUplink
+- type: listing # Frontier - Mono Edit - Readds Explosives
+  id: UplinkSyndicateBomb
+  name: uplink-exploding-syndicate-bomb-name
+  description: uplink-exploding-syndicate-bomb-desc
+  productEntity: SyndicateBomb
+  cost:
+    Telecrystal: 15 # 11->15 Mono
+  categories:
+    - UplinkExplosives
+  restockTime: 1800
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - NukeOpsUplink
 
 # - type: listing # Frontier
   # id: UplinkSyndicateBombNukie
@@ -408,18 +408,18 @@
       # tags:
       # - NukeOpsUplink
 
-# - type: listing # Frontier
-  # id: UplinkClusterGrenade
-  # name: uplink-cluster-grenade-name
-  # description: uplink-cluster-grenade-desc
-  # productEntity: ClusterGrenade
-  # discountCategory: usualDiscounts
-  # discountDownTo:
-    # Telecrystal: 5
-  # cost:
-    # Telecrystal: 8
-  # categories:
-  # - UplinkExplosives
+- type: listing # Frontier - Mono Edit - Readds Explosives
+  id: UplinkClusterGrenade
+  name: uplink-cluster-grenade-name
+  description: uplink-cluster-grenade-desc
+  productEntity: ClusterGrenade
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 5
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkExplosives
 
 - type: listing
   id: UplinkGrenadeShrapnel
@@ -594,25 +594,25 @@
   categories:
   - UplinkChemicals
 
-# - type: listing # Frontier
-  # id: UplinkZombieBundle
-  # name: uplink-zombie-bundle-name
-  # description: uplink-zombie-bundle-desc
-  # icon: { sprite: /Textures/Structures/Wallmounts/signs.rsi, state: bio }
-  # productEntity: ClothingBackpackDuffelZombieBundle
-  # cost:
-    # Telecrystal: 40
-  # categories:
-  # - UplinkChemicals
-  # conditions:
-  # - !type:StoreWhitelistCondition
-    # whitelist:
-      # tags:
-      # - NukeOpsUplink
-  # - !type:BuyerWhitelistCondition
-    # blacklist:
-      # components:
-      # - SurplusBundle
+- type: listing # Frontier - Mono Edit - Maybe if we have a nukie event
+  id: UplinkZombieBundle
+  name: uplink-zombie-bundle-name
+  description: uplink-zombie-bundle-desc
+  icon: { sprite: /Textures/Structures/Wallmounts/signs.rsi, state: bio }
+  productEntity: ClothingBackpackDuffelZombieBundle
+  cost:
+    Telecrystal: 40
+  categories:
+  - UplinkChemicals
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+  - !type:BuyerWhitelistCondition
+    blacklist:
+      components:
+      - SurplusBundle
 
 - type: listing
   id: UplinkNocturineChemistryBottle
@@ -705,14 +705,16 @@
   categories:
   - UplinkChemicals
   conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
-    - !type:BuyerWhitelistCondition
+  - !type:BuyerWhitelistCondition
       blacklist:
         components:
           - SurplusBundle
+
+#    - !type:StoreWhitelistCondition # Mono Edit - Normal Uplink
+#      whitelist:
+#        tags:
+#          - NukeOpsUplink
+
 
 # Deception
 
@@ -786,7 +788,7 @@
   description: uplink-cyberpen-desc
   productEntity: CyberPen
   cost:
-    Telecrystal: 8 # Frontier: 1<8 - same price as an emag, should be more useful here
+    Telecrystal: 1 # Frontier: 1<8 - Mono Revert
   categories:
   - UplinkDeception
 
@@ -850,18 +852,18 @@
   categories:
   - UplinkDeception
 
-# - type: listing # Frontier
-  # id: UplinkSyndicateBombFake
-  # name: uplink-exploding-syndicate-bomb-fake-name
-  # description: uplink-exploding-syndicate-bomb-fake-desc
-  # productEntity: SyndicateBombFake
-  # discountCategory: usualDiscounts
-  # discountDownTo:
-    # Telecrystal: 1
-  # cost:
-    # Telecrystal: 4
-  # categories:
-  # - UplinkDeception
+- type: listing # Frontier - Mono Edit - Readds Explosives
+  id: UplinkSyndicateBombFake
+  name: uplink-exploding-syndicate-bomb-fake-name
+  description: uplink-exploding-syndicate-bomb-fake-desc
+  productEntity: SyndicateBombFake
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 1
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkDeception
 
 # Disruption
 
@@ -904,32 +906,32 @@
   categories:
   - UplinkDisruption
 
-# - type: listing # Frontier
-  # id: UplinkSyndicateWeaponModule
-  # name: uplink-syndicate-weapon-module-name
-  # description: uplink-syndicate-weapon-module-desc
-  # productEntity: BorgModuleSyndicateWeapon
-  # discountCategory: usualDiscounts
-  # discountDownTo:
-    # Telecrystal: 3
-  # cost:
-    # Telecrystal: 5
-  # categories:
-  # - UplinkDisruption
+- type: listing # Frontier - Mono Edit - Why can't borgs have syndicate fun too?
+  id: UplinkSyndicateWeaponModule
+  name: uplink-syndicate-weapon-module-name
+  description: uplink-syndicate-weapon-module-desc
+  productEntity: BorgModuleSyndicateWeapon
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkDisruption
 
-# - type: listing # Frontier
-  # id: UplinkSyndicateMartyrModule
-  # name: uplink-syndicate-martyr-module-name
-  # description: uplink-syndicate-martyr-module-desc
-  # productEntity: BorgModuleMartyr
-  # icon: { sprite: /Textures/Objects/Specific/Robotics/borgmodule.rsi, state: syndicateborgbomb }
-  # discountCategory: veryRareDiscounts
-  # discountDownTo:
-    # Telecrystal: 2
-  # cost:
-    # Telecrystal: 4
-  # categories:
-    # - UplinkDisruption
+- type: listing # Frontier - Mono Edit - Readds Warcrimes.
+  id: UplinkSyndicateMartyrModule
+  name: uplink-syndicate-martyr-module-name
+  description: uplink-syndicate-martyr-module-desc
+  productEntity: BorgModuleMartyr
+  icon: { sprite: /Textures/Objects/Specific/Robotics/borgmodule.rsi, state: syndicateborgbomb }
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 2
+  cost:
+    Telecrystal: 4
+  categories:
+    - UplinkDisruption
 
 - type: listing
   id: UplinkSoapSyndie
@@ -1011,41 +1013,41 @@
         # components:
           # - SurplusBundle
 
-# - type: listing # Frontier
-  # id: UplinkAntimovCircuitBoard
-  # name: uplink-antimov-law-name
-  # description: uplink-antimov-law-desc
-  # productEntity: AntimovCircuitBoard
-  # discountCategory: usualDiscounts
-  # discountDownTo:
-    # Telecrystal: 10
-  # cost:
-    # Telecrystal: 14
-  # categories:
-  # - UplinkDisruption
-  # conditions:
-  # - !type:StoreWhitelistCondition
-     # blacklist:
-       # tags:
-       # - NukeOpsUplink
+- type: listing # Frontier - Mono Edit - Readds Warcrimes.
+  id: UplinkAntimovCircuitBoard
+  name: uplink-antimov-law-name
+  description: uplink-antimov-law-desc
+  productEntity: AntimovCircuitBoard
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 10
+  cost:
+    Telecrystal: 14
+  categories:
+  - UplinkDisruption
+  conditions:
+  - !type:StoreWhitelistCondition
+     blacklist:
+       tags:
+       - NukeOpsUplink
 
-# - type: listing # Frontier
-  # id: UplinkNukieAntimovCircuitBoard
-  # name: uplink-antimov-law-name
-  # description: uplink-antimov-law-desc
-  # productEntity: AntimovCircuitBoard
-  # discountCategory: rareDiscounts
-  # discountDownTo:
-    # Telecrystal: 20
-  # cost:
-    # Telecrystal: 24
-  # categories:
-  # - UplinkDisruption
-  # conditions:
-  # - !type:StoreWhitelistCondition
-    # whitelist:
-      # tags:
-      # - NukeOpsUplink
+- type: listing # Frontier - Mono Edit - Maybe if we have a nukie event
+  id: UplinkNukieAntimovCircuitBoard
+  name: uplink-antimov-law-name
+  description: uplink-antimov-law-desc
+  productEntity: AntimovCircuitBoard
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 20
+  cost:
+    Telecrystal: 24
+  categories:
+  - UplinkDisruption
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
 
 - type: listing
   id: UplinkSurplusBundle
@@ -1238,19 +1240,19 @@
       tags:
       - NukeOpsUplink
 
-# - type: listing # Frontier
-  # id: UplinkMobCatMicrobomb
-  # name: uplink-mobcat-microbomb-name
-  # description: uplink-mobcat-microbomb-desc
-  # icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-syndicat }
-  # productEntity: ReinforcementRadioSyndicateSyndiCat
-  # discountCategory: usualDiscounts
-  # discountDownTo:
-    # Telecrystal: 3
-  # cost:
-    # Telecrystal: 6
-  # categories:
-    # - UplinkAllies
+- type: listing # Frontier - Mono Meow meow
+  id: UplinkMobCatMicrobomb
+  name: uplink-mobcat-microbomb-name
+  description: uplink-mobcat-microbomb-desc
+  icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-syndicat }
+  productEntity: ReinforcementRadioSyndicateSyndiCat
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 6
+  categories:
+    - UplinkAllies
 
 - type: listing
   id: UplinkSyndicatePersonalAI
@@ -1712,15 +1714,15 @@
   categories:
   - UplinkPointless
 
-# - type: listing # Frontier
-  # id: UplinkSnackBox
-  # name: uplink-snack-box-name
-  # description: uplink-snack-box-desc
-  # productEntity: HappyHonkNukieSnacks
-  # cost:
-    # Telecrystal: 1
-  # categories:
-  # - UplinkPointless
+- type: listing # Frontier - Mono Readd.
+  id: UplinkSnackBox
+  name: uplink-snack-box-name
+  description: uplink-snack-box-desc
+  productEntity: HappyHonkNukieSnacks
+  cost:
+    Telecrystal: 1
+  categories:
+  - UplinkPointless
 
 - type: listing
   id: UplinkRevolverCapGun
@@ -1978,36 +1980,36 @@
   #   - Mime
   #   - Clown
 
-# - type: listing # Frontier: no fun allowed
-#   id: uplinkBananaPeelExplosive
-#   name: uplink-banana-peel-explosive-name
-#   description: uplink-banana-peel-explosive-desc
-#   icon: { sprite: Objects/Specific/Hydroponics/banana.rsi, state: peel }
-#   productEntity: TrashBananaPeelExplosiveUnarmed
-#   discountCategory: rareDiscounts
-#   discountDownTo:
-#     Telecrystal: 1
-#   cost:
-#     Telecrystal: 2
-#   categories:
-#   - UplinkJob
+- type: listing # Frontier: no fun allowed - Mono Revert: Fun Allowed
+  id: uplinkBananaPeelExplosive
+  name: uplink-banana-peel-explosive-name
+  description: uplink-banana-peel-explosive-desc
+  icon: { sprite: Objects/Specific/Hydroponics/banana.rsi, state: peel }
+  productEntity: TrashBananaPeelExplosiveUnarmed
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 1
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkExplosives # Mono: UplinkJob<UplinkExplosives
 #   conditions:
 #   - !type:BuyerJobCondition
 #     whitelist:
 #     - Clown
 
-# - type: listing # Frontier: no fun allowed
-#   id: UplinkClusterBananaPeel
-#   name: uplink-cluster-banana-peel-name
-#   description: uplink-cluster-banana-peel-desc
-#   productEntity: ClusterBananaPeel
-#   discountCategory: rareDiscounts
-#   discountDownTo:
-#     Telecrystal: 3
-#   cost:
-#     Telecrystal: 6
-#   categories:
-#   - UplinkJob
+- type: listing # Frontier: no fun allowed - Mono Revert: Fun allowed
+  id: UplinkClusterBananaPeel
+  name: uplink-cluster-banana-peel-name
+  description: uplink-cluster-banana-peel-desc
+  productEntity: ClusterBananaPeel
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 6
+  categories:
+  - UplinkExplosives # Mono UplinkJob<UplinkExplosives
 #   conditions:
 #   - !type:BuyerJobCondition
 #     whitelist:
