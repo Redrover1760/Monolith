@@ -121,11 +121,11 @@
 #    id: LifeSupportCan
 
 - type: pirateBounty # Mono
-  id: PirateBountyTSFMCcomms
+  id: PirateBountyEncryptionKeyTSFMC
   reward: 6
-  description: pirate-bounty-description-TSFMCcomms
+  description: pirate-bounty-description-encryption-key-TSFMC
   entries:
-  - name: pirate-bounty-item-TSFMCcomms
+  - name: pirate-bounty-item-encryption-key-TSFMC
     amount: 1
     id: EncryptionKeyNfsd
 
