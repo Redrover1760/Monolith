@@ -122,7 +122,7 @@
 
 - type: pirateBounty # Mono
   id: PirateBountyEncryptionKeyTSFMC
-  reward: 6
+  reward: 5
   description: pirate-bounty-description-encryption-key-TSFMC
   entries:
   - name: pirate-bounty-item-encryption-key-TSFMC
