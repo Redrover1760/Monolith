@@ -20,6 +20,8 @@
     RiotBulletShield: 3
     Stunbaton: 4
     WeaponDisabler: 4
+    WeaponCapacitorRechargerFlatpack: 10
+    Multitool: 8
     ContrabandAppraisalTool: 5 # Frontier
     CrowbarRed: 10 # Frontier
     ForensicScanner: 3 # Frontier
