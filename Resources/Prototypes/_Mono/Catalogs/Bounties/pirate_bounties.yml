@@ -145,7 +145,7 @@
   description: pirate-bounty-description-cybernetics
   entries:
   - name: pirate-bounty-item-cybernetics
-    amount: 1
+    amount: 4
     id: Cybernetics
 
 - type: pirateBounty
