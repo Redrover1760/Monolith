@@ -6,7 +6,7 @@
   description: uplink-night-vision-desc
   productEntity: ClothingEyesNightVisionGogglesSyndie
   cost:
-    Telecrystal: 10 # goob
+    Telecrystal: 2 # Mono Edit Goob TC to Wizden TC 10->2
   categories:
   - UplinkWearables
   conditions:
@@ -21,7 +21,7 @@
   description: uplink-night-vision-desc
   productEntity: ClothingEyesNightVisionGogglesNukie
   cost:
-    Telecrystal: 10 # goob
+    Telecrystal: 2 # Mono Edit Goob TC to Wizden TC 10->2
   categories:
   - UplinkWearables
   conditions:
@@ -38,7 +38,7 @@
   description: uplink-thermal-vision-desc
   productEntity: ClothingEyesThermalVisionGogglesSyndie
   cost:
-    Telecrystal: 10 # goob
+    Telecrystal: 2 # Mono Edit Goob TC to Wizden TC 10->2
   categories:
   - UplinkWearables
   conditions:
@@ -53,7 +53,7 @@
   description: uplink-thermal-vision-desc
   productEntity: ClothingEyesThermalVisionGogglesNukie
   cost:
-    Telecrystal: 10 # goob
+    Telecrystal: 2 # Mono Edit Goob TC to Wizden TC 10->2
   categories:
   - UplinkWearables
   conditions:
