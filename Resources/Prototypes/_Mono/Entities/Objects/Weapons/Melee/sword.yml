@@ -32,7 +32,7 @@
      graph: GraphWeaponHFKatana
      node: WeaponHFKatana
    - type: PirateBountyItem
-     id: HardlightTool
+     id: TSFEnergyWeapon
 
 - type: entity
   name: VT-7 high-frequency blade

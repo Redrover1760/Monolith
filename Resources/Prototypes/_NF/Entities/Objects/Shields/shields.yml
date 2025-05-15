@@ -10,4 +10,4 @@
   - type: PointLight
     color: blue
   - type: PirateBountyItem # Mono
-    id: HardlightTool
+    id: TSFEnergyWeapon

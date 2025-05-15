@@ -55,6 +55,8 @@
   - type: Appearance
   - type: Clothing
     sprite: _DV/Objects/Weapons/Guns/Rifles/vulcan.rsi
+  - type: PirateBountyItem # Mono
+    id: StandardTSFLongarm
   # - type: StaticPrice # Frontier: overvalued
   #  price: 1300
 

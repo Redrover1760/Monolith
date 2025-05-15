@@ -102,8 +102,9 @@
       map: [ "blade" ]
   - type: Item
     sprite: Objects/Weapons/Melee/e_sword-inhands.rsi
-  - type: PirateBountyItem
-    id: HardlightTool
+  - type: PirateBountyItem # Mono
+    id: TSFEnergyWeapon
+
 
 - type: entity
   name: energy dagger
@@ -169,8 +170,6 @@
     energy: 1.5
     color: white
     netsync: false
-  - type: PirateBountyItem
-    id: HardlightTool
 
 
 - type: entity
@@ -244,8 +243,6 @@
     - Write
   - type: Contraband # Frontier
     hideValues: true # Frontier
-  - type: PirateBountyItem
-    id: HardlightTool
 
 - type: entity
   parent: [BaseItem, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
@@ -355,8 +352,9 @@
   - type: Reflect
     reflectProb: .75
     spread: 75
-  - type: PirateBountyItem
-    id: HardlightTool
+  - type: PirateBountyItem # Mono
+    id: TSFEnergyWeapon
+
 
 # Item will look weird in handslot. Will need to adjust handstorage visuals in a future PR
 - type: entity

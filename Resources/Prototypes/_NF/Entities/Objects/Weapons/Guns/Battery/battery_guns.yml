@@ -40,7 +40,7 @@
     energyConsumption: 2700000
     disableDuration: 30
   - type: PirateBountyItem # Mono
-    id: TSFEnergyGun
+    id: StandardTSFLongarm
 
 - type: entity
   id: WeaponLaserTurboNF
@@ -108,8 +108,6 @@
     steps: 6
     zeroVisible: true
   - type: Appearance
-  - type: PirateBountyItem # Mono
-    id: TSFEnergyGun
 
 - type: entity
   id: WeaponLaserPistolNF

@@ -55,6 +55,8 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: PirateBountyItem # Mono
+    id: ExperimentalTSFWeapon
 
 - type: entity
   name: WSPR

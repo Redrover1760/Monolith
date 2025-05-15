@@ -9,7 +9,7 @@
   description: A WT-550 that has been properly registered for private security and mercenary use.
   components:
   - type: PirateBountyItem
-    id: PMCGun
+    id: StandardTSFLongarm
 
 - type: entity
   parent:
@@ -20,7 +20,7 @@
   description: A Drozd that has been properly registered for private security and mercenary use.
   components:
   - type: PirateBountyItem
-    id: PMCGun
+    id: StandardTSFLongarm
 
 - type: entity
   parent:
@@ -31,7 +31,7 @@
   description: A C-20r that has been properly registered for private security and mercenary use.
   components:
   - type: PirateBountyItem
-    id: PMCGun
+    id: StandardTSFLongarm
 
 # Rifles
 
@@ -44,7 +44,7 @@
   description: A Lecter that has been properly registered for private security and mercenary use.
   components:
   - type: PirateBountyItem
-    id: PMCGun
+    id: StandardTSFLongarm
 
 # Pistols
 

@@ -15,7 +15,7 @@ pirate-bounty-console-manifest-reward = Reward: {$reward}
 pirate-bounty-console-description-label = [color=gray]{$description}[/color]
 pirate-bounty-console-id-label = {$id}
 
-pirate-bounty-console-flavor-left = Go and plunder, me hearties! Down with NT!
+pirate-bounty-console-flavor-left = Glory to the Rogue Sector.
 pirate-bounty-console-flavor-right = v0.0.1a
 
 pirate-bounty-chest-name = pirate bounty chest ({$id})

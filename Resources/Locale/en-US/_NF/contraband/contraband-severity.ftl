@@ -5,7 +5,7 @@ contraband-examine-text-Class3Expedition = [color=crimson]This unregistered weap
 contraband-examine-text-Class3Cult = [color=crimson]This cult item is considered class 3 contraband, and its possession is illegal.[/color]
 contraband-examine-text-Class3General = [color=crimson]This item is considered class 3 contraband, and its possession is illegal.[/color]
 contraband-examine-text-Class3Pirate = [color=crimson]This rogue sector item is considered class 3 contraband, and its possession is illegal.[/color]
-contraband-examine-text-Class3PirateHighValue = [color=crimson] This rogue sector item is considered class 3 high value contraband, and its possesion is illegal.[/color]
+contraband-examine-text-Class3PirateHighValue = [color=crimson] This rogue sector item is considered highly valuable class 3 contraband, and its possesion is illegal.[/color]
 contraband-examine-text-Class3Syndicate = [color=crimson]This Syndicate item is considered class 3 contraband, and its possession is illegal.[/color]
 contraband-examine-text-Class3Wizard = [color=crimson]This Wizard item is considered class 3 contraband, and its possession is illegal.[/color]
 contraband-examine-text-PirateTarget = [color=yellow]This item may be a highly valuable target for insurgents![/color]

@@ -195,6 +195,8 @@
   - type: Appearance
   - type: StaticPrice # Mono
     price: 750
+  - type: PirateBountyItem # Mono
+    id: StandardTSFLongarm
 
 - type: entity
   name: Foam Force Astro Ace

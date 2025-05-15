@@ -55,7 +55,7 @@
           Lethal: { state: mode-lethal }
           Special: { state: mode-stun } # Unused
   - type: PirateBountyItem # Mono
-    id: TSFEnergyGun
+    id: StandardTSFLongarm
 
 
 - type: entity
@@ -186,4 +186,4 @@
   - type: StaticPrice
     price: 750
   - type: PirateBountyItem # Mono
-    id: TSFEnergyGun
+    id: ExperimentalTSFWeapon
