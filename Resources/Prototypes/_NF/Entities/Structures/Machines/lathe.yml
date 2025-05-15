@@ -182,8 +182,6 @@
   - type: EmagLatheRecipes
     emagStaticPacks:
     - NFMercenaryTechfabDeprecatedEmag
-    emagDynamicPacks: # Mono
-    - SecurityExplosives
   - type: PirateBountyItem # Mono
     id: Techfab
 
