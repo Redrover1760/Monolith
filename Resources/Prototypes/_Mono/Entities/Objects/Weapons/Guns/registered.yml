@@ -7,9 +7,6 @@
   name: PMC WT-550
   id: WeaponSubMachineGunWt550PMC
   description: A WT-550 that has been properly registered for private security and mercenary use.
-  components:
-  - type: PirateBountyItem
-    id: StandardTSFLongarm
 
 - type: entity
   parent:
@@ -18,9 +15,6 @@
   name: PMC Drozd
   id: WeaponSubMachineGunDrozdPMC
   description: A Drozd that has been properly registered for private security and mercenary use.
-  components:
-  - type: PirateBountyItem
-    id: StandardTSFLongarm
 
 - type: entity
   parent:
@@ -42,9 +36,6 @@
   name: PMC Lecter
   id: WeaponRifleLecterPMC
   description: A Lecter that has been properly registered for private security and mercenary use.
-  components:
-  - type: PirateBountyItem
-    id: StandardTSFLongarm
 
 # Pistols
 
