@@ -16,5 +16,5 @@
     attackRate: 3.5
     damage:
       types:
-        Structural: 35
+        Structural: 52.5 # 35->52.5 - Mono
         Piercing: 15
