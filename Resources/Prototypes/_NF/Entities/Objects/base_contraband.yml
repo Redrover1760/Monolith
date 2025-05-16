@@ -131,7 +131,7 @@
 
 - type: entity
   parent: BaseC3PirateContrabandNoValue
-  id: BaseC3PirateContrabandHighValue
+  id: BaseC3PirateContrabandHighValue # Mono
   abstract: true
   components:
   - type: Contraband
