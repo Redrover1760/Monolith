@@ -7,3 +7,8 @@
 - type: contrabandSeverity
   id: Class3Chem
   examineText: contraband-examine-text-Class3-Chemical
+
+# for high value rogue contraband
+- type: contrabandSeverity
+  id: Class3PirateHighValue
+  examineText: contraband-examine-text-Class3PirateHighValue
