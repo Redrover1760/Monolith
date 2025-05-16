@@ -385,7 +385,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitScaf
   - type: PirateBountyItem
-    id: ClothingOuterHardsuitMerc
+    id: ClothingOuterHardsuitMerc # Mono
   - type: StaminaDamageResistance # Mono - Stamres
     coefficient: 0.4 # slightly worse than rogue one
 
