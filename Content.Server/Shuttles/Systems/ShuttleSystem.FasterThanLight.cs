@@ -646,7 +646,7 @@ public sealed partial class ShuttleSystem
     /// </summary>
     private void UpdateFTLArriving(Entity<FTLComponent, ShuttleComponent> entity)
     {
-        var globalFtlCooldown = 10f;
+        var globalFtlCooldown = 20f; // 10->20 Mono
         var uid = entity.Owner;
         var comp = entity.Comp1;
         // If this is a linked shuttle, let the main shuttle handle the arrival
@@ -740,7 +740,7 @@ public sealed partial class ShuttleSystem
             if (dockedUid == uid) continue;
             var dockedXform = _xformQuery.GetComponent(dockedUid);
             var (relativePos, relativeRot, dockConnections) = relativeTransforms[dockedUid];
-            var ftlCooldown = 10f;
+            var ftlCooldown = 20f; //10->20 - Mono
 
             var mainNewPos = _transform.GetWorldPosition(uid);
             var mainNewRot = _transform.GetWorldRotation(uid);
