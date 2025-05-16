@@ -29,7 +29,7 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitMercenary
-  - type: PirateBountyItem
+  - type: PirateBountyItem # Mono
     id: ClothingOuterHardsuitMerc
   - type: StaminaDamageResistance # Mono - Stamres
     coefficient: 0.55
