@@ -85,7 +85,7 @@
 - type: entity
   id: RadioImplanterFreelance
   suffix: radio Freelance
-  parent: [ BaseImplantOnlyImplanter, BaseC3PirateContrabandHighValue ]
+  parent: [ BaseImplantOnlyImplanter, BaseC3PirateContrabandHighValue ] # Mono - Added Pirate Contraband
   components:
   - type: Implanter
     implant: RadioImplantFreelance
