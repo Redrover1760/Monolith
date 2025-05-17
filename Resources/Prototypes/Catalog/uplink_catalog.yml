@@ -1617,9 +1617,9 @@
   productEntity: ClothingBackpackDuffelSyndicateHardsuitBundle
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 3 # 4->3 Mono
+    Telecrystal: 4
   cost:
-    Telecrystal: 6 # 8->6 Mono
+    Telecrystal: 7 # 8->7 Mono
   categories:
   - UplinkWearables
 
