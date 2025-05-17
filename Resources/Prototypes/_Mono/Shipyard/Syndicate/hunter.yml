@@ -1,6 +1,6 @@
 - type: vessel
   id: Hunter
-  parent: BaseVesselHidden # BaseVesselAntag->BaseVesselHidden - Mono
+  parent: BaseVesselAntag
   name: Hunter
   description: A small armored Syndicate assault shuttle, perfect for devious operations!
   price: 50000

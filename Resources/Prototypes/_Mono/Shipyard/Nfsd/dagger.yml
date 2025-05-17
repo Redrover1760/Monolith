@@ -1,6 +1,6 @@
 - type: vessel
   id: Dagger
-  parent: BaseVesselHidden # BaseVessel->BaseVesselHidden - Mono
+  parent: BaseVessel
   name: TSF-SKR Dagger
   description: Straight from the shipyards of Sol, this ship is equipped with a mass driver as its main armament for long-range fire support.
   price: 62500

@@ -1,6 +1,6 @@
 - type: vessel
   id: Serpent
-  parent: BaseVesselHidden # BaseVessel->BaseVesselHidden - Mono
+  parent: BaseVessel
   name: TSF-SKR Serpent
   description: A experimental heavy frigate, with heavy spinal and broadside firepower.
   price: 272250
