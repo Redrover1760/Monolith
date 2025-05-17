@@ -1,6 +1,6 @@
 - type: vessel
   id: Spyglass
-  parent: BaseVesselAntag
+  parent: BaseVesselHidden # BaseVesselAntag->BaseVesselHidden - Mono
   name: RSIC Spyglass
   description: One of the more rare kinds of ships you'll see rogues with. A actual commercial one. Capable of Xenoarcheology and Robotics.
   price: 48500

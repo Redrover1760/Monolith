@@ -1,6 +1,6 @@
 - type: vessel
   id: Veska
-  parent: BaseVesselAntag
+  parent: BaseVesselHidden # BaseVesselAntag->BaseVesselHidden - Mono
   name: RG Veska
   description: A modified Ample that tears out the mining equipment and installs a light autocannon.
   price: 6500
