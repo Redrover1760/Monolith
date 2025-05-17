@@ -27,19 +27,19 @@
     soundEmpty:
       path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
   - type: Battery
-    maxCharge: 3000 # Mono 2000->3000
-    startingCharge: 3000 # Mono 2000->3000
+    maxCharge: 2250 # Mono 2000->2250
+    startingCharge: 2250 # Mono 2000->2250
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
-    fireCost: 100
+    fireCost: 75 # 100->75
   - type: EnergyGun
     fireModes:
     - proto: BulletDisabler
-      fireCost: 100
+      fireCost: 75 # 100->75
       name: disable
       state: disabler
     - proto: BulletEnergyGunLaser
-      fireCost: 200
+      fireCost: 150 # 200->150
       name: kill
       state: lethal
   - type: MagazineVisuals
@@ -87,22 +87,22 @@
     soundEmpty:
       path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
   - type: Battery
-    maxCharge: 3000 # Mono 2000->3000
-    startingCharge: 3000 # Mono 2000->3000
+    maxCharge: 2250 # Mono 2000->2250
+    startingCharge: 2250 # Mono 2000->2250
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 25
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
-    fireCost: 100
+    fireCost: 75 # 100->75
   - type: EnergyGun
     fireModes:
     - proto: BulletDisabler
-      fireCost: 100
+      fireCost: 75 # 100->75
       name: disable
       state: disabler
     - proto: BulletEnergyGunLaser
-      fireCost: 200
+      fireCost: 150 # 200->150
       name: kill
       state: lethal
   - type: MagazineVisuals
@@ -143,6 +143,7 @@
     - suitStorage # Frontier
     sprite: _DV/Objects/Weapons/Guns/Battery/multiphase_energygun.rsi
   - type: Gun
+    fireRate: 2.5
     soundGunshot:
       path: /Audio/_DV/Weapons/Guns/Gunshots/laser.ogg
     soundEmpty:
