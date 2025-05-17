@@ -607,6 +607,18 @@
     sprite: Clothing/OuterClothing/Hardsuits/syndiemedic.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Hardsuits/syndiemedic.rsi
+  - type: Armor # Mono
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.55
+        Piercing: 0.5
+        Heat: 0.5
+        Radiation: 0.35
+        Caustic: 0.2
+  - type: ClothingSpeedModifier # Mono
+    walkModifier: 0.93
+    sprintModifier: 0.93
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieMedic
   - type: Tag
