@@ -1,6 +1,6 @@
 - type: vessel
   id: Vega
-  parent: BaseVesselHidden # BaseVesselAntag->BaseVesselHidden - Mono
+  parent: BaseVesselAntag
   name: RG Vega
   description: A frame manufactured from the remains of mothballed TSFMC ships. Carries a single CYREXA as its main armament.
   price: 98450

@@ -1,6 +1,6 @@
 - type: vessel
   id: Spear
-  parent: BaseVesselHidden # BaseVessel->BaseVesselHidden - Mono
+  parent: BaseVesselAntag
   name: TSF-SKR Spear
   description: A small ship meant as a escort. Horrible interior space, and not much in the way of comfort.
   price: 33200

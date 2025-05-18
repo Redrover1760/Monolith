@@ -13,7 +13,7 @@
     flags: [IsPlayerShuttle]
 
 - type: vessel
-  id: BaseVesselHidden # BaseVesselAntag->BaseVesselHidden - Mono
+  id: BaseVesselAntag
   abstract: true
   parent: BaseVessel
   addComponents:
