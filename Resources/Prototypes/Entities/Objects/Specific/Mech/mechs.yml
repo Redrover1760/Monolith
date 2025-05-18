@@ -58,6 +58,7 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 1
     baseSprintSpeed: 2
+    WeightlessModifier: 1.2 # 0.7->1.2
   - type: Tag
     tags:
     - DoorBumpOpener
