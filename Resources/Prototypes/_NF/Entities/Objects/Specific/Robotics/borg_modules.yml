@@ -61,7 +61,7 @@
   - type: DroppableBorgModule
     moduleId: NFJetpack
     items:
-    - id: JetpackBlackFilled # JetpackMiniFilled -> JetpackBlackFilled Mono
+    - id: JetpackBlueFilled # JetpackMiniFilled -> JetpackBlueFilled Mono
       whitelist:
         components:
         - Jetpack
