@@ -45,9 +45,12 @@
       - DeathAcidifierImplant
       - DeathRattleImplant
       - MindShieldImplant
+      - MedicalTrackingImplant
+      - RadioImplantFreelance
+      - FreelanceTrackingImplant
       deimplantFailureDamage:
         types:
-          Cellular: 50
+          Cellular: 5 # 50->5
           Heat: 10
     - type: Sprite
       sprite: Objects/Specific/Medical/implanter.rsi
