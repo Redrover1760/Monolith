@@ -12,7 +12,7 @@
   id: BioGenCondimentRecipe
   parent: BioGenFoodRecipe
   materials:
-    Biomass: 18
+    Biomass: 5 # Mono
 
 - type: latheRecipe
   abstract: true
@@ -33,46 +33,45 @@
   completetime: 360
   applyMaterialDiscount: false
   materials:
-    Biomass: 1600
+    Biomass: 160 # Mono
 
 - type: latheRecipe
   id: NFBioGenWoodPlank
   result: MaterialWoodPlank1
   parent: BaseMaterialsNoDiscountRecipe # Base prototype is in Resources\Prototypes\_NF\Recipes\Lathes\sheet.yml
   materials:
-    Biomass: 15
+    Biomass: 3 # Mono
 
 - type: latheRecipe
   id: NFBioGenSheetPlastic
   result: SheetPlastic1
   parent: BaseMaterialsNoDiscountRecipe
-  completetime: 10
   materials:
-    Biomass: 40
+    Biomass: 5 # Mono
 
 - type: latheRecipe
   id: NFBioGenPaperSheet
   result: SheetPaper1
   parent: BaseMaterialsNoDiscountRecipe
   materials:
-    Biomass: 10
+    Biomass: 2 # Mono
 
 - type: latheRecipe
   id: NFBioGenFoodMeat
   result: FoodMeat
   parent: BioGenFoodRecipe
   applyMaterialDiscount: false
-  completetime: 10
+  completetime: 1
   materials:
-    Biomass: 35
+    Biomass: 5 # Mono
 
 - type: latheRecipe
   id: BioGenChickenCube
   result: ChickenCube
   parent: BioGenFoodRecipe
-  completetime: 300
+  completetime: 3
   materials:
-    Biomass: 45
+    Biomass: 8 # Mono
 
 - type: latheRecipe
   id: BioGenDuckCube
@@ -80,7 +79,7 @@
   parent: BioGenFoodRecipe
   completetime: 300
   materials:
-    Biomass: 45
+    Biomass: 8 # Mono
 
 
 - type: latheRecipe
@@ -89,7 +88,7 @@
   parent: BioGenFoodRecipe
   completetime: 300
   materials:
-    Biomass: 45
+    Biomass: 50 # Mono
 
 # Condiments
 

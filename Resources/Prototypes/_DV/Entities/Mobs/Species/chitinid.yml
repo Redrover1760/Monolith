@@ -5,6 +5,19 @@
   id: BaseMobChitinid
   abstract: true
   components:
+  - type: Fixtures # Heavy Bugs!
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 240 # Heavy.
+        restitution: 0.0
+        mask:
+          - MobMask
+        layer:
+          - MobLayer
+
   - type: HumanoidAppearance
     species: Chitinid
     hideLayersOnEquip:
