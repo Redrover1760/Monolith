@@ -33,7 +33,6 @@
       - SadTromboneImplant
       - LightImplant
       - BikeHornImplant
-      - TrackingImplant
       - StorageImplant
       - FreedomImplant
       - UplinkImplant
@@ -47,6 +46,7 @@
       - MindShieldImplant
       - MedicalTrackingImplant
       - RadioImplantFreelance
+      - TrackingImplant # Moved Down, This is the TSFMC Tracker - Mono
       - FreelanceTrackingImplant
       deimplantFailureDamage:
         types:
