@@ -102,12 +102,12 @@
   materials:
     Biomass: 10
 
-- type: latheRecipe
-  id: SynthHeadEmpty
-  result: BioSynthHeadEmpty
-  completetime: 10
-  materials:
-    Biomass: 5
+#- type: latheRecipe - Mono - Doesn't work yet sadly
+#  id: SynthHeadEmpty
+#  result: BioSynthHeadEmpty
+#  completetime: 10
+#  materials:
+#    Biomass: 5
 
 - type: latheRecipe
   id: SynthLeftArm
