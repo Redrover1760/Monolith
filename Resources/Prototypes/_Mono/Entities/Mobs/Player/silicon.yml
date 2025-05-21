@@ -129,10 +129,11 @@
       map: ["light"]
       visible: false
   - type: BorgChassis
-    maxModules: 6
+    maxModules: 8
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
+      - BorgModuleEngineering
       - BorgModuleSyndicate
       - BorgModuleSyndicateAssault
     hasMindState: derelict_e
@@ -158,6 +159,10 @@
       - BorgModuleOperative
       - BorgModuleSyndicateWeapon
       - BorgModuleJetpack
+      - BorgModuleTool
+      - BorgModuleConstruction
+      - BorgModuleCable
+      - BorgModuleRCD
       - BorgModuleGPS
   - type: ItemSlots
     slots:
