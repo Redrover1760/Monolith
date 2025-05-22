@@ -42,8 +42,8 @@
           availableJobs:
             Sheriff: [ 1, 1 ]
             Bailiff: [ 1, 1 ]
-            SeniorOfficer: [ 2, 2 ]
-            Brigmedic: [ 1, 1 ]
+            SeniorOfficer: [ 4, 4 ] # Mono
+            Brigmedic: [ 2, 2 ] # Mono
             #NFDetective: [ 0, 0 ] # Mono - comment out
             Deputy: [ -1, -1 ] # Mono
             Cadet: [ 3, 3 ] # Mono
