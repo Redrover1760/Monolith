@@ -222,7 +222,7 @@
       min: 30
       max: 50
       value: 30
-  baseReward: 3000 # 6400-10500
+  baseReward: 4000 # 6400-10500 # Mono Increase
 
 - type: medicalBounty
   id: HyperpacmanGoneWrong
