@@ -143,6 +143,7 @@
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SecurityAmmoStatic
+    - MonoRestraintsStatic # Mono
   - type: BlueprintReceiver
     whitelist:
       tags:
