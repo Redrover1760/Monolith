@@ -268,7 +268,7 @@
     receiveFrequencyId: CrewMonitor
     transmitFrequencyId: ShuttleTimer
   - type: RadarConsole
-    maxRange: 512
+    maxRange: 768 # Mono
     followEntity: false
   - type: HolographicAvatar
     layerData:
@@ -368,7 +368,7 @@
     receiveFrequencyId: CrewMonitor
     transmitFrequencyId: ShuttleTimer
   - type: RadarConsole
-    maxRange: 512
+    maxRange: 768 # Mono
     followEntity: false
   - type: HolographicAvatar
     layerData:
@@ -472,7 +472,7 @@
     receiveFrequencyId: CrewMonitor
     transmitFrequencyId: ShuttleTimer
   - type: RadarConsole
-    maxRange: 512
+    maxRange: 768 # Mono
     followEntity: false
   - type: HolographicAvatar
     layerData:
@@ -574,7 +574,7 @@
     receiveFrequencyId: CrewMonitor
     transmitFrequencyId: ShuttleTimer
   - type: RadarConsole
-    maxRange: 512
+    maxRange: 768 # Mono
     followEntity: false
   - type: HolographicAvatar
     layerData:
