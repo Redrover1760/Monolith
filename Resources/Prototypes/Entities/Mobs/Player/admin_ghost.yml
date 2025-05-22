@@ -75,10 +75,10 @@
     initialDelay: 0
     global: true
   - type: RadarConsole
-    maxRange: 2048 # Frontier: increase admin radar range
+    maxRange: 2048 # Mono: further increase admin radar range
     followEntity: true
     hideCoords: false # Frontier
-    maxIffRange: 2048 # Mono
+    maxIffRange: null # Frontier
   - type: CargoOrderConsole
     taxAccounts: # Frontier
       Frontier: 0.25 # Frontier

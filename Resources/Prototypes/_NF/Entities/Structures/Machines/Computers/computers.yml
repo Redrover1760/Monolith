@@ -8,7 +8,7 @@
     board: AdvancedRadarConsoleCircuitboard
   - type: RadarConsole
     maxRange: 768
-    maxIffRange: null # Frontier
+    maxIffRange: null # Mono
   - type: Sprite
     layers:
     - map: ["computerLayerBody"]
