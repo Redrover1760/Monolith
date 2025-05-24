@@ -41,17 +41,17 @@
 #        !type:DamageTypeTrigger
 #        damageType: Heat
 #        damage: 200
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawnInContainer: true
-        spawn:
-          Ash:
-            min: 1
-            max: 1
-      - !type:BurnBodyBehavior { }
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MeatLaserImpact
+#      behaviors:
+#      - !type:SpawnEntitiesBehavior
+#        spawnInContainer: true
+#        spawn:
+#          Ash:
+#            min: 1
+#            max: 1
+#      - !type:BurnBodyBehavior { }
+#      - !type:PlaySoundBehavior
+#        sound:
+#          collection: MeatLaserImpact
   # Shitmed Change End
 
 - type: entity
@@ -127,6 +127,17 @@
         !type:DamageTypeTrigger
         damageType: Heat
         damage: 400
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
   - type: Input
     context: "ghost"
   - type: Tag
@@ -161,6 +172,17 @@
         !type:DamageTypeTrigger
         damageType: Heat
         damage: 200
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
 
 - type: entity
   id: BaseRightArm
@@ -190,6 +212,17 @@
         !type:DamageTypeTrigger
         damageType: Heat
         damage: 250
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
 
 - type: entity
   id: BaseLeftHand
@@ -219,6 +252,17 @@
         !type:DamageTypeTrigger
         damageType: Heat
         damage: 200
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
 
 - type: entity
   id: BaseRightHand
@@ -248,6 +292,17 @@
         !type:DamageTypeTrigger
         damageType: Heat
         damage: 200
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
 
 - type: entity
   id: BaseLeftLeg
@@ -308,6 +363,17 @@
         !type:DamageTypeTrigger
         damageType: Heat
         damage: 250
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
 
 - type: entity
   id: BaseLeftFoot
@@ -337,6 +403,17 @@
         !type:DamageTypeTrigger
         damageType: Heat
         damage: 200
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
 
 - type: entity
   id: BaseRightFoot
@@ -366,3 +443,14 @@
         !type:DamageTypeTrigger
         damageType: Heat
         damage: 200
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
