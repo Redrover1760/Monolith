@@ -226,6 +226,13 @@
 - type: entity
   parent:
   - CrateAmmoSecureMercenary
+  - StorageFillAmmoBoxBigLethal35
+  id: CrateAmmoBoxLethalBig35
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - CrateAmmoSecureMercenary
   - StorageFillAmmoBoxRubber35
   id: CrateAmmoBoxRubber35
   categories: [ HideSpawnMenu ]
