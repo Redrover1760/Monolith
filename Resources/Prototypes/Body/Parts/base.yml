@@ -23,24 +23,24 @@
       path: /Audio/_Shitmed/Medical/Surgery/organ1.ogg
     endSound:
       path: /Audio/_Shitmed/Medical/Surgery/organ2.ogg
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTypeTrigger
-        damageType: Blunt
-        damage: 110
-      behaviors:
-      - !type:GibPartBehavior { }
-    - trigger:
-        !type:DamageTypeTrigger
-        damageType: Slash
-        damage: 150
-      behaviors:
-      - !type:GibPartBehavior { }
-    - trigger:
-        !type:DamageTypeTrigger
-        damageType: Heat
-        damage: 200
+#  - type: Destructible - Mono Change
+#    thresholds:
+#    - trigger:
+#        !type:DamageTypeTrigger
+#        damageType: Blunt
+#        damage: 110
+#      behaviors:
+#      - !type:GibPartBehavior { }
+#    - trigger:
+#        !type:DamageTypeTrigger
+#        damageType: Slash
+#        damage: 150
+#      behaviors:
+#      - !type:GibPartBehavior { }
+#    - trigger:
+#        !type:DamageTypeTrigger
+#        damageType: Heat
+#        damage: 200
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawnInContainer: true
@@ -109,6 +109,24 @@
     partType: Head
     toolName: "a head" # Shitmed Change
     vital: true
+  - type: Destructible # Mono Head Durability Increase
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 300
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 350
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 400
   - type: Input
     context: "ghost"
   - type: Tag
@@ -125,6 +143,24 @@
     partType: Arm
     symmetry: Left
     toolName: "a left arm" # Shitmed Change
+  - type: Destructible # Mono
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 110
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 150
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 200
 
 - type: entity
   id: BaseRightArm
@@ -136,6 +172,24 @@
     partType: Arm
     symmetry: Right
     toolName: "a right arm" # Shitmed Change
+  - type: Destructible # Mono
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 150
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 200
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 250
 
 - type: entity
   id: BaseLeftHand
@@ -147,6 +201,24 @@
     partType: Hand
     symmetry: Left
     toolName: "a left hand" # Shitmed Change
+  - type: Destructible # Mono
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 110
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 150
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 200
 
 - type: entity
   id: BaseRightHand
@@ -158,6 +230,24 @@
     partType: Hand
     symmetry: Right
     toolName: "a right hand" # Shitmed Change
+  - type: Destructible # Mono
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 110
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 150
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 200
 
 - type: entity
   id: BaseLeftLeg
@@ -170,6 +260,24 @@
     symmetry: Left
     toolName: "a left leg" # Shitmed Change
   - type: MovementBodyPart
+  - type: Destructible # Mono
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 150
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 200
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 250
 
 - type: entity
   id: BaseRightLeg
@@ -182,6 +290,24 @@
     symmetry: Right
     toolName: "a right leg" # Shitmed Change
   - type: MovementBodyPart
+  - type: Destructible # Mono
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 150
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 200
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 250
 
 - type: entity
   id: BaseLeftFoot
@@ -193,6 +319,25 @@
     partType: Foot
     symmetry: Left
     toolName: "a left foot" # Shitmed Change
+  - type: Destructible # Mono
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 110
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 150
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 200
+
 - type: entity
   id: BaseRightFoot
   name: "right foot"
@@ -203,3 +348,21 @@
     partType: Foot
     symmetry: Right
     toolName: "a right foot" # Shitmed Change
+  - type: Destructible # Mono
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 110
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 150
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 200
