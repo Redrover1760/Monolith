@@ -223,7 +223,7 @@
   id: CrateAmmoBoxLethal35
   categories: [ HideSpawnMenu ]
 
-- type: entity
+- type: entity # Mono
   parent:
   - CrateAmmoSecureMercenary
   - StorageFillAmmoBoxBigLethal35

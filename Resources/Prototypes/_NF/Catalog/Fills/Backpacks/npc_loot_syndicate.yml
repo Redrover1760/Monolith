@@ -495,7 +495,7 @@
         prob: 0.7
       - id: SpawnDungeonLootMaterialsValuableFull
         prob: 0.7
-      - id: MagazineBoxPistolBig
+      - id: MagazineBoxPistolBig # Mono
       - prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
