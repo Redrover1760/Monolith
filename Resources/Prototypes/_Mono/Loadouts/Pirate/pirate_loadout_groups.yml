@@ -1,6 +1,6 @@
 - type: loadoutGroup
   id: PirateMercenaryJumpsuit
-  name: loadout-group-pirate-mercenary-jumpsuit
+  name: loadout-group-mercenary-jumpsuit
   loadouts:
   #Merc Stuff
   - PirateMercenaryClothingUniformJumpsuitMercenary
@@ -16,8 +16,6 @@
   #Pilot Stuff
   - PiratePilotClothingUniformJumpsuitPilot
   - PiratePilotClothingUniformJumpsuitMilitaryPilot
-  - PiratePilotClothingUniformJumpsuitMilitaryContractor
-  - PiratePilotClothingUniformJumpsuitMilitaryContractorTac
   # Contractor Stuff
   - PirateContractorClothingUniformJumpsuitColorGrey
   - PirateContractorClothingUniformJumpskirtColorGrey
