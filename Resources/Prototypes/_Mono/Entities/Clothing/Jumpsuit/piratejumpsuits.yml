@@ -484,11 +484,6 @@
 - type: entity
   parent: [ ClothingUniformJumpskirtPurpleTurtleneckDress , SensorOff ]
   id: PirateClothingUniformJumpskirtPurpleTurtleneckDress
-
-- type: entity
-  parent: [ ClothingUniformJumpsuitMercenary , SensorOff ]
-  id: PirateClothingUniformJumpsuitMercenary
-
 - type: entity
   parent: [ ClothingUniformJumpskirtRedTurtleneckDress , SensorOff ]
   id: PirateClothingUniformJumpskirtRedTurtleneckDress
