@@ -1,5 +1,6 @@
 - type: loadoutGroup
   id: PirateMercenaryJumpsuit
+  name: loadout-group-contractor-jumpsuit
   loadouts:
   #Merc Stuff
   - PirateMercenaryClothingUniformJumpsuitMercenary
