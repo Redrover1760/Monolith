@@ -210,10 +210,6 @@
   id: PirateClothingUniformJumpskirtColorPink
 
 - type: entity
-  parent: [ ClothingUniformJumpskirtColorPink , SensorOff ]
-  id: PirateClothingUniformJumpskirtColorPink
-
-- type: entity
   parent: [ ClothingUniformJumpsuitColorDarkBlue , SensorOff ]
   id: PirateClothingUniformJumpsuitColorDarkBlue
 
