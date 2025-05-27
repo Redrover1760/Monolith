@@ -365,10 +365,10 @@
       successChance: 0.2
       interactSuccessString: petting-success-snake
       interactFailureString: petting-failure-generic
-#    - type: PointLight - Mono moved to organ
-#      radius: 1.1
-#      energy: 1.5
-#      color: "#4faffb"
+    - type: PointLight
+      radius: 1.1
+      energy: 1.5
+      color: "#4faffb"
 
 - type: entity
   id: MobCobraSpaceSalvage
