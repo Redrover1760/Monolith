@@ -4,8 +4,8 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/27/2025 19:36:20
-  entityCount: 1024
+  time: 05/27/2025 19:51:26
+  entityCount: 1026
 maps: []
 grids:
 - 1
@@ -6557,6 +6557,20 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 7.5,-0.5
+      parent: 1
+- proto: WallWeaponCapacitorRechargerOmnidirectional
+  entities:
+  - uid: 1025
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 8.5,-3.5
+      parent: 1
+  - uid: 1026
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 2.5,0.5
       parent: 1
 - proto: WarpPoint
   entities:
