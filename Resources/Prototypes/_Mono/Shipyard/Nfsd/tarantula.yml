@@ -3,7 +3,7 @@
   parent: BaseVesselAntag
   name: TSF-SKR Tarantula
   description: A durable ship built for sustained mid-range engagements, equipped with heavy autocannons.
-  price: 75525
+  price: 80525
   category: Medium
   group: Security
   access: Security
