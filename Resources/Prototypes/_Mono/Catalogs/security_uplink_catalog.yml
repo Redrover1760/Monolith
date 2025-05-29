@@ -34,7 +34,7 @@
   description: uplink-security-portable-recharger-desc
   productEntity: PortableRecharger
   cost:
-    FrontierUplinkCoin: 10
+    FederationMilitaryCredit: 10
   categories:
   - UplinkSecurityUtility
   conditions:
