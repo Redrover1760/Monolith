@@ -29,6 +29,21 @@
       - SecurityUplink
 
 - type: listing
+  id: UplinkSecurityPortableRecharger
+  name:  uplink-security-portable-recharger-name
+  description: uplink-security-portable-recharger-desc
+  productEntity: PortableRecharger
+  cost:
+    FrontierUplinkCoin: 10
+  categories:
+  - UplinkSecurityUtility
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - SecurityUplink
+
+- type: listing
   id: UplinkSecurityMagazineSubsonic
   name:  uplink-subsonic-mag-name
   description: uplink-subsonic-mag-desc
