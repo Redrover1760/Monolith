@@ -30,4 +30,4 @@
     messages:
     - type: PodLocation
       message: smuggling-report-pirate
-      maxError: 1250 # Mono
+      maxError: 850 # Mono
