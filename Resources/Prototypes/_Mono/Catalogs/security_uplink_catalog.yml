@@ -30,8 +30,8 @@
 
 - type: listing
   id: UplinkSecuritySurgeryDuffel
-  name:  uplink-security-medkit-name
-  description: uplink-security-medkit-desc
+  name:  uplink-security-surgery-duffel-name
+  description: uplink-security-surgery-duffel-desc
   productEntity: ClothingBackpackDuffelSurgeryAdvancedFilled
   icon: { sprite: Objects/Specific/Medical/Surgery/scalpel.rsi, state: laser }
   cost:
