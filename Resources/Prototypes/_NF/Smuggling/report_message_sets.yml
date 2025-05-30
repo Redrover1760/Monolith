@@ -13,21 +13,21 @@
     - type: DeadDropStation
       message: smuggling-report-nfsd-specific
   - prob: 0.8
-    minDelay: 14
-    maxDelay: 16
+    minDelay: 4 # Mono edits - faster time
+    maxDelay: 8 # Mono
     messages:
     - type: PodLocation
       message: smuggling-report-nfsd-pod
-      maxError: 900 # Should be slightly larger than the giant radar range
+      maxError: 1250 # Mono
 
 - type: smugglingReportMessageSet
   id: Pirate
   channel: Freelance
   messageSets:
-  - prob: 0.333
-    minDelay: 14
-    maxDelay: 16
+  - prob: 0.7 # Mono 0.333->0.6
+    minDelay: 4 # Mono
+    maxDelay: 8 # Mono
     messages:
     - type: PodLocation
       message: smuggling-report-pirate
-      maxError: 600 # Pirates don't have giant radars, let's cut them a break.
+      maxError: 1250 # Mono
