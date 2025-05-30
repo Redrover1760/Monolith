@@ -52,7 +52,7 @@
           tags:
           - HeadOfPersonnel
           - HeadOfSecurity
-          - Warden # Mono
+          - Bailiff # Mono
         - type: StationDeadDropReporting
           messageSet: Nfsd
         - type: StationDeadDropHintExempt
