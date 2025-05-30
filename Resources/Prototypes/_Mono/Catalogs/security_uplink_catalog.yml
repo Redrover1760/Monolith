@@ -29,6 +29,28 @@
       - SecurityUplink
 
 - type: listing
+  id: UplinkSecuritySurgeryDuffel
+  name:  uplink-security-medkit-name
+  description: uplink-security-medkit-desc
+  productEntity: ClothingBackpackDuffelSurgeryAdvancedFilled
+  icon: { sprite: Objects/Specific/Medical/Surgery/scalpel.rsi, state: laser }
+  cost:
+    FederationMilitaryCredit: 4
+  categories:
+    - UplinkSecurityUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Brigmedic
+        - Bailiff
+        - Sheriff
+
+
+- type: listing
   id: UplinkSecurityPortableRecharger
   name:  uplink-security-portable-recharger-name
   description: uplink-security-portable-recharger-desc

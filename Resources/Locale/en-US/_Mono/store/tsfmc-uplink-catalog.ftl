@@ -7,6 +7,9 @@ uplink-security-annie-desc = A .30 subsonic weapon, made to shoulder the weight 
 uplink-security-portable-recharger-name = Portable Recharger
 uplink-security-portable-recharger-desc = An experimental portable recharger equipped with an inbuilt microreactor.
 
+uplink-security-surgery-duffel-name = Advanced Surgery Kit
+uplink-security-surgery-duffel-desc = A duffel filled with advanced surgery tools, perfect for re-attaching some heads.
+
 uplink-security-hfblade-name = HF-Katana
 uplink-security-hfblade-desc = A tool of justice.
 
