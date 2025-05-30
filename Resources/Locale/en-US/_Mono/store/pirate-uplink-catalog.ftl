@@ -192,7 +192,7 @@ uplink-pirate-modsuit-desc = An experimental modsuit prototype developed by Ullm
 # MARK: Explosives
 
 uplink-pirate-flashbanggrenade-box-name = Flashbang Grenade Box
-uplink-pirate-flashbanggrenade-box-desc = A box containing 4 flasbang grenades.
+uplink-pirate-flashbanggrenade-box-desc = A box containing 4 flashbang grenades.
 
 uplink-pirate-smokegrenade-box-name = Smoke Grenade Box
 uplink-pirate-smokegrenade-box-desc = A box containing 4 smoke grenades.
