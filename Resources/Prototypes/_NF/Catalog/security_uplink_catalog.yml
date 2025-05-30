@@ -1186,7 +1186,7 @@
   cost:
     FederationMilitaryCredit: 1
   categories:
-    - UplinkSecurityUtility
+    - UplinkSecurityExplosives # Moved to Explosives - Mono
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
@@ -1218,7 +1218,7 @@
   cost:
     FederationMilitaryCredit: 1
   categories:
-    - UplinkSecurityUtility
+    - UplinkSecurityExplosives # Moved to Explosives - Mono
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
@@ -1234,7 +1234,7 @@
   cost:
     FederationMilitaryCredit: 2
   categories:
-    - UplinkSecurityUtility
+    - UplinkSecurityExplosives # Moved to Explosives - Mono
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
