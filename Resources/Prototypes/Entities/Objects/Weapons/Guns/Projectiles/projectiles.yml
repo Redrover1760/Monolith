@@ -257,7 +257,7 @@
       fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
-    damage: 33
+    damage: 38 # Mono
   - type: Projectile
     impactEffect: BulletImpactEffectDisabler
     damage:
@@ -972,7 +972,7 @@
       fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
-    damage: 15
+    damage: 18 # Mono
   - type: Projectile
     impactEffect: BulletImpactEffectDisabler
     damage:
@@ -1031,7 +1031,7 @@
     impactEffect: BulletImpactEffectOrangeDisabler
     damage:
       types:
-        Heat: 28
+        Heat: 34 # Mono
 
 - type: entity
   name : disabler bolt
@@ -1047,7 +1047,7 @@
     - state: omnilaser
       shader: unshaded
   - type: StaminaDamageOnCollide
-    damage: 30
+    damage: 34 # Mono
   - type: Projectile
     impactEffect: BulletImpactEffectDisabler
     damage:
@@ -1126,7 +1126,7 @@
     impactEffect: BulletImpactEffectOrangeDisabler
     damage:
       types:
-        Heat: 13
+        Heat: 16 # Mono
 
 - type: entity
   name: wide laser barrage
@@ -1325,6 +1325,6 @@
     impactEffect: BulletImpactEffectRedDisabler
     damage:
       types:
-        Heat: 20 # Slightly more damage than the 17heat from the Captain's Hitscan lasgun
+        Heat: 25 # Mono - 20->25
     soundHit:
       collection: MeatLaserImpact
