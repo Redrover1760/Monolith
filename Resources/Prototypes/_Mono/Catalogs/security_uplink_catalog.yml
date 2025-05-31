@@ -56,7 +56,7 @@
   description: uplink-security-portable-recharger-desc
   productEntity: PortableRecharger
   cost:
-    FederationMilitaryCredit: 10
+    FederationMilitaryCredit: 7
   categories:
   - UplinkSecurityUtility
   conditions:
