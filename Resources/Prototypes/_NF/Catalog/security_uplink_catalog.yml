@@ -337,7 +337,7 @@
   productEntity: WeaponEnergyGun
   icon: { sprite: _DV/Objects/Weapons/Guns/Battery/energygun.rsi, state: icon }
   cost:
-    FederationMilitaryCredit: 4
+    FederationMilitaryCredit: 3
   categories:
     - UplinkSecurityWeapons
   conditions:

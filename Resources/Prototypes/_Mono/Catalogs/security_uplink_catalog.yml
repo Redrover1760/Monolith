@@ -19,7 +19,7 @@
   description: uplink-security-eg4-desc
   productEntity: WeaponEnergyRevolver
   cost:
-    FederationMilitaryCredit: 10
+    FederationMilitaryCredit: 7
   categories:
   - UplinkSecurityWeapons
   conditions:
