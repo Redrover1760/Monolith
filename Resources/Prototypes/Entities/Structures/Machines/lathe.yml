@@ -356,8 +356,6 @@
     - GygaxMechParts
     - MechWeapons
     - RipleyUpgrade
-  - type: EmagLatheRecipes
-    emagStaticPacks:
     - WeaponMechCombatArsenal
   - type: MaterialStorage
     whitelist:

@@ -5,4 +5,8 @@
   - GunneryControlComputerCircuitboard
   - MachineShieldMS225Circuitboard
   - MachineDriveCTLA25Circuitboard
+  - MachineDriveCTLA25sCircuitboard
+  - MachineDriveCTLA50Circuitboard
   - MachineGCSCircuitboard
+  - AdvancedRadarConsoleCircuitboard
+  - ComputerIFFCircuitboard

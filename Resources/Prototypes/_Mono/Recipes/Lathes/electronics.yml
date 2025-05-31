@@ -20,5 +20,25 @@
 
 - type: latheRecipe
   parent: BaseGoldCircuitboardRecipe
+  id: MachineDriveCTLA25sCircuitboard
+  result: MachineDriveCTLA25sCircuitboard
+
+- type: latheRecipe
+  parent: BaseGoldCircuitboardRecipe
+  id: MachineDriveCTLA50Circuitboard
+  result: MachineDriveCTLA50Circuitboard
+
+- type: latheRecipe
+  parent: BaseGoldCircuitboardRecipe
   id: MachineGCSCircuitboard
   result: MachineGCSCircuitboard
+
+- type: latheRecipe
+  parent: BaseGoldCircuitboardRecipe
+  id: AdvancedRadarConsoleCircuitboard
+  result: AdvancedRadarConsoleCircuitboard
+
+- type: latheRecipe
+  parent: BaseGoldCircuitboardRecipe
+  id: ComputerIFFCircuitboard
+  result: ComputerIFFCircuitboard
