@@ -15,7 +15,7 @@
   description: AAAAAAAAAAAAAAAAAAAAAAAAA
   components:
   - type: InstantAction
-    useDelay: 10
+    useDelay: 1 # 10->1
     icon: Interface/Actions/scream.png
     event: !type:ScreamActionEvent
     checkCanInteract: false
@@ -94,7 +94,8 @@
   description: Activating your freedom implant will free you from any hand restraints
   components:
   - type: InstantAction
-    charges: 3
+    # charges: 3 # Goob - useful freedom
+    useDelay: 5 # Goob - useful freedom
     checkCanInteract: false
     itemIconStyle: BigAction
     priority: -20
@@ -116,15 +117,14 @@
       state: old-radio
     event: !type:OpenUplinkImplantEvent
 
-- type: entity
+- type: entity # ported goob emp implant
   id: ActionActivateEmpImplant
   name: Activate EMP
   description: Triggers a small EMP pulse around you
   components:
   - type: InstantAction
     checkCanInteract: false
-    charges: 3
-    useDelay: 5
+    useDelay: 15
     itemIconStyle: BigAction
     priority: -20
     icon:
@@ -132,15 +132,15 @@
       state: icon
     event: !type:ActivateImplantEvent
 
-- type: entity
+- type: entity # ported goob scram
   id: ActionActivateScramImplant
   name: SCRAM!
   description: Randomly teleports you within a large distance.
   components:
   - type: InstantAction
-    checkCanInteract: false
-    charges: 2
-    useDelay: 5
+    # checkCanInteract: false # Goobstation - scrambler rework - start
+    # charges: 2
+    useDelay: 120 # Goobstation - scrambler rework - end
     itemIconStyle: BigAction
     priority: -20
     icon:

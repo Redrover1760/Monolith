@@ -1699,11 +1699,11 @@
     Telecrystal: 2
   categories:
     - UplinkWearables
-#  conditions: # Mono - Added to normal uplink
-#    - !type:StoreWhitelistCondition
-#      whitelist:
-#        tags:
-#          - NukeOpsUplink
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - NukeOpsUplink
 
 - type: listing
   id: UplinkClothingConductingGloves
