@@ -279,7 +279,10 @@
   - type: Sprite
     sprite: Clothing/Back/Backpacks/syndicate.rsi
   - type: ExplosionResistance
-    damageCoefficient: 0.1
+    damageCoefficient: 0.25 # 0.1->0.25 - Mono
+  - type: Storage # Extra space - Mono
+    grid:
+    - 0,0,7,3
 
 #Special
 - type: entity

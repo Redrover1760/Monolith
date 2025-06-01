@@ -167,13 +167,13 @@
   - type: Sprite
     sprite: Clothing/Back/Duffels/syndicate.rsi
   - type: ExplosionResistance
-    damageCoefficient: 0.1
+    damageCoefficient: 0.25 # 0.1->0.25 - Mono
   - type: Storage
     grid:
     - 0,0,8,4
 
 - type: entity
-  parent: NFClothingDuffel # Frontier: ClothingBackpackDuffelNFClothingDuffelSyndicate
+  parent: ClothingBackpackDuffelSyndicate # Frontier: ClothingBackpackDuffelNFClothingDuffelSyndicate - Mono Revert
   id: ClothingBackpackDuffelSyndicateBundle
   abstract: true
   components:
@@ -181,7 +181,7 @@
       tags: [] # ignore "WhitelistChameleon" tag
 
 - type: entity
-  parent: NFClothingDuffel # Frontier: ClothingBackpackDuffelNFClothingDuffelSyndicate
+  parent: ClothingBackpackDuffelSyndicate # Frontier: ClothingBackpackDuffelNFClothingDuffelSyndicate - Mono Revert
   id: ClothingBackpackDuffelSyndicateAmmo
   name: syndicate duffel bag
   components:
@@ -194,7 +194,7 @@
       equippedPrefix: ammo
 
 - type: entity
-  parent: NFClothingDuffel # Frontier: ClothingBackpackDuffelNFClothingDuffelSyndicateAmmo
+  parent: ClothingBackpackDuffelSyndicate # Frontier: ClothingBackpackDuffelNFClothingDuffelSyndicateAmmo - Mono Revert
   id: ClothingBackpackDuffelSyndicateAmmoBundle
   abstract: true
   components:
@@ -202,7 +202,7 @@
       tags: [] # ignore "WhitelistChameleon" tag
 
 - type: entity
-  parent: NFClothingDuffel # Frontier: ClothingBackpackDuffelNFClothingDuffelSyndicate
+  parent: ClothingBackpackDuffelSyndicate # Frontier: ClothingBackpackDuffelNFClothingDuffelSyndicate - Mono Revert
   id: ClothingBackpackDuffelSyndicateMedical
   name: syndicate duffel bag
   components:
@@ -215,7 +215,7 @@
       equippedPrefix: med
 
 - type: entity
-  parent: NFClothingDuffel # Frontier: ClothingBackpackDuffelNFClothingDuffelSyndicateMedical
+  parent: ClothingBackpackDuffelSyndicate # Mono Revert
   id: ClothingBackpackDuffelSyndicateMedicalBundle
   abstract: true
   components:
