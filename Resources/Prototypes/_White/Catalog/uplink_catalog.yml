@@ -7,7 +7,7 @@
   icon: { sprite: /Textures/_White/Objects/Weapons/Melee/Daggers/betrayal_knife.rsi, state: icon }
   productEntity: BetrayalKnife
   cost:
-    Telecrystal: 40 # goob
+    Telecrystal: 8 # goob TC converted 40->8
   categories:
   - UplinkWeaponry
   conditions:
