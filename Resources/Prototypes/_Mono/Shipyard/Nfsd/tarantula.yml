@@ -1,7 +1,11 @@
+# Author Info
+# GitHub: Redrover1760
+# Discord: GnarlySheep
+
 - type: vessel
   id: Tarantula
   parent: BaseVesselAntag
-  name: TSF Tarantula
+  name: TSF-SVE Tarantula
   description: A durable ship built for sustained mid-range engagements, equipped with heavy autocannons.
   price: 90525
   category: Medium
