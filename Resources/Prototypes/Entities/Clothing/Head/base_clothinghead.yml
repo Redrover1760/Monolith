@@ -181,7 +181,7 @@
 - type: entity
   abstract: true
   # No parent since it isn't an item
-  # must parent both this and the desired helmet base when using 
+  # must parent both this and the desired helmet base when using
   id: ClothingHeadSuitWithLightBase
   name: base hardsuit helmet with light
   categories: [ HideSpawnMenu ]
@@ -197,8 +197,8 @@
   - type: ToggleableLightVisuals
   - type: PointLight
     enabled: false
-    radius: 3
-    energy: 2
+    radius: 4 # 3->4 Mono
+    energy: 3 # 2->3 Mono
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
     netsync: false

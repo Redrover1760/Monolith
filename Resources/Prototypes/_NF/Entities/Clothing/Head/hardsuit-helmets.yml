@@ -90,8 +90,8 @@
   - type: Clothing
     sprite: _NF/Clothing/Head/Hardsuits/maxim_prototype.rsi
   - type: PointLight # Luxury Hardsuit Light
-    radius: 7
-    energy: 3
+    radius: 8 # 7->8 Mono
+    energy: 4 # 3->4 Mono
 
 #Security patrol suit
 - type: entity
@@ -142,6 +142,8 @@
   description: An armored tacsuit helmet used by the TSFMC.
   categories: [ HideSpawnMenu ]
   components:
+  - type: PointLight
+    radius: 5 # Mono
   - type: Sprite
     sprite: _NF/Clothing/Head/Hardsuits/nfsd.rsi
   - type: Clothing
@@ -254,8 +256,8 @@
         Slash: 0.9
         Piercing: 0.8
   - type: PointLight
-    radius: 7
-    energy: 2
+    radius: 8 # 7->8 Mono
+    energy: 3 # 2->3 Mono
     color: "#FF0040" # mono
 
 #Tactical hardsuit Helmet
