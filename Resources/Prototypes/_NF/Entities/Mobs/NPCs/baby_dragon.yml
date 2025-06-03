@@ -47,6 +47,8 @@
       - StaminaModifier
       - Drowsiness
       - Adrenaline
+  - type: Temperature # Mono
+    heatDamageThreshold: 800
   - type: Bloodstream
     bloodMaxVolume: 800 # 650->800 - Mono
   - type: FloatingVisuals
@@ -73,8 +75,6 @@
     baseWalkSpeed: 4 # 3->4
     baseSprintSpeed: 6 # 5->6
     weightlessModifier: 2 # 1.5>2 - Mono "I hope you like going fast"
-  - type: WorldLoader # Mono
-    radius: 128
   - type: UserInterface
     interfaces:
       enum.RadarConsoleUiKey.Key:
@@ -173,24 +173,48 @@
     - DoorBumpOpener
   - type: ActionGun
     action: ActionDragonsBreath
-    gunProto: BabyDragonsSparkGun
+    gunProto: BabyDragonsBreathGun
+  - type: NightVision # Goobstation - Nigthvision - Mono
+    color: "#808080"
+    activateSound: null
+    deactivateSound: null
 
-- type: entity
+#- type: entity
+#  categories: [ HideSpawnMenu ]
+#  id: BabyDragonsSparkGun
+#  name: baby dragon's spark
+#  description: For dragon's breathing
+#  components:
+#  - type: RechargeBasicEntityAmmo
+#    rechargeCooldown: 8 #120->8 Mono
+#    rechargeSound:
+#      path: /Audio/Animals/space_dragon_roar.ogg
+#  - type: BasicEntityAmmoProvider
+#    proto: BabyDragonSpark
+#    capacity: 1
+#    count: 1
+#  - type: Gun
+#    soundGunshot:
+#      path: /Audio/Animals/space_dragon_roar.ogg
+#    soundEmpty: null
+#    projectileSpeed: 25 # 15->25 Mono
+
+- type: entity # Mono - 5->15 cd vs normal dragon
   categories: [ HideSpawnMenu ]
-  id: BabyDragonsSparkGun
-  name: baby dragon's spark
-  description: For dragon's breathing
+  id: BabyDragonsBreathGun
+  name: baby dragon's lung
+  description: For dragon's breathing.
   components:
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 8 #120->8 Mono
+    rechargeCooldown: 15
     rechargeSound:
       path: /Audio/Animals/space_dragon_roar.ogg
   - type: BasicEntityAmmoProvider
-    proto: BabyDragonSpark
+    proto: ProjectileDragonsBreath
     capacity: 1
     count: 1
   - type: Gun
     soundGunshot:
       path: /Audio/Animals/space_dragon_roar.ogg
     soundEmpty: null
-    projectileSpeed: 25 # 15->25 Mono
+    projectileSpeed: 5
