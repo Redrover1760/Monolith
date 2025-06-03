@@ -202,18 +202,18 @@
 #    soundEmpty: null
 #    projectileSpeed: 25 # 15->25 Mono
 
-- type: entity # Mono - 5->15 cd vs normal dragon
+- type: entity # Mono - Baby version, no explosions
   categories: [ HideSpawnMenu ]
   id: BabyDragonsBreathGun
   name: baby dragon's lung
   description: For dragon's breathing.
   components:
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 15
+    rechargeCooldown: 5
     rechargeSound:
       path: /Audio/Animals/space_dragon_roar.ogg
   - type: BasicEntityAmmoProvider
-    proto: ProjectileDragonsBreath
+    proto: ProjectileBabyDragonsBreath
     capacity: 1
     count: 1
   - type: Gun
