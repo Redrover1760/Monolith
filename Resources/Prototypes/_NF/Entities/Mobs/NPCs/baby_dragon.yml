@@ -49,6 +49,9 @@
       - Adrenaline
   - type: Temperature # Mono
     heatDamageThreshold: 800
+  - type: Flammable
+    damage:
+      types: {}
   - type: Bloodstream
     bloodMaxVolume: 800 # 650->800 - Mono
   - type: FloatingVisuals
