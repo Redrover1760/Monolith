@@ -75,7 +75,6 @@
       types:
         Asphyxiation: -1.0
 
-
 - type: entity
   parent: BaseSpeciesDummy
   id: MobProtogenDummy
