@@ -64,7 +64,6 @@
       Unsexed: UnisexIPC
   - type: TypingIndicator # Mono
     proto: robot
-    speechSounds: Pai
   - type: Deathgasp # Mono
     prototype: SiliconDeathgasp
     needsCritical: false
