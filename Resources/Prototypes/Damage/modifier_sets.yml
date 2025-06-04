@@ -201,6 +201,9 @@
     Cold: 1.25
     Radiation: 1.55
     Shock: 1.2
+    Blunt: 0.8
+    Slash: 0.9
+    Piercing: 0.85
 
 - type: damageModifierSet
   id: Vox
