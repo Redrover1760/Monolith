@@ -25,10 +25,11 @@
         - Telecrystal5
         - Telecrystal5 # Mono
         - Telecrystal5 # Mono
-        - Telecrystal5 # Mono
+        - SpawnMobWeaponTurretLaserSyndicateNF # Mono
+        - SpawnMobWeaponTurretSyndicate # Mono
         - SpawnDungeonLootGunT3 # Mono
         - CrateSyndicateSurplusBundle # Mono
-      rareChance: 0.1 # Mono
+      rareChance: 0.18 # Mono
 
 - type: entity
   name: Contraband Crate Spawner
