@@ -1,7 +1,7 @@
 
 - type: entity
   name: telecrystal
-  parent: [BaseItem, BaseC3CurrencyContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband - Mono made BaseC3CurrencyContraband
+  parent: [BaseItem, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
   id: Telecrystal
   suffix: 20 TC
   description: It seems to be pulsing with suspiciously enticing energies.
@@ -22,6 +22,10 @@
   - type: Currency
     price:
       Telecrystal: 1
+  - type: Contraband
+    turnInValues:
+      FederationMilitaryCredit: 1
+      Doubloon: 1
 
 - type: entity
   parent: Telecrystal
