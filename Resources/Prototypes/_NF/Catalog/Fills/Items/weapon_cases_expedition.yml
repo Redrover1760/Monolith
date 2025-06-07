@@ -445,6 +445,17 @@
     - id: MagazineLightRifle
       amount: 2
 
+- type: entity # Mono
+  parent: WeaponCaseLong
+  id: WeaponCaseLongEnergyShotgunExpedition
+  suffix: Dungeon, EnergyShotgun
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponEnergyShotgun
+      amount: 1
+
 - type: entity
   parent: WeaponCaseLong
   id: WeaponCaseLongJackdaw
