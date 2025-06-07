@@ -29,7 +29,7 @@
         - SpawnMobWeaponTurretLaserSyndicateNF # Mono
         - SpawnMobWeaponTurretSyndicate # Mono
         - CrateSyndicateSurplusBundle # Mono
-      rareChance: 0.125 # Mono
+      rareChance: 0.1 # Mono
 
 - type: entity
   name: Contraband Crate Spawner
