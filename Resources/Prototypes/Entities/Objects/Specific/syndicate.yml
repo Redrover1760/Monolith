@@ -1,7 +1,7 @@
 
 - type: entity
   name: telecrystal
-  parent: [BaseItem, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
+  parent: [BaseItem, BaseC3CurrencyContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband - Mono made BaseC3CurrencyContraband
   id: Telecrystal
   suffix: 20 TC
   description: It seems to be pulsing with suspiciously enticing energies.

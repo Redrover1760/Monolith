@@ -17,6 +17,16 @@
     turnInValues:
       FederationMilitaryCredit: 0 # set to 0 due to TSF farming FMCs, should be simply locked away or destroyed If turnInValues gets set as double/float, could set it to ~0.2 or so
 
+- type: entity
+  parent: BaseC3Contraband
+  id: BaseC3CurrencyContraband
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class3Currency
+    turnInValues:
+      FederationMilitaryCredit: 1 # TC worth less
+
 # These are compatibility prototypes to work with ported definitions
 # They simply map to the appropriate NF/Mono contraband equivalents
 

@@ -8,6 +8,11 @@
   id: Class3Chem
   examineText: contraband-examine-text-Class3-Chemical
 
+# for TC
+- type: contraband
+  id: Class3Currency
+  examinetext: contraband-examine-text-Class3-Currency
+
 # for high value rogue contraband
 - type: contrabandSeverity
   id: Class3PirateHighValue
