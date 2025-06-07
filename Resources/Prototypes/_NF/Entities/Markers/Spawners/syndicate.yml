@@ -21,13 +21,15 @@
         - BannerSyndicate
         - Telecrystal1
         - Telecrystal1 # Mono
+        - Telecrystal1 # Mono
       rarePrototypes:
         - Telecrystal5
         - Telecrystal5 # Mono
         - Telecrystal5 # Mono
         - SpawnMobWeaponTurretLaserSyndicateNF # Mono
+        - SpawnMobWeaponTurretSyndicate # Mono
         - CrateSyndicateSurplusBundle # Mono
-      rareChance: 0.1 # Mono
+      rareChance: 0.125 # Mono
 
 - type: entity
   name: Contraband Crate Spawner
