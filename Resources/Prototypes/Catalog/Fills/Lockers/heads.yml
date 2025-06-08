@@ -154,7 +154,7 @@
   id: LockerFillChiefEngineerNoHardsuit
   table: !type:AllSelector
     children:
-    #    - id: AccessConfigurator # Frontier
+    - id: AccessConfigurator # Mono
     #    - id: BoxEncryptionKeyEngineering # Frontier
     #    - id: CigarCase # Frontier
     #      prob: 0.15 # Frontier
@@ -163,11 +163,11 @@
     - id: ClothingHandsGlovesColorYellow
     - id: ClothingHeadsetAltEngineering
     #    - id: DoorRemoteEngineering # Frontier
-    #    - id: RCD # Frontier
-    #    - id: RCDAmmo # Frontier
+    - id: RCD # Mono
+    - id: RCDAmmo # Mono
     - id: RubberStampCE
-    - id: ShipyardRCD # Frontier
-    - id: ShipyardRCDAmmo # Frontier
+    #    - id: ShipyardRCD # Mono
+    #    - id: ShipyardRCDAmmo # Mono
     - id: trayScanner # Frontier
 
 # Hardsuit table, used for suit storage as well
