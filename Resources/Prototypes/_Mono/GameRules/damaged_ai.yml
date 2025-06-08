@@ -14,9 +14,9 @@
     startAudio:
       path: /Audio/Misc/notice1.ogg
     weight: 2
-    maxOccurrences: 4
+    maxOccurrences: 3
   - type: GameRule
-    minPlayers: 35
+    minPlayers: 32
   - type: LoadMapRule
     preloadedGrid: AIZenith
 
@@ -29,9 +29,9 @@
     startAudio:
       path: /Audio/Misc/notice1.ogg
     weight: 2
-    maxOccurrences: 4
+    maxOccurrences: 3
   - type: GameRule
-    minPlayers: 35
+    minPlayers: 32
   - type: LoadMapRule
     preloadedGrid: AINebula
 
