@@ -53,7 +53,7 @@
   name: chat-radio-service
   keycode: 'v'
   frequency: 1349
-  color: "#539c00"
+  color: "#00c871"
 
 - type: radioChannel
   id: Supply
