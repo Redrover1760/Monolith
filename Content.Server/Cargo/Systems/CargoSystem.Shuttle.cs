@@ -12,11 +12,15 @@ using Content.Server._NF.Cargo.Components; // Frontier
 using Content.Shared._NF.Bank.Components; // Frontier
 using Content.Shared.Mobs;
 using Robust.Shared.Containers; // Frontier
+using Content.Shared._NF.Trade; // Mono
+using Content.Server._NF.Bank; // Mono
+using Content.Shared._NF.Bank.BUI; // Mono
 
 namespace Content.Server.Cargo.Systems;
 
 public sealed partial class CargoSystem
 {
+    [Dependency] BankSystem _bank = default!; // Mono
     /*
      * Handles cargo shuttle / trade mechanics.
      */
@@ -79,7 +83,7 @@ public sealed partial class CargoSystem
         amount += noModAmount;
         // End Frontier
         _uiSystem.SetUiState(uid.Owner, CargoPalletConsoleUiKey.Sale, // Frontier: uid<uid.Owner
-            new CargoPalletConsoleInterfaceState((int) amount, toSell.Count, true));
+            new CargoPalletConsoleInterfaceState((int)amount, toSell.Count, true));
     }
 
     private void OnPalletUIOpen(EntityUid uid, CargoPalletConsoleComponent component, BoundUIOpenedEvent args)
@@ -398,7 +402,7 @@ public sealed partial class CargoSystem
         return true;
     }
 
-    private void OnPalletSale(EntityUid uid, CargoPalletConsoleComponent component, CargoPalletSellMessage args)
+    private void OnPalletSale(EntityUid uid, CargoPalletConsoleComponent component, CargoPalletSellMessage args, ItemTaxComponent component2)
     {
         var xform = Transform(uid);
 
@@ -423,6 +427,12 @@ public sealed partial class CargoSystem
         _stack.Spawn((int) price, stackPrototype, xform.Coordinates);
         _audio.PlayPvs(ApproveSound, uid);
         UpdatePalletConsoleInterface((uid, component)); // Frontier: EntityUid<Entity
+        // Mono Begin
+        foreach (var (account, taxCoeff) in component2.TaxAccounts)
+        {
+            _bank.TrySectorDeposit(account, (int)(price * taxCoeff), LedgerEntryType.MedicalBountyTax);
+        } // Mono End
+
     }
 
     #endregion
