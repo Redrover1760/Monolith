@@ -126,3 +126,5 @@
     - BlackMarket
   - type: PirateBountyItem
     id: ContrabandCrate
+  - type: ItemTax
+    BlackMarket: 0.2
