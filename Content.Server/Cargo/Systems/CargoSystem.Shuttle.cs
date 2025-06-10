@@ -15,6 +15,7 @@ using Robust.Shared.Containers; // Frontier
 using Content.Server._Mono.ItemTax; // Mono
 using Content.Server._NF.Bank; // Mono
 using Content.Shared._NF.Bank.BUI; // Mono
+using Robust.Shared.GameObjects; // Mono
 
 namespace Content.Server.Cargo.Systems;
 
@@ -83,7 +84,7 @@ public sealed partial class CargoSystem
         amount += noModAmount;
         // End Frontier
         _uiSystem.SetUiState(uid.Owner, CargoPalletConsoleUiKey.Sale, // Frontier: uid<uid.Owner
-            new CargoPalletConsoleInterfaceState((int) amount, toSell.Count, true));
+            new CargoPalletConsoleInterfaceState((int)amount, toSell.Count, true));
     }
 
     private void OnPalletUIOpen(EntityUid uid, CargoPalletConsoleComponent component, BoundUIOpenedEvent args)
@@ -428,7 +429,7 @@ public sealed partial class CargoSystem
         _audio.PlayPvs(ApproveSound, uid);
         UpdatePalletConsoleInterface((uid, component)); // Frontier: EntityUid<Entity
         // Mono Begin
-        if (TryComp<ItemTaxComponent>(uid, out var tax))
+        if (TryComp(uid, out ItemTaxComponent? tax))
         {
             foreach (var (account, taxCoeff) in tax.TaxAccounts)
             {
