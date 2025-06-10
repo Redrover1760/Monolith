@@ -93,9 +93,6 @@
       paper_label: !type:ContainerSlot
   - type: ItemSlots
   - type: RequireProjectileTarget
-  - type: ItemTax
-    taxAccounts:
-    Frontier: 0.05
 
 - type: entity
   parent:
