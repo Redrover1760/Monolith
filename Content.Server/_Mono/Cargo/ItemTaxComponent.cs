@@ -8,7 +8,7 @@ namespace Content.Server._Mono.ItemTax;
 /// <summary>
 /// This is used to add an additional tax on an item when sold
 /// </summary>
-[RegisterComponent, NetworkedComponent]
+[RegisterComponent]
 public sealed partial class ItemTaxComponent : Component
 {
     [DataField]

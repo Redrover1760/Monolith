@@ -22,6 +22,7 @@ namespace Content.Server.Cargo.Systems;
 public sealed partial class CargoSystem
 {
     [Dependency] BankSystem _bank = default!; // Mono
+
     /*
      * Handles cargo shuttle / trade mechanics.
      */
