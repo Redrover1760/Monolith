@@ -429,9 +429,9 @@ public sealed partial class CargoSystem
         _audio.PlayPvs(ApproveSound, uid);
         UpdatePalletConsoleInterface((uid, component)); // Frontier: EntityUid<Entity
         // Mono Begin
-        if (TryComp(uid, out ItemTaxComponent? tax))
+        if (TryComp<ItemTaxComponent>(uid, out var itemTax))
         {
-            foreach (var (account, taxCoeff) in tax.TaxAccounts)
+            foreach (var (account, taxCoeff) in itemTax.TaxAccounts)
             {
                 _bank.TrySectorDeposit(account, (int)(price * taxCoeff), LedgerEntryType.BlackMarketSale);
             }
