@@ -15,7 +15,6 @@ using Robust.Shared.Containers; // Frontier
 using Content.Server._Mono.ItemTax; // Mono
 using Content.Server._NF.Bank; // Mono
 using Content.Shared._NF.Bank.BUI; // Mono
-using Robust.Shared.GameObjects; // Mono
 
 namespace Content.Server.Cargo.Systems;
 
