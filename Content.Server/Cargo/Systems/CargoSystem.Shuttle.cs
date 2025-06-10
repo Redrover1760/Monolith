@@ -12,7 +12,7 @@ using Content.Server._NF.Cargo.Components; // Frontier
 using Content.Shared._NF.Bank.Components; // Frontier
 using Content.Shared.Mobs;
 using Robust.Shared.Containers; // Frontier
-using Content.Shared._NF.Trade; // Mono
+using Content.Server._Mono.ItemTax; // Mono
 using Content.Server._NF.Bank; // Mono
 using Content.Shared._NF.Bank.BUI; // Mono
 
@@ -83,7 +83,7 @@ public sealed partial class CargoSystem
         amount += noModAmount;
         // End Frontier
         _uiSystem.SetUiState(uid.Owner, CargoPalletConsoleUiKey.Sale, // Frontier: uid<uid.Owner
-            new CargoPalletConsoleInterfaceState((int)amount, toSell.Count, true));
+            new CargoPalletConsoleInterfaceState((int) amount, toSell.Count, true));
     }
 
     private void OnPalletUIOpen(EntityUid uid, CargoPalletConsoleComponent component, BoundUIOpenedEvent args)
@@ -402,7 +402,7 @@ public sealed partial class CargoSystem
         return true;
     }
 
-    private void OnPalletSale(EntityUid uid, CargoPalletConsoleComponent component, CargoPalletSellMessage args, ItemTaxComponent component2)
+    private void OnPalletSale(EntityUid uid, CargoPalletConsoleComponent component, CargoPalletSellMessage args)
     {
         var xform = Transform(uid);
 
@@ -424,15 +424,17 @@ public sealed partial class CargoSystem
         price += noMultiplierPrice;
         // End Frontier: market modifiers & immune objects
         var stackPrototype = _protoMan.Index<StackPrototype>(component.CashType);
-        _stack.Spawn((int) price, stackPrototype, xform.Coordinates);
+        _stack.Spawn((int)price, stackPrototype, xform.Coordinates);
         _audio.PlayPvs(ApproveSound, uid);
         UpdatePalletConsoleInterface((uid, component)); // Frontier: EntityUid<Entity
         // Mono Begin
-        foreach (var (account, taxCoeff) in component2.TaxAccounts)
+        if (TryComp<ItemTaxComponent>(uid, out var tax))
         {
-            _bank.TrySectorDeposit(account, (int)(price * taxCoeff), LedgerEntryType.MedicalBountyTax);
+            foreach (var (account, taxCoeff) in tax.TaxAccounts)
+            {
+                _bank.TrySectorDeposit(account, (int)(price * taxCoeff), LedgerEntryType.BlackMarketSale);
+            }
         } // Mono End
-
     }
 
     #endregion

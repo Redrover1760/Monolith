@@ -28,8 +28,9 @@ public enum LedgerEntryType : byte
     VendorTax,
     CargoTax,
     MailDelivered,
-    BlackMarketAtmTax,
-    BlackMarketShipyardTax,
+    AtmTax,
+    ShipyardTax,
+    BlackMarketSale, // Mono
     BluespaceReward,
     AntiSmugglingBonus,
     MedicalBountyTax,
