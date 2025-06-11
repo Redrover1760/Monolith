@@ -45,7 +45,7 @@
     price: 500
   - type: ItemTax
     taxAccounts:
-    nfsd: 0.2
+      nfsd: 0.2
 
 - type: entity
   name: Bulldog
