@@ -45,5 +45,5 @@
     id: FentanylCrystal
   - type: ItemTax # Mono
     taxAccounts:
-      Medical: -0.1
-      nfsd: -0.1
+      Medical: -0.05
+      nfsd: -0.05
