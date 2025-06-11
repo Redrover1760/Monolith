@@ -30,3 +30,13 @@
     - id: ClothingUniformJumpsuitERTMailCarrier
     - id: ClothingBackpackERTMailCarrier
     - id: SpaceCash20000
+
+- type: entity # 
+  categories: [ HideSpawnMenu ]
+  parent: BaseMailLarge
+  id: MailMonoDesword
+  suffix: Desword # Who the hell puts this in the mail?
+  components:
+  - type: Mail
+    contents:
+    - id: EnergySwordDouble

@@ -84,6 +84,7 @@
     MailNFSword: 0.3
     MailMonoSpawnerT4Weapon: 0.1
     MailMonoSpawnerT4Explosive: 0.1
+    MailMonoDesword: 0.005
     # Pranks
     MailNFBuildABuddy: 0.5
     MailNFCritter: 1
