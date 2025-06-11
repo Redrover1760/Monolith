@@ -1,7 +1,7 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseMailLarge
-  id: MailMonoSpawnerT4Weapon
+  id: MailMonoT4Weapon
   suffix: GunT4
   components:
   - type: Mail
@@ -11,7 +11,7 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseMailLarge
-  id: MailMonoSpawnerT4Explosive
+  id: MailMonoT4Explosive
   suffix: ExplosivesT4
   components:
   - type: Mail
