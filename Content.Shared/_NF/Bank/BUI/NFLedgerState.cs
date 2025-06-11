@@ -30,10 +30,12 @@ public enum LedgerEntryType : byte
     MailDelivered,
     AtmTax,
     ShipyardTax,
-    BlackMarketSales, // Mono
-    ColonialOutpostSales, // Mono
-    TSFMCSales, // Mono
-    MedicalSales, // Mono
+    // Mono begin
+    BlackMarketSales,
+    ColonialOutpostSales,
+    TSFMCSales,
+    MedicalSales,
+    // Mono end
     BluespaceReward,
     AntiSmugglingBonus,
     MedicalBountyTax,
@@ -43,6 +45,12 @@ public enum LedgerEntryType : byte
     StationDepositOther,
     // Expense entries
     MailPenalty,
+    // Mono Begin
+    BlackMarketPenalties,
+    ColonialOutpostPenalties,
+    TSFMCPenalties,
+    MedicalPenalties,
+    // Mono End
     ShuttleRecordFees,
     StationWithdrawalPayroll,
     StationWithdrawalWorkOrder,
