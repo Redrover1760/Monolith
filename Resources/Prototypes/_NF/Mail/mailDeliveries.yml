@@ -98,7 +98,7 @@
     Security:
       MailSecurityDonuts: 3
       MailSecurityNonlethalsKit: 2
-      MailSecurityNFHudNfsdMed: 1
+      MailSecurityNFHudNfsdMed: 1.25
       MailSecurityNFSpaceLaw: 1
       MailSecurityNFMusket: 1
       MailNFMedkit: 1 # 2 weight total
