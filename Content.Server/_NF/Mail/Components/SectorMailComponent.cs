@@ -29,7 +29,7 @@ public sealed partial class SectorMailComponent : Component // Frontier: Station
     /// It does not determine unique recipients. That is random.
     /// </summary>
     [DataField]
-    public int CandidatesPerDelivery = 4;
+    public int CandidatesPerDelivery = 8; //4->8 Mono
 
     [DataField]
     public int MinimumDeliveriesPerTeleport = 1;
@@ -51,7 +51,7 @@ public sealed partial class SectorMailComponent : Component // Frontier: Station
     /// mail lately to prevent entity bloat for the sake of performance.
     /// </remarks>
     [DataField]
-    public int MaximumUndeliveredParcels = 5;
+    public int MaximumUndeliveredParcels = 25; // 5->25 Mono
 
     /// <summary>
     /// Any item that breaks or is destroyed in less than this amount of
@@ -64,7 +64,7 @@ public sealed partial class SectorMailComponent : Component // Frontier: Station
     /// What's the bonus for delivering a fragile package intact?
     /// </summary>
     [DataField]
-    public int FragileBonus = 2000;
+    public int FragileBonus = 8000; // Mono 2000->10000
 
     /// <summary>
     /// What's the malus for failing to deliver a fragile package?
@@ -89,7 +89,7 @@ public sealed partial class SectorMailComponent : Component // Frontier: Station
     /// What's the bonus for delivering a priority package on time?
     /// </summary>
     [DataField]
-    public int PriorityBonus = 5000;
+    public int PriorityBonus = 15000; //5000->15000
 
     /// <summary>
     /// What's the malus for failing to deliver a priority package?
@@ -102,7 +102,7 @@ public sealed partial class SectorMailComponent : Component // Frontier: Station
     /// What's the bonus for delivering a large package intact?
     /// </summary>
     [DataField]
-    public int LargeBonus = 20000; // 5000->20000 Mono
+    public int LargeBonus = 15000; // 5000->15000 Mono
 
     /// <summary>
     /// What's the malus for failing to deliver a large package?
