@@ -1797,7 +1797,7 @@
         orGroup: Box
       - id: BoxBuildABuddyVulpkanin
         orGroup: Box
-        id: BoxBuildABuddyResomi
+      - id: BoxBuildABuddyResomi
         orGroup: Box
       - id: DrinkSpaceGlue
       - id: PaperMailNFBuildABuddy
