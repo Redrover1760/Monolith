@@ -82,6 +82,7 @@
   - type: Contraband
     turnInValues:
       FederationMilitaryCredit: 2
+  - type: ItemTax # Mono
     taxAccounts:
       nfsd: -0.05
 
