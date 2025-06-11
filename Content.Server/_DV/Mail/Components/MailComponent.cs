@@ -79,7 +79,7 @@ namespace Content.Server._DV.Mail.Components
         /// The amount that cargo will be awarded for delivering this mail.
         /// </summary>
         [DataField]
-        public int Bounty = 12000; // Mono 7500->12000
+        public int Bounty = 15000; // Mono 7500->15000
 
         /// <summary>
         /// Penalty if the mail is destroyed.

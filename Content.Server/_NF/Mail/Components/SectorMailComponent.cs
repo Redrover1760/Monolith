@@ -13,7 +13,7 @@ public sealed partial class SectorMailComponent : Component // Frontier: Station
     public float Accumulator = 1995f;
 
     [DataField]
-    public TimeSpan TeleportInterval = TimeSpan.FromMinutes(35);
+    public TimeSpan TeleportInterval = TimeSpan.FromMinutes(30); //35 min -> 30 min
 
     /// <summary>
     /// The MailDeliveryPoolPrototype that's used to select what mail this
@@ -102,7 +102,7 @@ public sealed partial class SectorMailComponent : Component // Frontier: Station
     /// What's the bonus for delivering a large package intact?
     /// </summary>
     [DataField]
-    public int LargeBonus = 15000; // 5000->15000 Mono
+    public int LargeBonus = 25000; // 5000->25000 Mono
 
     /// <summary>
     /// What's the malus for failing to deliver a large package?
