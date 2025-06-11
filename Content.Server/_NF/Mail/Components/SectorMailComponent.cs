@@ -102,7 +102,7 @@ public sealed partial class SectorMailComponent : Component // Frontier: Station
     /// What's the bonus for delivering a large package intact?
     /// </summary>
     [DataField]
-    public int LargeBonus = 5000;
+    public int LargeBonus = 20000; // 5000->20000 Mono
 
     /// <summary>
     /// What's the malus for failing to deliver a large package?

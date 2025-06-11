@@ -384,7 +384,7 @@
       orGroup: Sword
     - id: ClothingBeltSheathFilled # Little dangerous between the reflect and the damage
       orGroup: Sword
-      prob: 0.1
+      prob: 0.9
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -394,25 +394,25 @@
   components:
   - type: Mail
     contents:
-      # Expected value: 5175 spesos
+      # Expected value: 5175x2 spesos
     - id: SpaceCash1000
-      orGroup: Cash
-      prob: 0.3
+#      orGroup: Cash
+      prob: 0.6
     - id: SpaceCash2500
-      orGroup: Cash
-      prob: 0.35
+#      orGroup: Cash
+      prob: 0.7
     - id: SpaceCash5000
-      orGroup: Cash
-      prob: 0.15
+#      orGroup: Cash
+      prob: 0.3
     - id: SpaceCash10000
-      orGroup: Cash
-      prob: 0.1
+#      orGroup: Cash
+      prob: 0.2
     - id: SpaceCash20000
-      orGroup: Cash
-      prob: 0.075
+#      orGroup: Cash
+      prob: 0.15
     - id: SpaceCash30000
-      orGroup: Cash
-      prob: 0.025
+#      orGroup: Cash
+      prob: 0.05
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -482,11 +482,11 @@
     contents:
     - id: PersonalAI
       orGroup: PAI
-      prob: 0.99
+      prob: 0.9
       # Ultra rare
     - id: SyndicatePersonalAI
       orGroup: PAI
-      prob: 0.01
+      prob: 0.1
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -1797,6 +1797,8 @@
         orGroup: Box
       - id: BoxBuildABuddyVulpkanin
         orGroup: Box
+        id: BoxBuildABuddyResomi
+        orGroup: Box
       - id: DrinkSpaceGlue
       - id: PaperMailNFBuildABuddy
 
@@ -2103,3 +2105,36 @@
   - type: Mail
     contents:
     - id: FoodBoxDonut
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMailLarge
+  id: MailMonoSpawnerT4Weapon
+  suffix: GunT4
+  components:
+  - type: Mail
+    contents:
+    - id: SpawnDungeonLootGunT4
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMailLarge
+  id: MailMonoSpawnerT4Explosive
+  suffix: ExplosivesT4
+  components:
+  - type: Mail
+    contents:
+    - id: SpawnDungeonLootExplosivesT4
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMailLarge
+  id: MailMonoERTMailKit
+  suffix: ErtMailKit
+  components:
+  - type: Mail
+    contents:
+    - id: ClothingOuterHardsuitERTMailCarrier
+    - id: ClothingUniformJumpsuitERTMailCarrier
+    - id: ClothingBackpackERTMailCarrier
+    - id: SpaceCash30000
