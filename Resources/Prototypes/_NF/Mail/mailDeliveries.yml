@@ -88,7 +88,7 @@
     MailNFBuildABuddy: 0.5
     MailNFCritter: 1
     MailNFEMP: 0.5
-    MailRestraints: 0.5 # TODO: figure out what to do with this.
+    MailRestraints: 1 # TODO: figure out what to do with this.
     MailNFSmoke: 0.5
     MailNFVagueThreat: 0.4
 

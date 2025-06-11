@@ -2042,6 +2042,7 @@
   - type: Mail
     contents:
     - id: Zipties
+    - id: Handcuffs
     - id: ClothingMaskMuzzle
     - id: ClothingEyesBlindfold
 
