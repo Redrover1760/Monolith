@@ -128,4 +128,4 @@
     id: ContrabandCrate
   - type: ItemTax
     taxAccounts:
-    BlackMarket: 0.2
+      BlackMarket: 0.2
