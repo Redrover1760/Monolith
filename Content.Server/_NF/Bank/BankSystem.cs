@@ -164,7 +164,7 @@ public sealed partial class BankSystem : SharedBankSystem
         newBalance = null; // Default return
         if (amount <= 0)
         {
-            _log.Info($"TryBankWithdraw: {amount} is invalid");
+            _log.Info($"TryBankWithdraw: {amount} is invalid. Admin remove money variation.");
             return false;
         }
 
@@ -207,7 +207,7 @@ public sealed partial class BankSystem : SharedBankSystem
         newBalance = null; // Default return
         if (amount <= 0)
         {
-            _log.Info($"TryBankDeposit: {amount} is invalid. Command to add money version, parameters: {session} {prefs} {profile} {amount} {newBalance}");
+            _log.Info($"TryBankDeposit: {amount} is invalid. Admin add money variation.");
             return false;
         }
 
