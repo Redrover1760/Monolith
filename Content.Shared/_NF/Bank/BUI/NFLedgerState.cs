@@ -30,7 +30,10 @@ public enum LedgerEntryType : byte
     MailDelivered,
     AtmTax,
     ShipyardTax,
-    BlackMarketSale, // Mono
+    BlackMarketSales, // Mono
+    ColonialOutpostSales, // Mono
+    TSFMCSales, // Mono
+    MedicalSales, // Mono
     BluespaceReward,
     AntiSmugglingBonus,
     MedicalBountyTax,

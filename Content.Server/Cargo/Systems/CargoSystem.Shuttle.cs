@@ -20,6 +20,7 @@ namespace Content.Server.Cargo.Systems;
 
 public sealed partial class CargoSystem
 {
+    private ISawmill _log = default!;
     [Dependency] BankSystem _bank = default!; // Mono
 
     /*
@@ -76,7 +77,7 @@ public sealed partial class CargoSystem
             return;
         }
         // Frontier: per-object market modification
-        GetPalletGoods(uid, gridUid, out var toSell, out var amount, out var noModAmount);
+        GetPalletGoods(uid, gridUid, out var toSell, out var amount, out var noModAmount, out var blackMarketTaxAmount, out var frontierTaxAmount, out var nfsdTaxAmount, out var medicalTaxAmount);
         if (TryComp<MarketModifierComponent>(uid, out var priceMod))
         {
             amount *= priceMod.Mod;
@@ -270,11 +271,11 @@ public sealed partial class CargoSystem
 
     #region Station
 
-    private bool SellPallets(Entity<CargoPalletConsoleComponent> consoleUid, EntityUid gridUid, out double amount, out double noMultiplierAmount) // Frontier: first arg to Entity, add noMultiplierAmount
+    private bool SellPallets(Entity<CargoPalletConsoleComponent> consoleUid, EntityUid gridUid, out double amount, out double noMultiplierAmount, out double blackMarketTaxAmount, out double frontierTaxAmount, out double nfsdTaxAmount, out double medicalTaxAmount) // Frontier: first arg to Entity, add noMultiplierAmount
     {
-        GetPalletGoods(consoleUid, gridUid, out var toSell, out amount, out noMultiplierAmount); // Frontier: add noMultiplierAmount
+        GetPalletGoods(consoleUid, gridUid, out var toSell, out amount, out noMultiplierAmount, out blackMarketTaxAmount, out frontierTaxAmount, out nfsdTaxAmount, out medicalTaxAmount); // Frontier: add noMultiplierAmount
 
-        Log.Debug($"Cargo sold {toSell.Count} entities for {amount} (plus {noMultiplierAmount} without mods)"); // Frontier: add section in parentheses
+        Log.Debug($"Cargo sold {toSell.Count} entities for {amount} (plus {noMultiplierAmount} without mods). (Taxes: Black Market: {blackMarketTaxAmount}, CO: {frontierTaxAmount}, TSFMC: {nfsdTaxAmount}, MD: {medicalTaxAmount})"); // Frontier: add section in parentheses
 
         if (toSell.Count == 0)
             return false;
@@ -325,10 +326,14 @@ public sealed partial class CargoSystem
         }
     }
 
-    private void GetPalletGoods(Entity<CargoPalletConsoleComponent> consoleUid, EntityUid gridUid, out HashSet<EntityUid> toSell, out double amount, out double noMultiplierAmount) // Frontier: first arg to Entity, add noMultiplierAmount
+    private void GetPalletGoods(Entity<CargoPalletConsoleComponent> consoleUid, EntityUid gridUid, out HashSet<EntityUid> toSell, out double amount, out double noMultiplierAmount, out double blackMarketTaxAmount, out double frontierTaxAmount, out double nfsdTaxAmount, out double medicalTaxAmount) // Frontier: first arg to Entity, add noMultiplierAmount
     {
         amount = 0;
         noMultiplierAmount = 0;
+        blackMarketTaxAmount = 0;
+        frontierTaxAmount = 0;
+        nfsdTaxAmount = 0;
+        medicalTaxAmount = 0;
         toSell = new HashSet<EntityUid>();
 
         foreach (var (palletUid, _, _) in GetCargoPallets(consoleUid, gridUid, BuySellType.Sell))
@@ -372,6 +377,29 @@ public sealed partial class CargoSystem
                 else
                     amount += price;
                 // End Frontier: check for items that are immune to market modifiers
+                if (TryComp<ItemTaxComponent>(ent, out var itemTax))
+                {
+                    foreach (var (account, taxCoeff) in itemTax.TaxAccounts)
+                    {
+                        switch (account)
+                        {
+                            case SectorBankAccount.BlackMarket:
+                                blackMarketTaxAmount += price * taxCoeff;
+                                break;
+                            case SectorBankAccount.Frontier:
+                                frontierTaxAmount += price * taxCoeff;
+                                break;
+                            case SectorBankAccount.Nfsd:
+                                nfsdTaxAmount += price * taxCoeff;
+                                break;
+                            case SectorBankAccount.Medical:
+                                medicalTaxAmount += price * taxCoeff;
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                }
             }
         }
     }
@@ -414,7 +442,7 @@ public sealed partial class CargoSystem
             return;
         }
 
-        if (!SellPallets((uid, component), gridUid, out var price, out var noMultiplierPrice)) // Frontier: convert first arg to Entity, add noMultiplierPrice
+        if (!SellPallets((uid, component), gridUid, out var price, out var noMultiplierPrice, out var blackMarketTaxAmount, out var frontierTaxAmount, out var nfsdTaxAmount, out var medicalTaxAmount)) // Frontier: convert first arg to Entity, add noMultiplierPrice
             return;
 
         // Frontier: market modifiers & immune objects
@@ -425,13 +453,10 @@ public sealed partial class CargoSystem
         price += noMultiplierPrice;
         // End Frontier: market modifiers & immune objects
         // Mono Begin
-        if (TryComp<ItemTaxComponent>(uid, out var itemTax))
-        {
-            foreach (var (account, taxCoeff) in itemTax.TaxAccounts)
-            {
-                _bank.TrySectorDeposit(account, (int)(price * taxCoeff), LedgerEntryType.BlackMarketSale);
-            }
-        }
+        _bank.TrySectorDeposit(SectorBankAccount.BlackMarket, (int)blackMarketTaxAmount, LedgerEntryType.BlackMarketSales);
+        _bank.TrySectorDeposit(SectorBankAccount.Frontier, (int)frontierTaxAmount, LedgerEntryType.ColonialOutpostSales);
+        _bank.TrySectorDeposit(SectorBankAccount.Nfsd, (int)nfsdTaxAmount, LedgerEntryType.TSFMCSales);
+        _bank.TrySectorDeposit(SectorBankAccount.Medical, (int)medicalTaxAmount, LedgerEntryType.MedicalSales);
         // Mono End
         var stackPrototype = _protoMan.Index<StackPrototype>(component.CashType);
         _stack.Spawn((int)price, stackPrototype, xform.Coordinates);
