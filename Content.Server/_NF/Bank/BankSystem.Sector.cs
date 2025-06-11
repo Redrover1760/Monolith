@@ -73,7 +73,7 @@ public sealed partial class BankSystem : SharedBankSystem
     {
         if (amount <= 0)
         {
-            _log.Info($"TryBankDeposit: {amount} is invalid");
+            _log.Info($"TryBankDeposit: {amount} is invalid, Sector budget deposit attempt. Parameters: Acc: {account} Am: {amount} Rsn: {reason}");
             return false;
         }
 
