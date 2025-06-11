@@ -44,5 +44,6 @@
   - type: PirateBountyItem
     id: FentanylCrystal
   - type: ItemTax # Mono
-    Medical: -0.1
-    nfsd: -0.1
+    taxAccounts:
+      Medical: -0.1
+      nfsd: -0.1
