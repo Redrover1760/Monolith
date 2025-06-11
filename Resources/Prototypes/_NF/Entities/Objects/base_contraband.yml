@@ -133,8 +133,7 @@
   abstract: true
   components:
   - type: Contraband
-    turnInValues:
-      FederationMilitaryCredit: 2
+    turnInValues: *oneFUC
   - type: ItemTax # Mono
     taxAccounts:
       nfsd: -0.1
