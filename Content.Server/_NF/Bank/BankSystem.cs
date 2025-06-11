@@ -62,7 +62,7 @@ public sealed partial class BankSystem : SharedBankSystem
     {
         if (amount <= 0)
         {
-            _log.Info($"TryBankWithdraw: {amount} is invalid from {mobUid}");
+            _log.Info($"TryBankWithdraw: {amount} is invalid from Uid {mobUid}");
             return false;
         }
 
@@ -110,7 +110,7 @@ public sealed partial class BankSystem : SharedBankSystem
     {
         if (amount <= 0)
         {
-            _log.Info($"TryBankDeposit: {amount} is invalid from {mobUid}");
+            _log.Info($"TryBankDeposit: {amount} is invalid from Uid {mobUid}");
             return false;
         }
 
