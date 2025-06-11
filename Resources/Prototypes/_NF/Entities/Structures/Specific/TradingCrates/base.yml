@@ -95,7 +95,7 @@
   - type: RequireProjectileTarget
   - type: ItemTax
     taxAccounts:
-    Frontier: 0.3
+      Frontier: 0.3
 
 - type: entity
   parent:

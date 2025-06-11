@@ -70,7 +70,7 @@
     price: 100 # mono
   - type: ItemTax
     taxAccounts:
-    nfsd: 0.2
+      nfsd: 0.2
 
 - type: entity
   name: viper
