@@ -129,3 +129,4 @@
   - type: ItemTax
     taxAccounts:
       BlackMarket: 0.2
+      nfsd: -0.1
