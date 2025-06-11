@@ -68,7 +68,7 @@
   - type: Appearance
   - type: StaticPrice
     price: 100 # mono
-  - type: ItemTax
+  - type: ItemTax # Mono
     taxAccounts:
       nfsd: 0.2
 

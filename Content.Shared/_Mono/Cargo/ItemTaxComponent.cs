@@ -5,7 +5,7 @@ using Robust.Shared.GameStates;
 namespace Content.Shared._Mono.ItemTax.Components;
 
 /// <summary>
-/// This is used to add additional money to a budget when a specific item is sold
+/// This is used to add or substract additional money to a budget when a specific item is sold.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
 public sealed partial class ItemTaxComponent : Component

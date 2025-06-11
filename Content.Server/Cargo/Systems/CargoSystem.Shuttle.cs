@@ -378,6 +378,7 @@ public sealed partial class CargoSystem
                 else
                     amount += price;
                 // End Frontier: check for items that are immune to market modifiers
+                // Mono: ItemTaxs to budgets.
                 if (TryComp<ItemTaxComponent>(ent, out var itemTax))
                 {
                     foreach (var (account, taxCoeff) in itemTax.TaxAccounts)
@@ -401,6 +402,7 @@ public sealed partial class CargoSystem
                         }
                     }
                 }
+                // End Mono
             }
         }
     }
@@ -483,7 +485,7 @@ public sealed partial class CargoSystem
             _bank.TrySectorWithdraw(SectorBankAccount.Medical, (int)medicalTaxAmount, LedgerEntryType.MedicalPenalties);
         }
         // Mono End
-            var stackPrototype = _protoMan.Index<StackPrototype>(component.CashType);
+        var stackPrototype = _protoMan.Index<StackPrototype>(component.CashType);
         _stack.Spawn((int)price, stackPrototype, xform.Coordinates);
         _audio.PlayPvs(ApproveSound, uid);
         UpdatePalletConsoleInterface((uid, component)); // Frontier: EntityUid<Entity

@@ -43,7 +43,7 @@
         ents: []
   - type: StaticPrice
     price: 500
-  - type: ItemTax
+  - type: ItemTax # Mono
     taxAccounts:
       nfsd: 0.2
 

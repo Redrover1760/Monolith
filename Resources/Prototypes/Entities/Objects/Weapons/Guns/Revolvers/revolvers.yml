@@ -51,7 +51,7 @@
       path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
   - type: StaticPrice
     price: 50
-  - type: ItemTax
+  - type: ItemTax # Mono
     taxAccounts:
       nfsd: 0.2
 

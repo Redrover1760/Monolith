@@ -65,7 +65,7 @@
     price: 500
   - type: UseDelay
     delay: 1
-  - type: ItemTax
+  - type: ItemTax # Mono
     taxAccounts:
       nfsd: 0.2
 

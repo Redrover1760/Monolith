@@ -12,7 +12,7 @@
   # Inherited
   - type: StaticPrice
     price: 0
-  - type: ItemTax
+  - type: ItemTax # Mono
     Medical: 0.8
 
 - type: entity
