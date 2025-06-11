@@ -43,3 +43,6 @@
         acts: [ "Destruction" ]
   - type: PirateBountyItem
     id: FentanylCrystal
+  - type: ItemTax
+    Medical: -0.1
+    nfsd: -0.1
