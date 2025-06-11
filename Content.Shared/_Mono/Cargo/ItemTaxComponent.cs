@@ -10,6 +10,9 @@ namespace Content.Shared._Mono.ItemTax.Components;
 [RegisterComponent, NetworkedComponent, Access(typeof(SharedCargoSystem))]
 public sealed partial class ItemTaxComponent : Component
 {
+    /// <summary>
+    /// Defines the percent tax to be added to or taken from each budget on pallet crate sell.
+    /// </summary>
     [DataField]
     public Dictionary<SectorBankAccount, float> TaxAccounts = new();
 }

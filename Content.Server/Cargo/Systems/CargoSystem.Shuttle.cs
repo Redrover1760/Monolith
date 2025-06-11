@@ -14,7 +14,9 @@ using Content.Shared.Mobs;
 using Robust.Shared.Containers; // Frontier
 using Content.Shared._Mono.ItemTax.Components; // Mono
 using Content.Server._NF.Bank; // Mono
-using Content.Shared._NF.Bank.BUI; // Mono
+using Content.Shared._NF.Bank.BUI;
+using Robust.Shared.Toolshed.Commands.Math; // Mono
+
 
 namespace Content.Server.Cargo.Systems;
 
@@ -454,22 +456,34 @@ public sealed partial class CargoSystem
         // Mono Begin
         if (blackMarketTaxAmount > 0)
             _bank.TrySectorDeposit(SectorBankAccount.BlackMarket, (int)blackMarketTaxAmount, LedgerEntryType.BlackMarketSales);
-        if (blackMarketTaxAmount < 0)
-            _bank.TrySectorDeposit(SectorBankAccount.BlackMarket, (int)blackMarketTaxAmount, LedgerEntryType.BlackMarketPenalties);
         if (frontierTaxAmount > 0)
             _bank.TrySectorDeposit(SectorBankAccount.Frontier, (int)frontierTaxAmount, LedgerEntryType.ColonialOutpostSales);
-        if (frontierTaxAmount < 0)
-            _bank.TrySectorDeposit(SectorBankAccount.Frontier, (int)frontierTaxAmount, LedgerEntryType.ColonialOutpostPenalties);
         if (nfsdTaxAmount > 0)
             _bank.TrySectorDeposit(SectorBankAccount.Nfsd, (int)nfsdTaxAmount, LedgerEntryType.TSFMCSales);
-        if (nfsdTaxAmount < 0)
-            _bank.TrySectorDeposit(SectorBankAccount.Nfsd, (int)nfsdTaxAmount, LedgerEntryType.TSFMCPenalties);
         if (medicalTaxAmount > 0)
             _bank.TrySectorDeposit(SectorBankAccount.Medical, (int)medicalTaxAmount, LedgerEntryType.MedicalSales);
+        if (blackMarketTaxAmount < 0)
+        {
+            blackMarketTaxAmount = -blackMarketTaxAmount;
+            _bank.TrySectorWithdraw(SectorBankAccount.BlackMarket, (int)blackMarketTaxAmount, LedgerEntryType.BlackMarketPenalties);
+        }
+        if (frontierTaxAmount < 0)
+        {
+            frontierTaxAmount = -frontierTaxAmount;
+            _bank.TrySectorWithdraw(SectorBankAccount.Frontier, (int)frontierTaxAmount, LedgerEntryType.ColonialOutpostPenalties);
+        }
+        if (nfsdTaxAmount < 0)
+        {
+            nfsdTaxAmount = -nfsdTaxAmount;
+            _bank.TrySectorWithdraw(SectorBankAccount.Nfsd, (int)nfsdTaxAmount, LedgerEntryType.TSFMCPenalties);
+        }
         if (medicalTaxAmount < 0)
-            _bank.TrySectorDeposit(SectorBankAccount.Medical, (int)medicalTaxAmount, LedgerEntryType.MedicalPenalties);
+        {
+            medicalTaxAmount = -medicalTaxAmount;
+            _bank.TrySectorWithdraw(SectorBankAccount.Medical, (int)medicalTaxAmount, LedgerEntryType.MedicalPenalties);
+        }
         // Mono End
-        var stackPrototype = _protoMan.Index<StackPrototype>(component.CashType);
+            var stackPrototype = _protoMan.Index<StackPrototype>(component.CashType);
         _stack.Spawn((int)price, stackPrototype, xform.Coordinates);
         _audio.PlayPvs(ApproveSound, uid);
         UpdatePalletConsoleInterface((uid, component)); // Frontier: EntityUid<Entity
