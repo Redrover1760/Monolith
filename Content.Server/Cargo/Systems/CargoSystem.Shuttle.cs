@@ -12,7 +12,7 @@ using Content.Server._NF.Cargo.Components; // Frontier
 using Content.Shared._NF.Bank.Components; // Frontier
 using Content.Shared.Mobs;
 using Robust.Shared.Containers; // Frontier
-using Content.Server._Mono.ItemTax; // Mono
+using Content.Shared._Mono.ItemTax.Components; // Mono
 using Content.Server._NF.Bank; // Mono
 using Content.Shared._NF.Bank.BUI; // Mono
 
@@ -424,10 +424,6 @@ public sealed partial class CargoSystem
         }
         price += noMultiplierPrice;
         // End Frontier: market modifiers & immune objects
-        var stackPrototype = _protoMan.Index<StackPrototype>(component.CashType);
-        _stack.Spawn((int)price, stackPrototype, xform.Coordinates);
-        _audio.PlayPvs(ApproveSound, uid);
-        UpdatePalletConsoleInterface((uid, component)); // Frontier: EntityUid<Entity
         // Mono Begin
         if (TryComp<ItemTaxComponent>(uid, out var itemTax))
         {
@@ -435,7 +431,12 @@ public sealed partial class CargoSystem
             {
                 _bank.TrySectorDeposit(account, (int)(price * taxCoeff), LedgerEntryType.BlackMarketSale);
             }
-        } // Mono End
+        }
+        // Mono End
+        var stackPrototype = _protoMan.Index<StackPrototype>(component.CashType);
+        _stack.Spawn((int)price, stackPrototype, xform.Coordinates);
+        _audio.PlayPvs(ApproveSound, uid);
+        UpdatePalletConsoleInterface((uid, component)); // Frontier: EntityUid<Entity
     }
 
     #endregion
