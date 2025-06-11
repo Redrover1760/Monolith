@@ -1,0 +1,32 @@
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMailLarge
+  id: MailMonoSpawnerT4Weapon
+  suffix: GunT4
+  components:
+  - type: Mail
+    contents:
+    - id: SpawnDungeonLootGunT4
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMailLarge
+  id: MailMonoSpawnerT4Explosive
+  suffix: ExplosivesT4
+  components:
+  - type: Mail
+    contents:
+    - id: SpawnDungeonLootExplosivesT4
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMailLarge
+  id: MailMonoERTMailKit
+  suffix: ErtMailKit
+  components:
+  - type: Mail
+    contents:
+    - id: ClothingOuterHardsuitERTMailCarrier
+    - id: ClothingUniformJumpsuitERTMailCarrier
+    - id: ClothingBackpackERTMailCarrier
+    - id: SpaceCash30000

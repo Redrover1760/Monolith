@@ -394,10 +394,10 @@
   components:
   - type: Mail
     contents:
-      # Expected value: 5175x2 spesos
+      # Expected value: Yes - Mono
     - id: SpaceCash1000
 #      orGroup: Cash
-      prob: 0.6
+      prob: 1
     - id: SpaceCash2500
 #      orGroup: Cash
       prob: 0.7
@@ -434,7 +434,7 @@
       orGroup: Muffin1
     - id: FoodMothMoffin
       orGroup: Muffin1
-      prob: 0.5
+      prob: 1
       # Muffin 2
     - id: FoodBakedMuffinBerry
       orGroup: Muffin2
@@ -2105,36 +2105,3 @@
   - type: Mail
     contents:
     - id: FoodBoxDonut
-
-- type: entity
-  categories: [ HideSpawnMenu ]
-  parent: BaseMailLarge
-  id: MailMonoSpawnerT4Weapon
-  suffix: GunT4
-  components:
-  - type: Mail
-    contents:
-    - id: SpawnDungeonLootGunT4
-
-- type: entity
-  categories: [ HideSpawnMenu ]
-  parent: BaseMailLarge
-  id: MailMonoSpawnerT4Explosive
-  suffix: ExplosivesT4
-  components:
-  - type: Mail
-    contents:
-    - id: SpawnDungeonLootExplosivesT4
-
-- type: entity
-  categories: [ HideSpawnMenu ]
-  parent: BaseMailLarge
-  id: MailMonoERTMailKit
-  suffix: ErtMailKit
-  components:
-  - type: Mail
-    contents:
-    - id: ClothingOuterHardsuitERTMailCarrier
-    - id: ClothingUniformJumpsuitERTMailCarrier
-    - id: ClothingBackpackERTMailCarrier
-    - id: SpaceCash30000
