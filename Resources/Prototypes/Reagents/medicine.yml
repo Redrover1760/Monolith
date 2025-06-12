@@ -248,7 +248,7 @@
         damage:
           types:
             Heat: -2
-            Shock: -2 
+            Shock: -2
             Cold: -2 # Was 1.5, Buffed due to limb damage changes(GoobStation)
       - !type:HealthChange
         conditions:
@@ -946,6 +946,14 @@
   color: "#b50ee8"
   metabolisms:
     Medicine:
+      effects:
+      - !type:MakeSentient
+        conditions:
+        - !type:ReagentThreshold
+          min: 5
+  reactiveEffects: # Mono
+    Acidic:
+      methods: [ Touch ]
       effects:
       - !type:MakeSentient
         conditions:
