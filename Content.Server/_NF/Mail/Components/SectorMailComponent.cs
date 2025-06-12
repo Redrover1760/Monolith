@@ -10,10 +10,10 @@ namespace Content.Server._NF.Mail.Components;
 public sealed partial class SectorMailComponent : Component // Frontier: Station->Sector
 {
     [DataField]
-    public float Accumulator = 1995f;
+    public float Accumulator = 905f;
 
     [DataField]
-    public TimeSpan TeleportInterval = TimeSpan.FromMinutes(30); //35 min -> 30 min
+    public TimeSpan TeleportInterval = TimeSpan.FromMinutes(15); //35 min -> 15 min
 
     /// <summary>
     /// The MailDeliveryPoolPrototype that's used to select what mail this
@@ -29,7 +29,7 @@ public sealed partial class SectorMailComponent : Component // Frontier: Station
     /// It does not determine unique recipients. That is random.
     /// </summary>
     [DataField]
-    public int CandidatesPerDelivery = 8; //4->8 Mono
+    public int CandidatesPerDelivery = 14; //4->14 Mono - This is divided between Trade Mall and CO.
 
     [DataField]
     public int MinimumDeliveriesPerTeleport = 1;
