@@ -64,7 +64,7 @@ public sealed partial class SectorMailComponent : Component // Frontier: Station
     /// What's the bonus for delivering a fragile package intact?
     /// </summary>
     [DataField]
-    public int FragileBonus = 8000; // Mono 2000->10000
+    public int FragileBonus = 10000; // Mono 2000->10000
 
     /// <summary>
     /// What's the malus for failing to deliver a fragile package?
