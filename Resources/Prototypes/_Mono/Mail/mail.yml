@@ -1,22 +1,49 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseMailLarge
-  id: MailMonoT4Weapon
-  suffix: GunT4
+  id: MailMonoC20r
+  suffix: C20r
   components:
   - type: Mail
     contents:
-    - id: SpawnDungeonLootGunT4
+    - id: WeaponSubMachineGunC20r
+      id: MagazinePistolSubMachineGun
+      amount: 3
 
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseMailLarge
-  id: MailMonoT4Explosive
-  suffix: ExplosivesT4
+  id: MailMonoAK
+  suffix: AK
   components:
   - type: Mail
     contents:
-    - id: SpawnDungeonLootExplosivesT4
+    - id: WeaponRifleAk
+    - id: MagazineLightRifle
+      amount: 3
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMailLarge
+  id: MailMonoC4
+  suffix: C4
+  components:
+  - type: Mail
+    contents:
+    - id: C4
+      amount: 3
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMail
+  id: MailMonoRCD
+  suffix: RCD
+  components:
+  - type: Mail
+    contents:
+    - id: RCD
+    - id: RCDAmmo
+      amount: 2
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -31,7 +58,7 @@
     - id: ClothingBackpackERTMailCarrier
     - id: SpaceCash20000
 
-- type: entity # 
+- type: entity #
   categories: [ HideSpawnMenu ]
   parent: BaseMailLarge
   id: MailMonoDesword

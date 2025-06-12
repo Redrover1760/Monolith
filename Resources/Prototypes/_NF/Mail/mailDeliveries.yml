@@ -82,8 +82,9 @@
     MailNFKendoKit: 0.2
     MailNFKnife: 0.7
     MailNFSword: 0.3
-    MailMonoT4Gun: 0.1
-    MailMonoT4Explosive: 0.1
+    MailMonoC20r: 0.1
+    MailMonoAK: 0.1
+    MailMonoC4: 0.1
     MailMonoDesword: 0.005
     # Pranks
     MailNFBuildABuddy: 0.5
