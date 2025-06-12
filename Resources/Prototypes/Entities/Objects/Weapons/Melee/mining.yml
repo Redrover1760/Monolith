@@ -59,12 +59,12 @@
     soundHit:
       path: "/Audio/Items/drill_hit.ogg"
     attackRate: 4
+    heavyStaminaCost: 0 # Mono
     damage:
       groups:
         Brute: 6
       types:
         Structural: 15
-    HeavyStaminaCost: 0 # Mono
 
 - type: entity
   name: diamond tipped mining drill
@@ -82,12 +82,12 @@
     soundHit:
       path: "/Audio/Items/drill_hit.ogg"
     attackRate: 4
+    heavyStaminaCost: 0 # Mono
     damage:
       groups:
         Brute: 8
       types:
         Structural: 35
-    HeavyStaminaCost: 0 # Mono
   - type: MiningGatheringHard # Frontier
 
 
