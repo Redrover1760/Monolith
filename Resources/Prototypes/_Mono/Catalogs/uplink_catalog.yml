@@ -35,3 +35,23 @@
       blacklist:
         components:
           - SurplusBundle
+
+- type: listing # Syndicate Money
+  id: UplinkCash5000
+  name: uplink-Cash5000-name
+  description: uplink-Cash5000-desc
+  productEntity: SpaceCash5000
+  cost:
+    Telecrystal: 1
+  categories:
+  - UplinkDeception
+
+- type: listing # Syndicate Money
+  id: UplinkCash50000
+  name: uplink-Cash50000-name
+  description: uplink-Cash50000-desc
+  productEntity: SpaceCash50000
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkDeception

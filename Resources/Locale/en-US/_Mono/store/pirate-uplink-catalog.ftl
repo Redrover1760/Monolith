@@ -79,6 +79,10 @@ uplink-pirate-voicemask-desc = A voicemask to engage in some subterfuge and tomf
 
 uplink-pirate-cash10000-name = 10,000 spesos
 uplink-pirate-cash10000-desc = That's my boy, you made my day.
+
+uplink-pirate-cash100000-name = 100,000 spesos
+uplink-pirate-cash100000-desc = That's my boy, you really made my day.
+
 # desc is quote
 
 # MARK: Weapons

@@ -66,6 +66,22 @@
       - SecurityUplink
 
 - type: listing
+  id: UplinkSecurityCash75000
+  name: uplink-security-cash75000-name
+  description: uplink-security-cash75000-desc
+  productEntity: SpaceCash75000
+  icon: { sprite: Objects/Economy/cash.rsi, state: cash_1000000 }
+  cost:
+    FederationMilitaryCredit: 10
+  categories:
+    - UplinkSecurityUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
   id: UplinkSecurityMagazineSubsonic
   name:  uplink-subsonic-mag-name
   description: uplink-subsonic-mag-desc
