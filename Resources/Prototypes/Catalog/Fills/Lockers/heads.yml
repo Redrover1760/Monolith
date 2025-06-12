@@ -17,6 +17,9 @@
     - id: RubberStampApproved
     - id: RubberStampDenied
     - id: RubberStampQm
+    - id: ConstructionBag # Mono
+    - id: OreBag # Mono
+    - id: Pickaxe # Mono
     #    - id: AstroNavCartridge # Frontier
     - id: ClothingBeltUtilityEngineering # Frontier
 
@@ -162,6 +165,7 @@
     - id: ClothingEyesGlassesMeson
     - id: ClothingHandsGlovesColorYellow
     - id: ClothingHeadsetAltEngineering
+    - id: ConstructionBag # Mono
     #    - id: DoorRemoteEngineering # Frontier
     #    - id: RCD # Frontier
     #    - id: RCDAmmo # Frontier

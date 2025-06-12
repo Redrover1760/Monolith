@@ -64,6 +64,7 @@
         Brute: 6
       types:
         Structural: 15
+    HeavyStaminaCost: 0 # Mono
 
 - type: entity
   name: diamond tipped mining drill
@@ -86,6 +87,7 @@
         Brute: 8
       types:
         Structural: 35
+    HeavyStaminaCost: 0 # Mono
   - type: MiningGatheringHard # Frontier
 
 
