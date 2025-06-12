@@ -7,7 +7,7 @@
   - type: Mail
     contents:
     - id: WeaponSubMachineGunC20r
-      id: MagazinePistolSubMachineGun
+    - id: MagazinePistolSubMachineGun
       amount: 3
 
 - type: entity

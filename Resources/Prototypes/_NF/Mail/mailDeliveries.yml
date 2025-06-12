@@ -66,6 +66,7 @@
     MailNFCognizine: 0.5
     MailNFMedkit: 1
     MailNFIFFBoard: 0.5
+    MailMonoRCD: 0.5
     MailNFMoney: 1
     MailNFNecrosol: 0.5
     MailNFOmnizine: 0.5
@@ -82,9 +83,9 @@
     MailNFKendoKit: 0.2
     MailNFKnife: 0.7
     MailNFSword: 0.3
-    MailMonoC20r: 0.1
-    MailMonoAK: 0.1
-    MailMonoC4: 0.1
+    MailMonoC20r: 0.2
+    MailMonoAK: 0.2
+    MailMonoC4: 0.3
     MailMonoDesword: 0.005
     # Pranks
     MailNFBuildABuddy: 0.5
