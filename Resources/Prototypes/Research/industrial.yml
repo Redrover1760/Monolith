@@ -286,4 +286,4 @@
 #  - ShipyardRCDAmmo # Frontier
   - RCD
   - RCDAmmo
-#  - NFBlueprintShipyardRCDAmmo # Frontier
+  - NFBlueprintRCDAmmo
