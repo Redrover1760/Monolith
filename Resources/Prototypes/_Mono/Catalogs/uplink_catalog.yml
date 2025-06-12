@@ -41,6 +41,7 @@
   name: uplink-Cash5000-name
   description: uplink-Cash5000-desc
   productEntity: SpaceCash5000
+  icon: { sprite: Objects/Economy/cash.rsi, state: cash_1000000 }
   cost:
     Telecrystal: 1
   categories:
@@ -50,7 +51,8 @@
   id: UplinkCash50000
   name: uplink-Cash50000-name
   description: uplink-Cash50000-desc
-  productEntity: SpaceCash50000
+  productEntity:
+  icon: { sprite: _NF/Objects/Economy/cash.rsi, state: cash_100000 }
   cost:
     Telecrystal: 10
   categories:
