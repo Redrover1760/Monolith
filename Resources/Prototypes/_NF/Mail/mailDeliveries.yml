@@ -124,5 +124,5 @@
       MailCommandNFPipebombIntern: 1 # TODO: make the "real" pipebomb
       MailCommandNFWristwatchGold: 0.5
     MailCarrier:
-      MailMonoERTMailKit: 4
+      MailMonoERTMailKit: 1
       MailNFMoney: 3

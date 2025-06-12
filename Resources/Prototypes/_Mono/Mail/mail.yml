@@ -56,6 +56,8 @@
     - id: ClothingOuterHardsuitERTMailCarrier
     - id: ClothingUniformJumpsuitERTMailCarrier
     - id: ClothingBackpackERTMailCarrier
+    - id: ClothingHandsGlovesCombat
+    - id: ClothingMaskGasERT
     - id: SpaceCash20000
 
 - type: entity #
