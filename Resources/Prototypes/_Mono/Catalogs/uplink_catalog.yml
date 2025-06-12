@@ -46,6 +46,11 @@
     Telecrystal: 1
   categories:
   - UplinkDeception
+  conditions:
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 - type: listing # Syndicate Money
   id: UplinkCash100000
@@ -57,3 +62,8 @@
     Telecrystal: 10
   categories:
   - UplinkDeception
+  conditions:
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
