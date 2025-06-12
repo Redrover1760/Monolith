@@ -37,10 +37,10 @@
           - SurplusBundle
 
 - type: listing # Syndicate Money
-  id: UplinkCash5000
-  name: uplink-Cash5000-name
-  description: uplink-Cash5000-desc
-  productEntity: SpaceCash5000
+  id: UplinkCash10000
+  name: uplink-Cash10000-name
+  description: uplink-Cash10000-desc
+  productEntity: SpaceCash10000
   icon: { sprite: Objects/Economy/cash.rsi, state: cash_1000000 }
   cost:
     Telecrystal: 1
@@ -48,10 +48,10 @@
   - UplinkDeception
 
 - type: listing # Syndicate Money
-  id: UplinkCash50000
-  name: uplink-Cash50000-name
-  description: uplink-Cash50000-desc
-  productEntity: SpaceCash50000
+  id: UplinkCash100000
+  name: uplink-Cash100000-name
+  description: uplink-Cash100000-desc
+  productEntity: SpaceCash100000
   icon: { sprite: _NF/Objects/Economy/cash.rsi, state: cash_100000 }
   cost:
     Telecrystal: 10
