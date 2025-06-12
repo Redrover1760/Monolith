@@ -51,7 +51,7 @@
   id: UplinkCash50000
   name: uplink-Cash50000-name
   description: uplink-Cash50000-desc
-  productEntity:
+  productEntity: SpaceCash50000
   icon: { sprite: _NF/Objects/Economy/cash.rsi, state: cash_100000 }
   cost:
     Telecrystal: 10
