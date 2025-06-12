@@ -418,7 +418,7 @@
   name: uplink-pirate-cash10000-name
   description: uplink-pirate-cash10000-desc
   productEntity: SpaceCash10000
-  icon: { sprite: Objects/Economy/cash.rsi, state: cash_100000 }
+  icon: { sprite: _NF/Objects/Economy/cash.rsi, state: cash_100000 }
   cost:
     Doubloon: 1
   categories:
@@ -434,7 +434,7 @@
   name: uplink-pirate-cash100000-name
   description: uplink-pirate-cash100000-desc
   productEntity: SpaceCash100000
-  icon: { sprite: Objects/Economy/cash.rsi, state: cash_1000000 }
+  icon: { sprite: _NF/Objects/Economy/cash.rsi, state: cash_1000000 }
   cost:
     Doubloon: 10
   categories:
