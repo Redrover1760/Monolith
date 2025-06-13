@@ -289,7 +289,6 @@ public abstract partial class SharedGunSystem
 
                 args.Ammo.Add((entity, EnsureShootable(entity)));
 
-
                 if (!component.AutoCycle) //  Goobstation - do not remove spent ammo from the gun it doesn't autocycle
                     break;
 
