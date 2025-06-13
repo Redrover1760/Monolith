@@ -4113,3 +4113,18 @@ Entries:
   id: 493
   time: '2025-06-13T02:42:15.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/807
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        Kammerers shoot faster, Enforcers shoot a bit faster, Bulldogs shoot
+        really fast. DBs shoot faster.
+    - type: Add
+      message: PMC Enforcers re-added.
+    - type: Tweak
+      message: You can now reload mags while moving without spam clicking.
+    - type: Tweak
+      message: Kammerers are all 7 ammo now. Enforcers are 8 ammo.
+  id: 494
+  time: '2025-06-13T06:45:38.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/759
