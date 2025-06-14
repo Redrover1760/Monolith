@@ -27,11 +27,11 @@ public sealed class ResomiAccentSystem : EntitySystem
         {
 
             // bawk
-            message = RegexLowerSilly.Replace(message, message + " bawk");
+            message = RegexLowerSilly.Replace(message, "silly... bawk");
             // Bawk
-            message = RegexFirstCapSilly.Replace(message, message + " Bawk");
+            message = RegexFirstCapSilly.Replace(message, "Silly... Bawk");
             // BAWK
-            message = RegexUpperSilly.Replace(message, message + " BAWK");
+            message = RegexUpperSilly.Replace(message, "SILLY... BAWK");
         }
 
         args.Message = message;
