@@ -1,7 +1,7 @@
 # Shitmed Change: This file was fully reorganized to use composition
 - type: entity
   abstract: true
-  parent: BasePart # Shitmed Change
+  parent: [BaseItem, BasePart] # Shitmed Change
   id: PartVoxBase
   name: "vox body part"
   components:
