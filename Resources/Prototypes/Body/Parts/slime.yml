@@ -23,6 +23,7 @@
   id: TorsoSlime
   name: "slime torso"
   parent: [PartSlime, BaseTorso]
+  components:
   - type: Extractable # Mono Shitmed
     juiceSolution:
       reagents:
@@ -35,6 +36,7 @@
   id: HeadSlime
   name: "slime head"
   parent: [PartSlime, BaseHead]
+  components:
   - type: Extractable # Mono Shitmed
     juiceSolution:
       reagents:
