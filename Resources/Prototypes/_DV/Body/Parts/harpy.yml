@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: BasePart
+  parent: [BaseItem, BasePart]
   id: PartHarpyBase
   components:
   - type: Sprite
@@ -9,16 +9,39 @@
     sprite: _DV/Mobs/Species/Harpy/parts.rsi
   - type: BodyPart
     species: Harpy
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 3
+      - ReagentId: Blood
+        Quantity: 10
 
 - type: entity
   parent: [ PartHarpyBase, BaseTorso ]
   id: TorsoHarpy
   name: "harpy torso"
+  components:
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 10
+      - ReagentId: Blood
+        Quantity: 20
 
 - type: entity
   parent: [ PartHarpyBase, BaseHead ]
   id: HeadHarpy
   name: "harpy head"
+  components:
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 5
+      - ReagentId: Blood
+        Quantity: 10
 
 - type: entity
   parent: [ PartHarpyBase, BaseLeftArm ]

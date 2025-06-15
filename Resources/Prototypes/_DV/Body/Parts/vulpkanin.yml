@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: BasePart
+  parent: [BaseItem, BasePart]
   id: PartVulpkaninBase
   components:
   - type: Sprite
@@ -10,15 +10,32 @@
   - type: BodyPart
     species: Vulpkanin
 
+
 - type: entity
   parent: [ PartVulpkaninBase, BaseTorso ]
   id: TorsoVulpkanin
   name: "vulpkanin torso"
+  components:
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 10
+      - ReagentId: Blood
+        Quantity: 20
 
 - type: entity
   parent: [ PartVulpkaninBase, BaseHead ]
   id: HeadVulpkanin
   name: "vulpkanin head"
+  components:
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 5
+      - ReagentId: Blood
+        Quantity: 10
 
 - type: entity
   parent: [ PartVulpkaninBase, BaseLeftArm ]
