@@ -1,0 +1,37 @@
+# Spoken by Hydrakin. Have fun.
+- type: language
+  id: Hydrakinian
+  isVisibleLanguage: true
+  speech:
+    color: "#1a561add"
+  obfuscation:
+    !type:SyllableObfuscation
+    minSyllables: 2
+    maxSyllables: 4
+    replacement:
+    - ᔑ
+    - ʖ
+    - ᓵ
+    - ↸
+    - ᒷ
+    - ⎓
+    - ⊣
+    - ⍑
+    - ╎
+    - ⋮
+    - ꖌ
+    - ꖎ
+    - ᒲ
+    - リ
+    - 𝙹
+    - "!¡"
+    - ᑑ
+    - ∷
+    - ᓭ
+    - ℸ ̣
+    - ⚍
+    - ⍊
+    - ∴
+    - ̇/
+    - "||"
+    - ⨅
