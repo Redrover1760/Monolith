@@ -44,6 +44,17 @@
   - type: Body
     prototype: Hydrakin
     requiredLegs: 2
+  - type: Temperature
+    coldDamageThreshold: 20 # Mono - Absurd cold resistance
+    heatDamageThreshold: 380 # Extra heat temp buffer due to producing tons of heat.
+    coldDamage:
+      types:
+        Cold : 0.025 #per second, scales with temperature & other constants
+  - type: TemperatureSpeed
+    thresholds:
+      100: 0.9
+      70: 0.75
+      20: 0.6
   - type: HumanoidAppearance
     species: Hydrakin
   - type: Inventory
