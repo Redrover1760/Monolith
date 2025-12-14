@@ -10,6 +10,9 @@ language-Bubblish-description = The language of Slimes. Being a mixture of bubbl
 language-RootSpeak-name = Rootspeak
 language-RootSpeak-description = The strange whistling-style language spoken by the Diona.
 
+language-Hydraspeak-name = Hydraspeak
+language-Hydraspeak-description = A strange language spoken by the Hydrakin.
+
 language-Nekomimetic-name = Nekomimetic
 language-Nekomimetic-description = To the casual observer, this language is an incomprehensible mess of broken Japanese. To the Felinids and Oni, it's somehow comprehensible.
 

@@ -1,6 +1,6 @@
 # Spoken by Hydrakin. Have fun.
 - type: language
-  id: Hydrakinian
+  id: Hydraspeak
   isVisibleLanguage: true
   speech:
     color: "#1a561add"
@@ -9,6 +9,24 @@
     minSyllables: 2
     maxSyllables: 4
     replacement:
+    - ᔑᔑ
+    - ʖ↸
+    - ╎⍑
+    - ꖎꖎリ
+    - ∷∴
+    - ⋮∷
+    - ⨅⍊
+    - ᓵʖ
+    - ᒲ↸
+    - ʖ↸
+    - ᔑ↸
+    - ᑑ↸
+    - ʖᒲ
+    - ⊣ᒷ
+    - ᒲᒷ
+    - リᔑʖ
+    - ╎╎ᑑ
+    - ⎓∴
     - ᔑ
     - ʖ
     - ᓵ
@@ -24,7 +42,6 @@
     - ᒲ
     - リ
     - 𝙹
-    - "!¡"
     - ᑑ
     - ∷
     - ᓭ
@@ -32,6 +49,4 @@
     - ⚍
     - ⍊
     - ∴
-    - ̇/
-    - "||"
     - ⨅
