@@ -43,6 +43,10 @@
         conditions:
         - !type:OrganType
           type: Human
+      - !type:Oxygenate # Mono - Hydrakin
+        conditions:
+        - !type:OrganType
+          type: Hydrakin
       - !type:Oxygenate
         conditions:
         - !type:OrganType # Goobstation - Yowie
@@ -118,6 +122,10 @@
         amount: -2.0
     Gas:
       effects:
+      - !type:Oxygenate # Mono - Hydrakin
+        conditions:
+        - !type:OrganType
+          type: Hydrakin
       - !type:HealthChange
         conditions:
         - !type:OrganType # Goobstation - Yowie
@@ -169,6 +177,10 @@
             Radiation: 3
     Gas:
       effects:
+      - !type:Oxygenate # Mono - Hydrakin
+        conditions:
+        - !type:OrganType
+          type: Hydrakin
       - !type:HealthChange
         scaleByQuantity: true
         ignoreResistances: true
@@ -199,6 +211,10 @@
         conditions:
         - !type:OrganType
           type: Plant
+      - !type:Oxygenate # Mono - Hydrakin
+        conditions:
+        - !type:OrganType
+          type: Hydrakin
       - !type:HealthChange
         conditions:
         - !type:OrganType
@@ -252,6 +268,10 @@
         conditions:
         - !type:OrganType
           type: Vox
+      - !type:Oxygenate # Mono - Hydrakin
+        conditions:
+        - !type:OrganType
+          type: Hydrakin
       - !type:Oxygenate
         conditions:
         - !type:OrganType
@@ -284,6 +304,10 @@
   metabolisms:
     Gas:
       effects:
+      - !type:Oxygenate # Mono - Hydrakin
+        conditions:
+        - !type:OrganType
+          type: Hydrakin
       - !type:Emote
         conditions:
         - !type:ReagentThreshold
@@ -361,6 +385,10 @@
   metabolisms:
     Gas:
       effects:
+      - !type:Oxygenate # Mono - Hydrakin
+        conditions:
+        - !type:OrganType
+          type: Hydrakin
       - !type:HealthChange
         conditions:
         - !type:OrganType # Goobstation - Yowie

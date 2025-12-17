@@ -52,16 +52,20 @@
   - type: Speech
     speechSounds: Lizard
     speechVerb: Reptilian
-    allowedEmotes: ['Thump']
   - type: Vocal
     sounds:
-      Male: MaleReptilian
-      Female: FemaleReptilian
-      Unsexed: MaleReptilian
+      Male: UnisexHydrakin
+      Female: UnisexHydrakin
+      Unsexed: UnisexHydrakin
   - type: TypingIndicator
     proto: robot
   - type: Hydrakin
-    buildup: 2
+    buildup: 3
+  - type: Temperature # Basically immune to cold
+    coldDamageThreshold: 2.7
+  - type: TemperatureSpeed
+    thresholds:
+      2.7: 0.8
 
 - type: entity
   parent: BaseSpeciesDummy
