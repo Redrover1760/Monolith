@@ -12,11 +12,11 @@
   root: torso
   slots:
     head:
-      part: HeadAsakim
+      part: HeadHydrakin
       connections:
       - torso
       organs:
-        brain: OrganHumanBrain
+        brain: OrganHydrakinBrain
         eyes: OrganHumanEyes
     torso:
       part: TorsoHydrakin
@@ -27,10 +27,10 @@
       - left leg
       - head # Shitmed
       organs:
-        heart: OrganAnimalHeart
-        lungs: OrganHumanLungs
-        stomach: OrganReptilianStomach
-        liver: OrganAnimalLiver
+        heart: OrganHydrakinHeart
+        lungs: OrganHydrakinLungs
+        stomach: OrganRHydrakinStomach
+        liver: OrganHydrakinLiver
         kidneys: OrganHumanKidneys
     right arm:
       part: RightArmHydrakin
