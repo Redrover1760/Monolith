@@ -93,7 +93,7 @@
   - type: TypingIndicator
     proto: robot
   - type: Hydrakin
-    buildup: 3
+    buildup: 2
 
 - type: entity
   parent: BaseSpeciesDummy
