@@ -16,6 +16,14 @@ marking-HydrakinEarsOld = Thin Ears
 marking-HydrakinEarsFin = Fin Ears
 marking-HydrakinEarsFrilled = Frilled Ears
 
+marking-HydrakinProtoChest = Cyberkin
+
+marking-HydrakinProtoLeftArm = Cyberkin Left
+marking-HydrakinProtoRightArm = Cyberkin Right
+
+marking-HydrakinProtoLeftLeg = Cyberkin Left
+marking-HydrakinProtoRightLeg = Cyberkin Right
+
 marking-HydrakinProtoVisor = Visor
 marking-HydrakinProtoFace1 = Ring Display
 marking-HydrakinProtoFace2 = Serious Display
