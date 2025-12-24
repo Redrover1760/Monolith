@@ -61,11 +61,6 @@
     proto: robot
   - type: Hydrakin
     buildup: 3
-  - type: Temperature # Basically immune to cold
-    coldDamageThreshold: 2.7
-  - type: TemperatureSpeed
-    thresholds:
-      2.7: 0.8
 
 - type: entity
   parent: BaseSpeciesDummy

@@ -29,7 +29,7 @@
       organs:
         heart: OrganHydrakinHeart
         lungs: OrganHydrakinLungs
-        stomach: OrganRHydrakinStomach
+        stomach: OrganHydrakinStomach
         liver: OrganHydrakinLiver
         kidneys: OrganHumanKidneys
     right arm:
