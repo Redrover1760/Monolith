@@ -46,7 +46,7 @@
     requiredLegs: 2
   - type: Temperature
     coldDamageThreshold: 20 # Mono - Absurd cold resistance
-    heatDamageThreshold: 380 # Extra heat temp buffer due to producing tons of heat.
+    heatDamageThreshold: 330 # no. just no. suffer.
     coldDamage:
       types:
         Cold : 0.025 #per second, scales with temperature & other constants
@@ -94,6 +94,7 @@
     proto: robot
   - type: Hydrakin
     buildup: 2
+    maxTemperature: 350
 
 - type: entity
   parent: BaseSpeciesDummy
