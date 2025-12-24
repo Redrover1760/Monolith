@@ -45,14 +45,14 @@
     Snout:
       points: 0
       required: false
+    Head:
+      points: 1
+      required: true
+      defaultMarkings: [ HydrakinEyesDefault]
     Tail:
       points: 1
       required: true
       defaultMarkings: [ HydrakinTailDefault ]
-    Head:
-      points: 1
-      required: true
-      defaultMarkings: [ HydrakinEyesDefault ]
     HeadTop:
       points: 1
       required: true
@@ -65,6 +65,9 @@
       required: false
     Arms:
       points: 8 # imp 2<8
+      required: false
+    Overlay:
+      points: 2
       required: false
 
 - type: humanoidBaseSprite
