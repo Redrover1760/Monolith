@@ -4,7 +4,7 @@
 
 - type: font
   id: MinecraftEnchantment
-  path: /Fonts/minecraft-enchantment.ttf
+  path: /Fonts/unifont-17.0.03.otf
 
 #- type: font # Bubblish (Slimes)
 #  id: SourGummy
