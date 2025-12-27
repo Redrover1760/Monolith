@@ -4,6 +4,7 @@
   isVisibleLanguage: true
   speech:
     color: "#1a561add"
+    fontId: MinecraftEnchantment
   obfuscation:
     !type:SyllableObfuscation
     minSyllables: 2
