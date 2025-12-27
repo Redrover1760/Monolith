@@ -57,6 +57,9 @@
       10: 0.6
   - type: HumanoidAppearance
     species: Hydrakin
+  - type: ThermalRegulator #Todo, implement hydrakin thermal movement generation
+  - type: PressureProtection
+    lowPressureMultiplier: 1.2
   - type: Inventory
     speciesId: hydrakin
     templateId: hydrakin
