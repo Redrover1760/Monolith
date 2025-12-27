@@ -15171,3 +15171,28 @@ Entries:
   id: 1682
   time: '2025-12-24T15:05:11.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2857
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Colossus received more touchups: the biggest being the SEC docks are no
+        longer blocked!
+  id: 1683
+  time: '2025-12-25T14:54:20.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2855
+- author: thoughtlessuser
+  changes:
+    - type: Fix
+      message: Fixed PDV jumpsuits spawning with suit signature on.
+  id: 1684
+  time: '2025-12-25T23:14:15.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2868
+- author: Helicaste
+  changes:
+    - type: Tweak
+      message: Plant Analyzer advanced scan is much faster.
+    - type: Tweak
+      message: Plant Analyzers added to botanical belts by default.
+  id: 1685
+  time: '2025-12-27T17:20:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2863
