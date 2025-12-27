@@ -2,7 +2,7 @@
   id: UnisexHydrakin
   params:
     variation: 0.125
-    addVolume: -10
+    volume: -8
   sounds:
     Scream:
       collection: HydrakinScream
