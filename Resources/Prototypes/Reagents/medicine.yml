@@ -568,7 +568,7 @@
         - !type:OrganType
           type: Hydrakin
           shouldHave: true
-        amount: -750000
+        amount: -100000
 
 - type: reagent
   id: Barozine
