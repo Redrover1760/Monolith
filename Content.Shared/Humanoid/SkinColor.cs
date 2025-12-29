@@ -5,7 +5,7 @@ namespace Content.Shared.Humanoid;
 
 public static class SkinColor
 {
-    public const float MaxTintedHuesSaturation = 0.2f;
+    public const float MaxTintedHuesSaturation = 0.1f;
     public const float MinTintedHuesLightness = 0.85f;
 
     public const float MinHuesLightness = 0.175f;

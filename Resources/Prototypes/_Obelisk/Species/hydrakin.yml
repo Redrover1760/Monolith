@@ -11,7 +11,7 @@
   defaultSkinTone: "#ffffff"
   markingLimits: MobHydrakinMarkingLimits
   dollPrototype: MobHydrakinDummy
-  skinColoration: TintedHues
+  skinColoration: Hues
   maleFirstNames: names_hydrakin_unisex
   femaleFirstNames: names_hydrakin_unisex
   naming: First
