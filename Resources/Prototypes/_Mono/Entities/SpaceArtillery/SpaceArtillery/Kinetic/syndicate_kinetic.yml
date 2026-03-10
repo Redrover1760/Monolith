@@ -103,7 +103,7 @@
   - type: Gun
     fireRate: 2
     recoil: 10 # 2/5x
-    projectileSpeed: 230
+    projectileSpeed: 240
     minAngle: 0
     maxAngle: 6
     burstCooldown: 2
