@@ -23,6 +23,7 @@ public sealed partial class RadarBlipSystem : EntitySystem
     private readonly Dictionary<BlipConfig, ushort> _paletteIndex = new();
     private readonly Dictionary<ICommonSession, List<BlipNetData>> _cachedBliplist = new();
     private readonly Dictionary<ICommonSession, List<BlipNetData>> _sentBliplist = new();
+    private readonly Dictionary<ICommonSession, List<BlipNetData>> _unionedBliplist = new();
 
 
     public override void Initialize()
@@ -37,6 +38,20 @@ public sealed partial class RadarBlipSystem : EntitySystem
         base.Update(frameTime);
 
         _sentBliplist.Clear();
+
+        // Compare cached blip list with created bliplist
+
+        // Output those that do not match.
+
+        // For those that have a moving velocity, apply specialcase matching.
+
+        //but then if a blip moves it might not update
+        //need to check if new position is consistent with velocity
+        //If it is, remove from _unionedBliplist.
+        //Send the Union of _sentBlipList and _cachedBlipList to client. "_unionedBliplist"
+
+        // Client should no longer remove blips on their own.
+
     }
 
     private void OnBlipsRequested(RequestBlipsEvent ev, EntitySessionEventArgs args)
@@ -59,7 +74,7 @@ public sealed partial class RadarBlipSystem : EntitySystem
         AssembleBlipsReport((EntityUid)radarUid, _tempSourcesCache, radar);
         AssembleHitscanReport((EntityUid)radarUid, _tempSourcesCache, radar);
 
-        _cachedBliplist.Add(args.SenderSession, _tempBlipsCache);
+        _sentBliplist.Add(args.SenderSession, _tempBlipsCache);
 
         // Combine the blips and hitscan lines
         var giveEv = new GiveBlipsEvent(_tempPaletteCache, _tempBlipsCache, _tempHitscansCache);
