@@ -39,6 +39,8 @@ public sealed partial class RadarBlipSystem : EntitySystem
 
         _sentBliplist.Clear();
 
+        // Calculate new positions for all blips with velocity > 0 with frametime and velocity vector. Replace old positions with new.
+
         // Compare cached blip list with created bliplist
 
         // Output those that do not match.
@@ -51,6 +53,8 @@ public sealed partial class RadarBlipSystem : EntitySystem
         //Send the Union of _sentBlipList and _cachedBlipList to client. "_unionedBliplist"
 
         // Client should no longer remove blips on their own.
+
+        // Send removal requests to blips that have left the client's range, as determined by blipcomponent.
 
     }
 
