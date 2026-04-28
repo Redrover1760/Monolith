@@ -1,3 +1,5 @@
+using System.Diagnostics;
+using System.Linq;
 using System.Numerics;
 using Content.Server.Alert.Commands;
 using Content.Shared._Mono.Radar;
@@ -24,6 +26,10 @@ public sealed partial class RadarBlipSystem : EntitySystem
     private readonly Dictionary<ICommonSession, List<BlipNetData>> _cachedBliplist = new();
     private readonly Dictionary<ICommonSession, List<BlipNetData>> _sentBliplist = new();
     private readonly Dictionary<ICommonSession, List<BlipNetData>> _unionedBliplist = new();
+    private readonly Dictionary<ICommonSession, List<EntityUid>> _sessionUpdateList = new();
+
+    private static readonly float UpdateInterval = 0.5f;
+    private float _lastUpdated = 0;
 
 
     public override void Initialize()
@@ -36,6 +42,35 @@ public sealed partial class RadarBlipSystem : EntitySystem
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
+
+        _lastUpdated += frameTime;
+
+        if (UpdateInterval <= _lastUpdated)
+            return;
+
+        _lastUpdated -= UpdateInterval;
+
+        // MAIN Update Method
+
+        // Run once per interval.
+
+        // Get all Sessions requesting blips (Method)
+
+        // For each session, get all entities within RANGE of the target with EQE blip component (Method)
+
+        // Return as Dictionary
+
+        // COMPARE TO OLD CACHE (Method)
+
+        // For static blips, a simple Union of both lists will do.
+
+        // But for moving blips, we must calculate the expected updated position of blips by the velocity.
+
+        // For new blips, send them to the client for client to cache.
+
+        // For old blips, remove them from the Cache and send a removal event.
+
+        // Use dictionary, for each Session, return list. Send indivdiual list per client.
 
         _sentBliplist.Clear();
 
@@ -68,12 +103,18 @@ public sealed partial class RadarBlipSystem : EntitySystem
         var sourcesEv = new GetRadarSourcesEvent();
         RaiseLocalEvent(radarUid.Value, ref sourcesEv);
 
-        // Reuse pooled sources list
+
         _tempSourcesCache.Clear();
         if (sourcesEv.Sources != null)
             _tempSourcesCache.AddRange(sourcesEv.Sources);
         else
             _tempSourcesCache.Add(radarUid.Value);
+
+        // Ensure that we do not duplicate our values or keys, since we only clear after update() is called.
+        if (_sessionUpdateList.ContainsKey(args.SenderSession))
+            _sessionUpdateList[args.SenderSession] = _tempSourcesCache;
+        else
+            _sessionUpdateList.Add(args.SenderSession, _tempSourcesCache);
 
         AssembleBlipsReport((EntityUid)radarUid, _tempSourcesCache, radar);
         AssembleHitscanReport((EntityUid)radarUid, _tempSourcesCache, radar);
