@@ -8,27 +8,27 @@
   cost: 40000
   recipeUnlocks:
   - ShipVoucherPdvT0Recipe
-  - ShipVoucherPdvT1RandomRecipe
+  - ShipVoucherPdvT1Recipe
   - InertiaVoucherRogue
   - MockVoucherRogue
   - SnakeletVoucherRogue
   technologyPrerequisites:
   - UniversalMaterialResearchT1
-  position: 22, 4
+  position: 11, 1
 
 - type: technology
   id: PdvTierTwoVouchers
   name: research-technology-rogue-tier-two-vouchers
-  entityIcon: ShipVoucherPdvT2Random
+  entityIcon: ShipVoucherPdvT2
   discipline: RogueShipyard
   tier: 1
   cost: 60000
   recipeUnlocks:
-  - ShipVoucherPdvT2RandomRecipe
+  - ShipVoucherPdvT2Recipe
   technologyPrerequisites:
   - PdvTierOneVouchers
   - UniversalMaterialResearchT2
-  position: 22, 6
+  position: 11, 7
 
 - type: technology
   id: PdvTierThreeVouchers
@@ -39,11 +39,12 @@
   cost: 80000
   recipeUnlocks:
   - SaintieVoucherRogue
+  - KortikVoucherRogue
   - SaturnVoucherRogue
   technologyPrerequisites:
   - PdvTierTwoVouchers
   - UniversalMaterialResearchT3
-  position: 22, 12
+  position: 11, 12
 
 - type: technology
   id: RogueJaws
@@ -57,7 +58,7 @@
   - NaniteApplicatorSyndicate
   technologyPrerequisites:
   - UniversalMaterialResearchT1
-  position: 20, -1
+  position: 12, -1
 
 - type: technology
   id: RogueHypospray
@@ -70,7 +71,7 @@
   - HyposprayRogue
   technologyPrerequisites:
   - UniversalMaterialResearchT1
-  position: 20, -2
+  position: 12, -2
 
 - type: technology
   id: RogueEmag
@@ -84,7 +85,7 @@
   - AccessBreakerRogue
   technologyPrerequisites:
   - UniversalMaterialResearchT2
-  position: 21, 4
+  position: 12, 10
 
 - type: technology
   id: RogueThermals
@@ -97,7 +98,7 @@
   - ClothingEyesThermalVisionGoggles
   technologyPrerequisites:
   - UniversalMaterialResearchT1
-  position: 20, -3
+  position: 12, -3
 
 - type: technology
   id: PDVBasicBorgModule
@@ -108,9 +109,10 @@
   cost: 10000
   recipeUnlocks:
   - BasicBorgCombatModulePDV
+  - BorgIFFPDV
   technologyPrerequisites:
   - UniversalMaterialResearchT1
-  position: 20, -4
+  position: 12, -4
 
 - type: technology
   id: PDVAdvancedBorgModule
@@ -124,4 +126,4 @@
   technologyPrerequisites:
   - UniversalMaterialResearchT3
   - PDVBasicBorgModule
-  position: 23, 11
+  position: 12, 15
